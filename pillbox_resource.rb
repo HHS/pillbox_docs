@@ -1,16 +1,25 @@
 =begin
 
 USAGE
+require 'pillbox_resource'
 
 name = 'aspirin'
 
 PillboxResource.api_key = "YOUR SECRET KEY"   
-pills = PillboxResource.find(:all, :params=>{"ingredient"=>name.strip.capitalize})
+pills = PillboxResource.find(:all, :params=>{"ingredient"=>name})
 if pills.empty?
   puts "could not find #{name}"
 else
   ...
 end
+
+
+NOTE: shape/color lookup doesn't seem to work.
+
+>> PillboxResource.find(:all, :params=>{'shape'=>'C48337'}) NoMethodError: undefined method `collect!' for #<Hash:0x112928c>
+	from ./pillbox_resource.rb:63:in `instantiate_collection'
+>> PillboxResource.find(:all, :params=>{'shape'=>'capsule'})
+NoMethodError: undefined method `name' for nil:NilClass
 
 =end
 
@@ -65,9 +74,6 @@ end
 
 
 
-
-require 'ruby-debug'
-
 class PillboxResource < ActiveResource::Base
   self.site = "http://pillbox.nlm.nih.gov/PHP/pillboxAPIService.php"
 
@@ -115,32 +121,32 @@ class PillboxResource < ActiveResource::Base
    super first, interpret_params(options)
   end
   def interpret_params(options = {})
-    opts = options['params'] || {}
-    opts['key'] ||= self.api_key
+    params = options['params'] || {}
+    params['key'] ||= self.api_key
     
     begin
-      opts['color'] = case opts['color']
+      params['color'] = case params['color']
       when NilClass; 
-      when /^[0-9A-Fa-f]+$/;           opts['color'] # valid hex     
-      else;                     COLORS[opts['color'].upcase]
+      when /^[0-9A-Fa-f]+$/;           params['color'] # valid hex     
+      else;                     COLORS[params['color'].upcase]
       end
     rescue
       # "color not found"
     end
 
     begin
-      opts['shape'] = case opts['shape']
+      params['shape'] = case params['shape']
       when NilClass; 
-      when /^[0-9A-Fa-f]+$/;          opts['shape'] # valid hex
-      else;                     SHAPES[opts['shape'].upcase]
+      when /^[0-9A-Fa-f]+$/;          params['shape'] # valid hex
+      else;                     SHAPES[params['shape'].upcase]
       end
     rescue
       # "shape not found"
     end
 
     
-    opts.delete_if {|k,v| v.nil? }
-    options.merge!(opts)
+    params.delete_if {|k,v| v.nil? }
+    options.merge!(params)
   end
 
   def shape; attributes['SPLSHAPE'] end 

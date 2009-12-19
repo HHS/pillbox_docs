@@ -1,6 +1,25 @@
-This is where you describe the api and usage and purpose
+A collection of wrappers for the Pillbox API. Including:
+   - Ruby
+   - Python
 
-provided through the generous support by the FDA in both money and resources.
+Parameters:
+    key - Security key required for API access
+    shape - FDA SPL code for shape of pill (see definition below)
+    color - FDA SPL code for color of pill (see definition below)
+    score - Numeric value for FDA score value for pill
+    size - Numeric value (whole number) for size in mm of pill. Search +/- 2 mm
+    ingredient - Name of active ingredient.  Currently only one ingredient may be searched in each call.  There is currently no spellchecker.
+    prodcode - FDA 9-digit Product Code in dashed format
+    has_image - If 0, no image. If 1, image exists.
+
+
+Please see files for specific usage examples in each langauge. Further API documentation available on project homepage: (http://)
+
+KNOWN BUGS
+- Please note that some XML in the Pillbox API is unescaped. 
+- Ruby wrapper limited. shape/color lookup doesn't seem to work. (see file examples)
+
+API provided through the generous support by the FDA in both money and resources. Work conducted by NLM at NIH.
 
 Please contact david.hale at nlm.nih.gov for an api key. There is no bandwidth limit currently.
 
