@@ -39,6 +39,29 @@ SHAPES = {
     'TRIANGLE': 'C48353',
 }
 
+SHAPE_CODES = {
+    'C48335': 'BULLET',
+    'C48336': 'CAPSULE',
+    'C48337': 'CLOVER',
+    'C48338': 'DIAMOND',
+    'C48339': 'DOUBLE_CIRCLE',
+    'C48340': 'FREEFORM',
+    'C48341': 'GEAR',
+    'C48342': 'HEPTAGON',
+    'C48343': 'HEXAGON',
+    'C48344': 'OCTAGON',
+    'C48345': 'OVAL',
+    'C48346': 'PENTAGON',
+    'C48347': 'RECTANGLE',
+    'C48348': 'ROUND',
+    'C48349': 'SEMI_CIRCLE',
+    'C48350': 'SQUARE',
+    'C48351': 'TEAR',
+    'C48352': 'TRAPEZOID',
+    'C48353': 'TRIANGLE'
+}
+
+
 COLORS = {
     'BLACK': 'C48323',
     'BLUE': 'C48333',
@@ -54,6 +77,22 @@ COLORS = {
     'YELLOW': 'C48330',
 }
 
+COLOR_CODES = {
+    'C48323': 'BLACK',
+    'C48324': 'GRAY',
+    'C48325': 'WHITE',
+    'C48326': 'RED',
+    'C48327': 'PURPLE',
+    'C48328': 'PINK',
+    'C48329': 'GREEN',
+    'C48330': 'YELLOW',
+    'C48331': 'ORANGE',
+    'C48332': 'BROWN',
+    'C48333': 'BLUE',
+    'C48334': 'TURQUOISE'
+}
+
+
 
 class PillboxError(Exception):
     pass
@@ -64,6 +103,9 @@ class Pill(object):
     
     def __init__(self, d):
         self.__dict__ = d
+    
+    color = property(lambda self: COLOR_CODES[self.SPLCOLOR])
+    shape = property(lambda self: SHAPE_CODES[self.SPLSHAPE])
     
     def __str__(self):
         return self.RXSTRING
