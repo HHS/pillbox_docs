@@ -14,6 +14,7 @@ Parameters:
 """
 import urllib, urllib2
 import xml.etree.cElementTree as etree
+from decimal import Decimal
 
 BASE_URL = "http://pillbox.nlm.nih.gov/PHP/pillboxAPIService.php?"
 
@@ -92,6 +93,12 @@ COLOR_CODES = {
     'C48334': 'TURQUOISE'
 }
 
+IMAGE_SIZES = {
+    'super_small': 'ss', # 91 x 65 png
+    'small': 'sm',       # 161 x 115 jpg
+    'medium': 'md',      # 448 x 320 jpg
+    'large': 'lg'        # 840 x 600 jpg
+}
 
 
 class PillboxError(Exception):
@@ -104,11 +111,42 @@ class Pill(object):
     def __init__(self, d):
         self.__dict__ = d
     
-    color = property(lambda self: COLOR_CODES[self.SPLCOLOR])
-    shape = property(lambda self: SHAPE_CODES[self.SPLSHAPE])
+    # properties
+    color        = property(lambda self: COLOR_CODES[self.SPLCOLOR])
+    description  = property(lambda self: self.RXSTRING)
+    has_image    = property(lambda self: bool(self.HAS_IMAGE))
+    imprint      = property(lambda self: self.SPLIMPRINT)
+    ingredients  = property(lambda self: self.INGREDIENTS.split('; '))
+    product_code = property(lambda self: self.PRODUCT_CODE)
+    rxcui        = property(lambda self: self.RXCUI)
+    rxtty        = property(lambda self: self.RXTTY)
+    score        = property(lambda self: int(self.SPLSCORE))
+    set_id       = property(lambda self: self.SETID)
+    shape        = property(lambda self: SHAPE_CODES[self.SPLSHAPE])
+    size         = property(lambda self: Decimal(self.SPLSIZE))
+    spl_id       = property(lambda self: self.SPL_ID)
+    
+    
+    def image(self, size='small'):
+        if not self.image_id:
+            return ""
+        
+        IMAGE_URL = "http://pillbox.nlm.nih.gov/assets/%(size)s/%(image_id)s%(size_short)s.%(ext)s"
+        if size == "super_small":
+            ext = "png"
+        else:
+            ext = "jpg"
+        
+        return IMAGE_URL % {
+            'size': size,
+            'image_id': self.image_id,
+            'size_short': IMAGE_SIZES[size],
+            'ext': ext
+        }
+    
     
     def __str__(self):
-        return self.RXSTRING
+        return self.description
     
     def __repr__(self):
         return "<Pill: %s>" % self.__str__()
@@ -130,7 +168,7 @@ class Pillbox(object):
             pills = etree.fromstring(response)
             
         except Exception, e:
-            return response
+            raise PillboxError(e)
         
         return list(self._handle_pills(pills))
             
