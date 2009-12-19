@@ -59,6 +59,19 @@ class PillboxError(Exception):
     pass
 
 
+class Pill(object):
+    "Storage class for pills returned by Pillbox"
+    
+    def __init__(self, d):
+        self.__dict__ = d
+    
+    def __str__(self):
+        return self.RXSTRING
+    
+    def __repr__(self):
+        return "<Pill: %s>" % self.__str__()
+
+
 class Pillbox(object):
     "Python client for NIH's Pillbox"
     
@@ -68,26 +81,50 @@ class Pillbox(object):
     
     def _apicall(self, **params):
         response = urllib2.urlopen(BASE_URL + urllib.urlencode(params)).read()
+        if response == "No records found":
+            return response
+
         try:
-            return etree.fromstring(response)
+            pills = etree.fromstring(response)
+            
         except Exception, e:
             return response
+        
+        return list(self._handle_pills(pills))
+            
+    
+    def _handle_pills(self, pills):
+        for pill in pills.findall('pill'):
+            d = dict([
+                (p.tag, p.text) for p in pill.getchildren()
+            ])
+            pill = Pill(d)
+            yield pill
+
     
     def search(self, **params):
         params['key'] = self.api_key
         
+        color = None
         if 'color' in params:
             if params['color'] in COLORS.values():
-                pass # if you want to use the color code, that's cool
+                color = params['color'] # if you want to use the color code, that's cool
             else:
-                params['color'] = COLORS[params['color'].upper()]
-            
+                color = COLORS[params['color'].upper()]
+        
+        if color:
+            params['color'] = color
+        
+        shape = None
         if 'shape' in params:
             if params['shape'] in SHAPES.values():
-                pass
+                shape = params['shape']
             else:
-                params['shape'] = SHAPES[params['shape'].upper()]
-                
+                shape = SHAPES[params['shape'].upper()]
+        
+        if shape:
+            params['shape'] = shape
+            
         return self._apicall(**params)
 
 
