@@ -14,12 +14,15 @@ else
 end
 
 
-NOTE: shape/color lookup doesn't seem to work.
+NOTE: shape/color lookup doesn't always work.
 
->> PillboxResource.find(:all, :params=>{'shape'=>'C48337'}) NoMethodError: undefined method `collect!' for #<Hash:0x112928c>
-	from ./pillbox_resource.rb:63:in `instantiate_collection'
->> PillboxResource.find(:all, :params=>{'shape'=>'capsule'})
-NoMethodError: undefined method `name' for nil:NilClass
+>> PillboxResource.find(:all, :params=>{'shape'=>'C48337'})           # GOOD!
+>> PillboxResource.find(:first, :params=>{'color'=>"C48324;C48323"})  # WORKS!
+
+>> PillboxResource.find(:all, :params=>{'shape'=>'capsule'})          # BROKERZED
+ => NoMethodError: undefined method `name' for nil:NilClass
+
+      
 
 =end
 
@@ -55,7 +58,6 @@ end
 # handle a weird disclaimer message that is in XML
   module ActiveResource
     class Base           
-           
       	    def self.instantiate_collection(collection, prefix_options = {})
                 if collection.is_a?(Hash) && collection.size == 1
                   value = collection.values.first
@@ -65,7 +67,12 @@ end
                     [ instantiate_record(value, prefix_options) ]
                   end
                 else
+                  # strip extra layer off the front end (a disclaimer)
                   (d,disclaimer), (p,collection) = collection.sort 
+                  
+                  # ensure type Array
+                  collection = collection.is_a?(Array) ? collection : Array[collection]
+                  
                   collection.collect! { |record| instantiate_record(record, prefix_options) }
                 end
              end
@@ -98,6 +105,7 @@ class PillboxResource < ActiveResource::Base
       'TRAPEZOID'=> 'C48352',
       'TRIANGLE'=> 'C48353'
   }
+  SHAPE_CODES = SHAPES.invert
 
   COLORS = {
       'BLACK'=> 'C48323',
@@ -113,6 +121,7 @@ class PillboxResource < ActiveResource::Base
       'WHITE'=> 'C48325',
       'YELLOW'=> 'C48330'
   }
+  COLOR_CODES = COLORS.invert
   
 
   cattr_accessor :api_key
@@ -127,38 +136,60 @@ class PillboxResource < ActiveResource::Base
     begin
       params['color'] = case params['color']
       when NilClass; 
-      when /^[0-9A-Fa-f]+$/;           params['color'] # valid hex     
-      else;                     COLORS[params['color'].upcase]
+      when Array;                          params['color'].join(";")
+      when /^(\d|[a-f]|[A-F])+/;           params['color'] # valid hex     
+      else;                         COLORS[params['color'].upcase]
       end
     rescue
       # "color not found"
     end
-
+    
     begin
       params['shape'] = case params['shape']
       when NilClass; 
-      when /^[0-9A-Fa-f]+$/;          params['shape'] # valid hex
-      else;                     SHAPES[params['shape'].upcase]
+      when Array;                         params['color'].join(";")  
+      when /^(\d|[a-f]|[A-F])+/;          params['shape'] # valid hex
+      else;                        SHAPES[params['shape'].upcase]
       end
-    rescue
-      # "shape not found"
+    rescue # NoMethodError => e
+      # raise X if e.match "shape not found"
     end
 
+    # todo: prodcode
     
     params.delete_if {|k,v| v.nil? }
     options.merge!(params)
   end
 
-  def shape; attributes['SPLSHAPE'] end 
-  def color; attributes['SPLCOLOR'] end 
+  def shape # handle multi-color (OUTPUT ONLY)
+    return nil unless attributes['SPLSHAPE']
+    attributes['SPLSHAPE'].split(";").map do |shape_code|
+      SHAPE_CODES[shape_code] || shape_code
+    end
+  end 
+  def color
+    return nil unless attributes['SPLCOLOR']
+    attributes['SPLCOLOR'].split(";").map do |color_code|
+      COLOR_CODES[color_code] || shape_code
+    end
+  end 
 
   def description; attributes['RXSTRING'] end
+  def prodcode; attributes['PRODUCT_CODE'] end
   def product_code; attributes['PRODUCT_CODE'] end
   def has_image?; attributes['HAS_IMAGE'] == '1' end
   def ingredients; attributes['INGREDIENTS'].split(";") end
   def size; attributes['SPLSIZE'].to_f end
   def image_id; attributes['image_id'] end
-  def image_url; image_id ? "http://pillbox.nlm.nih.gov/assets/super_small/#{image_id}ss.png" : nil end
+  def image_url(image_size = 'super_small')
+    unless image_id 
+      return nil
+    end
+    case image_size
+      when "super_small"; "http://pillbox.nlm.nih.gov/assets/super_small/#{image_id}ss.png" 
+      when "small";       "http://pillbox.nlm.nih.gov/assets/small/#{image_id}sm.jpg" 
+    end
+  end
   def imprint; attributes['splimprint'] end
 
 end
