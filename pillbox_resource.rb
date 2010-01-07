@@ -66,7 +66,7 @@ end
                   else
                     [ instantiate_record(value, prefix_options) ]
                   end
-                else
+                else                  
                   # strip extra layer off the front end (a disclaimer)
                   (d,disclaimer), (p,collection) = collection.sort 
                   
@@ -126,10 +126,12 @@ class PillboxResource < ActiveResource::Base
 
   cattr_accessor :api_key
 
-  def find(first, options={})
-   super first, interpret_params(options)
+  def self.find(first, options={})
+    validate_presence_of_api_key 
+    validate_pillbox_api_params(options)
+    super first, self.interpret_params(options)
   end
-  def interpret_params(options = {})
+  def self.interpret_params(options = {})
     params = options['params'] || {}
     params['key'] ||= self.api_key
     
@@ -160,6 +162,17 @@ class PillboxResource < ActiveResource::Base
     params.delete_if {|k,v| v.nil? }
     options.merge!(params)
   end
+  
+  def self.validate_presence_of_api_key
+    raise "must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless self.api_key
+  end
+  
+  VALID_ATTRIBUTE_NAMES = %w(color ingredient shape imprint prodcode has_image size) 
+  def self.validate_pillbox_api_params(options)
+    raise "try using find :all, :params => { ... }  with one of these options: #{VALID_ATTRIBUTE_NAMES.inspect}" unless options[:params].is_a?(Hash)
+    raise "valid params options are:  #{VALID_ATTRIBUTE_NAMES.inspect}  ... you have invalid params option(s): #{(VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES}" unless ((VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES).empty?
+    
+  end
 
   def shape # handle multi-color (OUTPUT ONLY)
     return nil unless attributes['SPLSHAPE']
@@ -170,7 +183,7 @@ class PillboxResource < ActiveResource::Base
   def color
     return nil unless attributes['SPLCOLOR']
     attributes['SPLCOLOR'].split(";").map do |color_code|
-      COLOR_CODES[color_code] || shape_code
+      COLOR_CODES[color_code] || color_code
     end
   end 
 
