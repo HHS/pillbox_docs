@@ -27,7 +27,8 @@ NOTE: shape/color lookup doesn't always work.
 =end
 
 
-
+#require 'active_support'
+  
 begin
   require 'active_resource'
 rescue LoadError
@@ -106,6 +107,7 @@ class PillboxResource < ActiveResource::Base
       'TRIANGLE'=> 'C48353'
   }
   SHAPE_CODES = SHAPES.invert
+  def self.shapes; SHAPES.inject({}){|i,(k,v)| i.merge k.humanize => v } end
 
   COLORS = {
       'BLACK'=> 'C48323',
@@ -122,18 +124,32 @@ class PillboxResource < ActiveResource::Base
       'YELLOW'=> 'C48330'
   }
   COLOR_CODES = COLORS.invert
+  def self.colors; COLORS.inject({}){|i,(k,v)| i.merge k.humanize => v } end
   
 
   cattr_accessor :api_key
+  attr_accessor :color2
 
   def self.find(first, options={})
-    validate_presence_of_api_key 
+    # MYTODO :| ok for now... but this only works with rails
+    options = HashWithIndifferentAccess.new(options)
     validate_pillbox_api_params(options)
     super first, self.interpret_params(options)
   end
   def self.interpret_params(options = {})
-    params = options['params'] || {}
+    params = HashWithIndifferentAccess.new(options['params']) || {}
     params['key'] ||= self.api_key
+    
+    # flex api is crude... this makes it compatible with rails active_resource and will_paginate
+    if params[:start]
+       params['lower_limit'] = (params[:page] || "0").to_i * params[:start].to_i
+    end
+    params.delete(:page)
+    params.delete(:start)
+    
+    if color2 = params.delete('color2')      
+      params['color'] = [params['color'],color2].join(";")
+    end
     
     begin
       params['color'] = case params['color']
@@ -163,15 +179,15 @@ class PillboxResource < ActiveResource::Base
     options.merge!(params)
   end
   
-  def self.validate_presence_of_api_key
-    raise "must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless self.api_key
-  end
-  
-  VALID_ATTRIBUTE_NAMES = %w(color ingredient shape imprint prodcode has_image size) 
+  VALID_ATTRIBUTE_NAMES = %w(color color2 ingredient shape imprint prodcode has_image size lower_limit) 
   def self.validate_pillbox_api_params(options)
+    validate_presence_of_api_key(options)
     raise "try using find :all, :params => { ... }  with one of these options: #{VALID_ATTRIBUTE_NAMES.inspect}" unless options[:params].is_a?(Hash)
     raise "valid params options are:  #{VALID_ATTRIBUTE_NAMES.inspect}  ... you have invalid params option(s): #{(VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES}" unless ((VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES).empty?
     
+  end
+  def self.validate_presence_of_api_key(options)
+    raise "must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless (self.api_key or options[:params][:key])
   end
 
   def shape # handle multi-color (OUTPUT ONLY)
@@ -189,9 +205,11 @@ class PillboxResource < ActiveResource::Base
 
   def description; attributes['RXSTRING'] end
   def prodcode; attributes['PRODUCT_CODE'] end
+  def api_url; "http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name="+ingredient end
   def product_code; attributes['PRODUCT_CODE'] end
   def has_image?; attributes['HAS_IMAGE'] == '1' end
   def ingredients; attributes['INGREDIENTS'].split(";") end
+  def ingredient; ingredients.first end
   def size; attributes['SPLSIZE'].to_f end
   def image_id; attributes['image_id'] end
   def image_url(image_size = 'super_small')
@@ -201,8 +219,119 @@ class PillboxResource < ActiveResource::Base
     case image_size
       when "super_small"; "http://pillbox.nlm.nih.gov/assets/super_small/#{image_id}ss.png" 
       when "small";       "http://pillbox.nlm.nih.gov/assets/small/#{image_id}sm.jpg" 
+      when "medium";       "http://pillbox.nlm.nih.gov/assets/medium/#{image_id}md.jpg"
+      when "large";       "http://pillbox.nlm.nih.gov/assets/large/#{image_id}lg.jpg"
     end
   end
   def imprint; attributes['splimprint'] end
+  def trade_name; self.RXSTRING.split(" ").first.downcase end
 
 end
+
+=begin
+ONE-LINERS
+PillboxResource.api_key = CHANGE_ME_TO_A_VALID_KEY
+
+resources = Pill.all(:conditions=>"image_ref is NULL").map(&:name).map{|name| begin PillboxResource.find(:first, :params=>{:has_image=>'1', 'ingredient'=>name.downcase}) rescue name end}; true
+resources = Pill.all.map(&:name).map{|name| begin PillboxResource.find(:first, :params=>{:has_image=>'1', 'ingredient'=>name.downcase}) rescue name end}; true
+
+resources.map(&:to_s)
+#=> ["#<PillboxResource:0x2114ea8>", "Imodium", "Penicillin", "Placebo", "Tamiflu", "#<PillboxResource:0x2073044>", "#<PillboxResource:0x2045b08>", "#<PillboxResource:0x2566664>", "Z-Pak", "#<PillboxResource:0x2503fdc>", "#<PillboxResource:0x2489124>", "#<PillboxResource:0x242d770>", "Ex-Lax", "Orlisat"]
+
+to_be_filled_out = resources.dup
+to_be_filled_out = to_be_filled_out.reject{|r| r.is_a?(String) }
+to_be_filled_out = to_be_filled_out.reject{|r| r.nil? }
+#to_be_filled_out = to_be_filled_out.reject{|r| r.image_ref.is_a?(String) } # already?
+
+#execute
+# all pills
+Pill.all.each {|pill|
+    pr = begin
+          PillboxResource.find(:first, :params=>{:has_image=>'1', 'prodcode'=>pill.prodcode})
+        rescue
+        end
+    pr ||= begin 
+            PillboxResource.find(:first, :params=>{:has_image=>'1', 'ingredient'=>pill.name.downcase})
+        rescue
+            next            
+        end
+    pill.update_attributes :image_ref => pr.image_url('small'),
+                           :api_ref => pr.api_url,
+                           :accepted_names => [pr.ingredient, pr.trade_name]
+}
+# Pill.all(:conditions=>'accepted_names is NULL').map(&:name)
+
+
+resources = Pill.all.map{|pill| 
+   begin 
+    r = PillboxResource.find(:first, :params=>{:has_image=>'1', 'ingredient'=>pill.name.downcase})  
+    pill.update_attributes(
+     :image_ref => r.image_url,
+     :api_ref => r.api_url,
+     :accepted_names => [r.ingredient, r.trade_name]
+     )
+   rescue 
+     pill.name 
+    end
+}; true
+
+
+#from names
+to_be_filled_out.map {|r| 
+  p = Pill.find_by_name(r.trade_name); 
+  if p.nil?
+    puts "could not find #{r.trade_name}"
+  else 
+    begin
+      p.update_attributes(
+       :image_ref => r.image_url,
+       :api_ref => r.api_url,
+       :accepted_names => [r.ingredient, r.trade_name]
+       )
+     rescue => e
+       puts "pill #{r.trade_name} not updated because: #{e}"
+     end
+
+  end
+}; true
+
+# parse out of a messy file
+counter = 1
+names = {}
+Dir.glob('drugnames/*.txt').map {|path| f = File.open(path, "r") {|file|
+ while (line = file.gets)                                              
+   counter = counter + 1
+   names[path] ||= []
+   names[path] << line.gsub(","," ").split(" ").first
+ end
+ puts "Searched #{counter} lines for pill names at the beginning of the line"
+}}
+names
+pill_resources = []
+found_names = []
+names.each {|k,group_names|
+ for name in group_names.uniq
+   begin
+     result = PillboxResource.find(:first, :params=>{:has_image=>'1', 'ingredient'=>name.downcase})
+     if result.nil?
+       puts "no images found for #{name}"
+     else
+       pill_resources << result
+       found_names << name
+     end
+   rescue
+     puts "could not find #{name}"
+   end
+  end
+}
+puts "DID find images of the following, stored in 'pill_resources' variable" unless pill_resources.empty?
+for name in found_names
+  puts name
+end
+
+pill_category = nil #PillCategory.find_by_title("Sexual Health")
+for pill_name in ["","",""]
+  Pill.create(:name=>pill_name, :pill_category=>pill_category)
+end
+
+=end
