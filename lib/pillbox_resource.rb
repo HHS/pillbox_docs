@@ -176,8 +176,8 @@ class PillboxResource < ActiveResource::Base
     
     params.delete_if {|k,v| v.nil? }
     options['params'].merge!(params)
+        # puts options
     return options
-    # puts options
   end
   
   VALID_ATTRIBUTE_NAMES = %w(color color2 ingredient shape imprint prodcode has_image size lower_limit product_code) 
