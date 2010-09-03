@@ -1,0 +1,4223 @@
+--- 
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0019-N601
+    NDC9: 00019N601
+    SPLCOLOR: 
+    SPLIMPRINT: 
+    SPLSHAPE: 
+    SPLSIZE: "0.00"
+    SPLSCORE: "0"
+    RXCUI: 
+    RXTTY: 
+    RXSTRING: "Sodium Iodide I 123 (Sodium Iodide, I-123 100 MICROCURIE in 1 CAPSULE) "
+    INGREDIENTS: 
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a725446b-361b-41ce-aca2-ca1e601bd1a9
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mallinckrodt,"Inc.
+    SPL_INACTIVE_ING: sucrose
+  prefix_options: &id001 {}
+
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0019-N602
+    NDC9: 00019N602
+    SPLCOLOR: 
+    SPLIMPRINT: 
+    SPLSHAPE: 
+    SPLSIZE: "0.00"
+    SPLSCORE: "0"
+    RXCUI: 
+    RXTTY: 
+    RXSTRING: "Sodium Iodide I 123 (Sodium Iodide, I-123 200 MICROCURIE in 1 CAPSULE) "
+    INGREDIENTS: 
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a725446b-361b-41ce-aca2-ca1e601bd1a9
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mallinckrodt,"Inc.
+    SPL_INACTIVE_ING: sucrose
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55566-6500
+    NDC9: "555666500"
+    SPLCOLOR: 
+    SPLIMPRINT: 
+    SPLSHAPE: 
+    SPLSIZE: "0.00"
+    SPLSCORE: "0"
+    RXCUI: "725098"
+    RXTTY: SY
+    RXSTRING: Endometrin 100 MG Vaginal Tablet
+    INGREDIENTS: Progesterone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 2BA50FA9-B349-40CB-9A4B-1AF8FAA4EC09
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ferring"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: lactose"monohydrate"/"polyvinylpyrrolidone"/"adipic"acid"/"sodium"bicarbonate"/"sodium"lauryl"sulfate"/"magnesium"stearate"/"pregelatinized"starch"/"collodial"silicone"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0019-N300
+    NDC9: 00019N300
+    SPLCOLOR: 
+    SPLIMPRINT: 
+    SPLSHAPE: 
+    SPLSIZE: "0.00"
+    SPLSCORE: "0"
+    RXCUI: 
+    RXTTY: 
+    RXSTRING: "Sodium Iodide I 131 (Sodium Iodide, I-131 100 MILLICURIE in 1 CAPSULE) "
+    INGREDIENTS: 
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 275788c4-4d05-4a00-b88b-b7bcf2de7d54
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mallinckrodt,"Inc.
+    SPL_INACTIVE_ING: inert"fillers
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55567-038
+    NDC9: "555670038"
+    SPLCOLOR: C48324;;C48324;C48324
+    SPLIMPRINT: 0038;G
+    SPLSHAPE: 
+    SPLSIZE: "21.00"
+    SPLSCORE: "1"
+    RXCUI: "197684"
+    RXTTY: SCD
+    RXSTRING: Etodolac 200 MG Oral Capsule
+    INGREDIENTS: Etodolac
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 01F99FFF-4CD8-401F-9481-9CAC4E87BA2D
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Genpharm"Inc.
+    SPL_INACTIVE_ING: black"iron"oxide"/"crospovidone"/"FD&C"blue"no."1"aluminum"lake"/"FD&C"blue"no."2"aluminum"lake"/"FD&C"red"no."40"aluminum"lake"/"FD&C"yellow"no."10"aluminum"lake"/"gelatin"/"magnesium"stearate"/"microcrystalline"cellulose"/"povidone"/"sodium"lauryl"sulfate"/"synthetic"black"iron"oxide"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 64455-791
+    NDC9: "644550791"
+    SPLCOLOR: C48329
+    SPLIMPRINT: CARDIZEM;90mg
+    SPLSHAPE: C48335
+    SPLSIZE: "17.00"
+    SPLSCORE: "2"
+    RXCUI: "831137"
+    RXTTY: SY
+    RXSTRING: Cardizem 90 MG Oral Tablet
+    INGREDIENTS: Diltiazem
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 461fe23f-4453-4e3f-9621-0e3fda057d14
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: BTA"Pharmaceuticals
+    SPL_INACTIVE_ING: D&C"Yellow"no."10"/"FD&C"Blue"no."1"/"Aluminum"Oxide"/"hypromellose"/"lactose"/"magnesium"stearate"/"methylparaben"/"cellulose,"microcrystalline"/"silicon"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0023-3513
+    NDC9: "000233513"
+    SPLCOLOR: C48330
+    SPLIMPRINT: S
+    SPLSHAPE: C48335
+    SPLSIZE: "7.00"
+    SPLSCORE: "2"
+    RXCUI: "857562"
+    RXTTY: SY
+    RXSTRING: Sanctura 20 MG Oral Tablet
+    INGREDIENTS: Trospium
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: f49bf265-01b1-484d-841b-342c3fb7b7f9
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Allergan,"Inc.
+    SPL_INACTIVE_ING: sucrose"/"starch,"wheat"/"cellulose,"microcrystalline"/"talc"/"lactose"monohydrate"/"calcium"carbonate"/"titanium"dioxide"/"stearic"acid"/"croscarmellose"sodium"/"povidone"/"polyethylene"glycol"8000"/"colloidal"silicon"dioxide"/"ferric"oxide"/"carboxymethylcellulose"sodium"/"white"wax"/"magnesium"stearate"/"carnauba"wax
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 64455-792
+    NDC9: "644550792"
+    SPLCOLOR: C48330
+    SPLIMPRINT: CARDIZEM;120mg
+    SPLSHAPE: C48335
+    SPLSIZE: "19.00"
+    SPLSCORE: "2"
+    RXCUI: "831055"
+    RXTTY: SY
+    RXSTRING: Cardizem 120 MG Oral Tablet
+    INGREDIENTS: Diltiazem
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 461fe23f-4453-4e3f-9621-0e3fda057d14
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: BTA"Pharmaceuticals
+    SPL_INACTIVE_ING: D&C"Yellow"no."10"/"FD&C"Yellow"no."6"/"Aluminum"Oxide"/"hypromellose"/"lactose"/"magnesium"stearate"/"methylparaben"/"cellulose,"microcrystalline"/"silicon"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 21091-424
+    NDC9: "210910424"
+    SPLCOLOR: C48330;C48324
+    SPLIMPRINT: NA
+    SPLSHAPE: C48335
+    SPLSIZE: "19.00"
+    SPLSCORE: "2"
+    RXCUI: "883570"
+    RXTTY: SY
+    RXSTRING: Vetscription Worm Away 140 MG Oral Capsule
+    INGREDIENTS: piperazine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 8f488466-d2ab-4feb-ad93-25a4b785528c
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sergeant's"Pet"Care"Products,"Inc.
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 21091-418
+    NDC9: "210910418"
+    SPLCOLOR: C48330;C48324
+    SPLIMPRINT: NA
+    SPLSHAPE: C48335
+    SPLSIZE: "19.00"
+    SPLSCORE: "2"
+    RXCUI: "883570"
+    RXTTY: SY
+    RXSTRING: Vetscription Worm Away 140 MG Oral Capsule
+    INGREDIENTS: piperazine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 78e95589-2679-4245-b713-cb8013346315
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sergeant's"Pet"Care"Products,"Inc.
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0527-0597
+    NDC9: 005270597
+    SPLCOLOR: C48323
+    SPLIMPRINT: LANNETT;0597
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "900038"
+    RXTTY: SY
+    RXSTRING: phentermine hydrochloride 30 MG (phentermine 24 MG) Oral Capsule
+    INGREDIENTS: Phentermine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 4AF88A94-22C3-4DA1-B8D9-A73EF68A51B6
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: Lannett"Company,"Inc.
+    SPL_INACTIVE_ING: corn"starch"/"magnesium"stearate"/"lactose"anhydrous"/"gelatin"/"FD&C"Yellow"#"6"/"FD&C"Blue"#"1"/"FD&C"Red"#"40"/"shellac"/"dehydrated"alcohol"/"isopropyl"alcohol"/"butyl"alcohol"/"propylene"glycol"/"strong"ammonia"solution"/"yellow"iron"oxide"/"dimethicone
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 46672-247
+    NDC9: "466720247"
+    SPLCOLOR: C48323;C48324
+    SPLIMPRINT: 
+    SPLSHAPE: C48336
+    SPLSIZE: "22.00"
+    SPLSCORE: "1"
+    RXCUI: "856962"
+    RXTTY: SY
+    RXSTRING: APAP 500 MG / hydrocodone bitartrate 5 MG Oral Capsule
+    INGREDIENTS: Acetaminophen; Hydrocodone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 65D3962A-A96D-4885-AF7E-C25C0343474E
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: Mikart,"Inc.
+    SPL_INACTIVE_ING: colloidal"silicon"dioxide"/"croscarmellose"sodium"/"magnesium"stearate"/"microcrystalline"cellulose"/"gelatin"/"silicon"dioxide"/"sodium"lauryl"sulfate"/"black"iron"oxide"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0007-3344
+    NDC9: "000073344"
+    SPLCOLOR: C48323;C48325
+    SPLIMPRINT: 10;mg;3344;10;mg;SB
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "856621"
+    RXTTY: SY
+    RXSTRING: Compazine Spansule 10 MG Extended Release Capsule
+    INGREDIENTS: Prochlorperazine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 702122EB-F9E0-4FA9-5E99-EE091E8C20B1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: GlaxoSmithKline
+    SPL_INACTIVE_ING: D&C"Yellow"No."10"/"FD&C"Blue"No."1"/"FD&C"Blue"No."1"aluminum"lake"/"FD&C"Red"No."40"/"FD&C"Yellow"No."6"/"gelatin"/"propylene"glycol"/"silicon"dioxide"/"simethicone"emulsion"/"sodium"lauryl"sulfate"/"sugar"spheres"/"talc"/"triethyl"citrate"/"ammonio"methacrylate"co-polymer"/"D&C"Green"No."5"/"hydroxypropylmethylcellulose"/"simethicone"emulsion"/"sorbic"acid
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0007-3346
+    NDC9: "000073346"
+    SPLCOLOR: C48323;C48325
+    SPLIMPRINT: 15;mg;3346;15;mg;SB
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "856623"
+    RXTTY: SY
+    RXSTRING: Compazine Spansule (as prochlorperazine maleate) 15 MG Extended Release Capsule
+    INGREDIENTS: Prochlorperazine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 702122EB-F9E0-4FA9-5E99-EE091E8C20B1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: GlaxoSmithKline
+    SPL_INACTIVE_ING: ammonio"methacrylate"co-polymer"/"D&C"Green"No."5"/"D&C"Yellow"No."10"/"FD&C"Blue"No."1"/"FD&C"Blue"No."1"aluminum"lake"/"FD&C"Red"No."40"/"FD&C"Yellow"No."6"/"gelatin"/"hydroxypropylmethylcellulose"/"propylene"glycol"/"silicon"dioxide"/"simethicone"emulsion"/"sodium"lauryl"sulfate"/"sorbic"acid"/"sugar"spheres"/"talc"/"triethyl"citrate
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0378-2264
+    NDC9: 003782264
+    SPLCOLOR: C48323;C48327
+    SPLIMPRINT: MYLAN;2264
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "313217"
+    RXTTY: SCD
+    RXSTRING: Terazosin 2 MG Oral Capsule
+    INGREDIENTS: Terazosin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: FBFCA9D7-BD04-4148-91C7-02B37E839D28
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mylan"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: anhydrous"lactose"/"colloidal"silicon"dioxide"/"D&C"Red"No."28"/"D&C"Red"No."33"/"FD&C"Blue"No."1"/"gelatin"/"magnesium"stearate"/"microcrystalline"cellulose"/"pregelatinized"starch"/"sodium"lauryl"sulfate"/"silicon"dioxide"/"titanium"dioxide"/"black"iron"oxide"/"ammonium"hydroxide"/"propylene"glycol"/"simethicone
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 64764-702
+    NDC9: "647640702"
+    SPLCOLOR: C48323;C48328
+    SPLIMPRINT: TAP;PREVACID;30
+    SPLSHAPE: C48336
+    SPLSIZE: "19.00"
+    SPLSCORE: "1"
+    RXCUI: "757969"
+    RXTTY: SY
+    RXSTRING: Prevpac Kit
+    INGREDIENTS: Amoxicillin; Clarithromycin; lansoprazole
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 2f4c571b-a27e-40ef-b0cd-e6e44ac9a15e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Takeda"Pharmaceuticals"America,"Inc.
+    SPL_INACTIVE_ING: sucrose"/"hydroxypropyl"cellulose,"low"substituted"/"magnesium"carbonate"/"talc"/"polyethylene"glycol"/"titanium"dioxide"/"polysorbate"80"/"hydroxypropyl"cellulose"/"silicon"dioxide"/"D&C"Red"No."28"/"FD&C"Blue"No."1"/"FD&C"Red"No."40"/"methacrylic"acid"-"ethyl"acrylate"copolymer"(1:1)"type"A"/"starch,"corn
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0555-0033
+    NDC9: "005550033"
+    SPLCOLOR: C48323;C48329
+    SPLIMPRINT: barr/033
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "905369"
+    RXTTY: SCD
+    RXSTRING: Chlordiazepoxide Hydrochloride 10 MG Oral Capsule
+    INGREDIENTS: Chlordiazepoxide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: E3FF8641-AE8A-4016-ACB1-CB1B7890F5ED
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: BARR"LABORATORIES,"INC.
+    SPL_INACTIVE_ING: hydrogenated"vegetable"oil"/"lactose"anhydrous"/"microcrystalline"cellulose
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 54092-173
+    NDC9: "540920173"
+    SPLCOLOR: C48323;C48329
+    SPLIMPRINT: shire
+    SPLSHAPE: C48336
+    SPLSIZE: "22.00"
+    SPLSCORE: "1"
+    RXCUI: "313931"
+    RXTTY: SY
+    RXSTRING: Carbatrol 300 MG 12 HR Extended Release Capsule
+    INGREDIENTS: Carbamazepine
+    HAS_IMAGE: "0"
+    image_id: "000176"
+    SETID: bc03e499-5bac-4293-bff4-6864153a624d
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Shire"US"Manufacturing"Inc.
+    SPL_INACTIVE_ING: CITRIC"ACID"MONOHYDRATE"/"SILICON"DIOXIDE"/"LACTOSE"MONOHYDRATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYETHYLENE"GLYCOL"/"POVIDONE"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TRIETHYL"CITRATE"/"GELATIN"/"FD&C"BLUE"NO."2"/"D&C"YELLOW"NO."6"/"FERRIC"OXIDE"RED"/"FERRIC"OXIDE"YELLOW"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 54868-5432
+    NDC9: "548685432"
+    SPLCOLOR: C48323;C48329
+    SPLIMPRINT: ;
+    SPLSHAPE: C48336
+    SPLSIZE: "22.00"
+    SPLSCORE: "1"
+    RXCUI: "313931"
+    RXTTY: SY
+    RXSTRING: Carbatrol 300 MG 12 HR Extended Release Capsule
+    INGREDIENTS: Carbamazepine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: fbf67fc8-8d29-4ae2-a533-75461754c5b1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Physicians"Total"Care,"Inc.
+    SPL_INACTIVE_ING: CITRIC"ACID"MONOHYDRATE"/"SILICON"DIOXIDE"/"LACTOSE"MONOHYDRATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYETHYLENE"GLYCOL"/"POVIDONE"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TRIETHYL"CITRATE"/"GELATIN"/"FD&C"BLUE"NO."2"/"FD&C"YELLOW"NO."6"/"FERRIC"OXIDE"RED"/"FERRIC"OXIDE"YELLOW"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0149-0710
+    NDC9: 001490710
+    SPLCOLOR: C48323;C48330
+    SPLIMPRINT: Macrobid;Norwich;Eaton
+    SPLSHAPE: C48336
+    SPLSIZE: "20.00"
+    SPLSCORE: "1"
+    RXCUI: "539712"
+    RXTTY: SY
+    RXSTRING: Macrobid 100 MG Oral Capsule
+    INGREDIENTS: Nitrofurantoin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 1971e893-5fdb-41e3-a1e9-5e52deed03d1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Procter"and"Gamble"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: carbomer"934P"/"corn"starch"/"compressible"sugar"/"D&C"Yellow"No."10"/"edible"gray"ink"/"FD&C"Blue"No."1"/"FD&C"Red"No."40"/"gelatin"/"lactose"/"magnesium"stearate"/"povidone"/"talc"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-518
+    NDC9: "633040518"
+    SPLCOLOR: C48323;C48330
+    SPLIMPRINT: RX;518
+    SPLSHAPE: C48336
+    SPLSIZE: "22.00"
+    SPLSCORE: "1"
+    RXCUI: "311992"
+    RXTTY: SCD
+    RXSTRING: Nitrofurantoin 100 MG Oral Capsule
+    INGREDIENTS: Nitrofurantoin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: fa5f39f7-3b15-4947-81c9-a7081798b6cf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: carbomer"934P"/"compressible"sugar"/"D&C"yellow"#10"/"FD&C"yellow"#6"/"gelatin"/"iron"oxides"yellow,"black,"red"/"lactose"monohydrate"/"magnesium"stearate"/"povidone"/"pregelatinized"starch"/"titanium"dioxide"/"lecithin"/"propylene"glycol"/"shellac"/"simethicone
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65483-495
+    NDC9: "654830495"
+    SPLCOLOR: C48323;C48330
+    SPLIMPRINT: barr;010
+    SPLSHAPE: C48336
+    SPLSIZE: "22.00"
+    SPLSCORE: "1"
+    RXCUI: "758020"
+    RXTTY: SY
+    RXSTRING: Helidac Therapy Pack
+    INGREDIENTS: bismuth subsalicylate; Metronidazole; Tetracycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 0f85d6e4-35de-4e25-b4aa-af9a0ca24cf8
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Prometheus"Laboratories"Inc.
+    SPL_INACTIVE_ING: lactose"/"magnesium"stearate"/"sodium"lauryl"sulfate"/"D&C"yellow"no."10"/"FD&C"blue"No."1"/"FD&C"red"no."40"/"gelatin"/"titanium"dioxide"/"benzyl"alcohol"/"butylparaben"/"edetate"calcium"disodium"/"FD&C"yellow"no."6"/"methylparaben"/"propylparaben"/"silicon"dioxide"/"sodium"propionate
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0555-0010
+    NDC9: "005550010"
+    SPLCOLOR: C48323;C48330
+    SPLIMPRINT: barr;011
+    SPLSHAPE: C48336
+    SPLSIZE: "22.00"
+    SPLSCORE: "1"
+    RXCUI: "198252"
+    RXTTY: SCD
+    RXSTRING: Tetracycline 500 MG Oral Capsule
+    INGREDIENTS: Tetracycline
+    HAS_IMAGE: "0"
+    image_id: "000627"
+    SETID: 1742C476-E7DD-4BC5-BF4B-9935612A96C9
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: BARR"LABORATORIES,"INC.
+    SPL_INACTIVE_ING: lactose"/"magnesium"stearate"/"sodium"lauryl"sulfate"/"DC"yellow"no."10"/"gelatin"/"titanium"dioxide"/"benzyl"alcohol"/"butylparaben"/"edetate"calcium"disodium"/"methylparaben"/"propylparaben"/"silicon"dioxide"/"sodium"propionate"/"pharmaceutical"glaze"/"dimethylpolysiloxane"/"water"/"ethylene"glycol"monoethyl"ether"/"FD"C"red"no."40"/"ethyl"alcohol"/"pharmaceutical"shellac"/"soya"lecithin"/"FD"&"C"blue"no."1"/"FD"&"C"yellow"no."6
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65483-702
+    NDC9: "654830702"
+    SPLCOLOR: C48324
+    SPLIMPRINT: ENTOCORT;EC;3;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "7.00"
+    SPLSCORE: "1"
+    RXCUI: "991401"
+    RXTTY: SY
+    RXSTRING: Entocort EC 3 MG 24 HR Extended Release Capsule
+    INGREDIENTS: Budesonide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: fe6530ef-1b23-451f-1290-0e3ef02ec1b5
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Prometheus"Laboratories"Inc
+    SPL_INACTIVE_ING: ACETYLTRIBUTYL"CITRATE"/"METHACRYLIC"ACID"/"TRIETHYL"CITRATE"/"POLYSORBATE"80"/"TALC"/"GELATIN"/"FERROSOFERRIC"OXIDE"/"TITANIUM"DIOXIDE"/"COLLOIDAL"SILICON"DIOXIDE"/"FERRIC"OXIDE"YELLOW"/"FERRIC"OXIDE"RED
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0143-3991
+    NDC9: 001433991
+    SPLCOLOR: C48324
+    SPLIMPRINT: 
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "1"
+    RXCUI: "310430"
+    RXTTY: SCD
+    RXSTRING: gabapentin 100 MG Oral Capsule
+    INGREDIENTS: gabapentin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 559849c3-0431-441c-a65a-7bf5d716cc5e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: West-ward"Pharmaceutical"Corp
+    SPL_INACTIVE_ING: STARCH,"CORN"/"TALC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0074-3805
+    NDC9: 000743805
+    SPLCOLOR: C48324
+    SPLIMPRINT: HH
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "1"
+    RXCUI: "208469"
+    RXTTY: SY
+    RXSTRING: Hytrin 1 MG Oral Capsule
+    INGREDIENTS: Terazosin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 43CBC779-48D1-48FB-F09E-2D1722B4046D
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Abbott"Laboratories
+    SPL_INACTIVE_ING: gelatin"/"glycerin"/"iron"oxide"/"methylparaben"/"mineral"oil"/"polyethylene"glycol"/"povidone"/"propylparaben"/"titanium"dioxide"/"vanillin
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0074-4317
+    NDC9: "000744317"
+    SPLCOLOR: C48324
+    SPLIMPRINT: A;ZA
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "1"
+    RXCUI: "606854"
+    RXTTY: SY
+    RXSTRING: Zemplar 0.001 MG Oral Capsule
+    INGREDIENTS: paricalcitol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 1b27c026-2d60-47b4-2a9c-ded1818f21b5
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Abbott"Laboratories
+    SPL_INACTIVE_ING: ALCOHOL"/"BUTYLATED"HYDROXYTOLUENE"/"GELATIN"/"GLYCERIN"/"TITANIUM"DIOXIDE"/"WATER
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0172-5241
+    NDC9: "001725241"
+    SPLCOLOR: C48324
+    SPLIMPRINT: 5241;05mg
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "597850"
+    RXTTY: SY
+    RXSTRING: anagrelide 0.5 MG (as anagrelide hydrochloride) Oral Capsule
+    INGREDIENTS: anagrelide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 6727d5d4-e8ec-4a85-bc82-ec70b641eecf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: IVAX"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"CROSPOVIDONE"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."1"/"FD&C"BLUE"NO."2"/"FD&C"RED"NO."40"/"FERROSOFERRIC"OXIDE"/"GELATIN"/"LACTOSE,"ANHYDROUS"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"POVIDONE"/"PROPYLENE"GLYCOL"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0004-0801
+    NDC9: 000040801
+    SPLCOLOR: C48324
+    SPLIMPRINT: ROCHE;45;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "728115"
+    RXTTY: SY
+    RXSTRING: Tamiflu 45 MG Oral Capsule
+    INGREDIENTS: Oseltamivir
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: ee3c9555-60f2-4f82-a760-11983c86e97b
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Hoffmann-La"Roche"Inc
+    SPL_INACTIVE_ING: starch,"corn"/"povidone"k30"/"croscarmellose"sodium"/"talc"/"sodium"stearyl"fumarate"/"gelatin"/"titanium"dioxide"/"ferrosoferric"oxide"/"FD&C"blue"No."2
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 53489-618
+    NDC9: "534890618"
+    SPLCOLOR: C48324
+    SPLIMPRINT: MUTUAL;604
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "403967"
+    RXTTY: SCD
+    RXSTRING: zonisamide 50 MG Oral Capsule
+    INGREDIENTS: zonisamide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 6962CABA-EE38-4892-8C90-548E088294B2
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: URL"Mutual"Pharmaceutical
+    SPL_INACTIVE_ING: Microcrystalline"cellulose"/"sodium"lauryl"sulfate"/"talc"/"gelatin"/"black"iron"oxide"/"titanium"dioxide"/"ammonium"hydroxide"28%"/"propylene"glycol"/"simethicone
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0378-1700
+    NDC9: 003781700
+    SPLCOLOR: C48324
+    SPLIMPRINT: MYLAN;1700
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "311992"
+    RXTTY: SCD
+    RXSTRING: Nitrofurantoin 100 MG Oral Capsule
+    INGREDIENTS: Nitrofurantoin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 944C0E5F-88FF-4A46-95EF-2EA7D55063CE
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mylan"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: black"iron"oxide"/"corn"starch"/"D&C"yellow"#10"aluminum"lake"/"FD&C"blue"#1"aluminum"lake"/"FD&C"blue"#2"aluminum"lake"/"FD&C"red"#40"aluminum"lake"/"gelatin"/"lactose"/"n-butyl"alcohol"/"propylene"glycol"/"SD-45"alcohol"/"SDA"3A"alcohol"/"shellac"glaze"/"sodium"lauryl"sulfate"/"talc"/"titanium"dioxide"/"yellow"iron"oxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0781-5385
+    NDC9: 007815385
+    SPLCOLOR: C48324
+    SPLIMPRINT: I113
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "629697"
+    RXTTY: SY
+    RXSTRING: minocycline 45 MG 24 HR Extended Release Tablet
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 072017ee-a92c-4bdf-b1be-76f1d1262fcb
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sandoz"Inc
+    SPL_INACTIVE_ING: FERROSOFERRIC"OXIDE"/"COLLOIDAL"SILICON"DIOXIDE"/"HYPROMELLOSE"2910"(15"CPS)"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"TITANIUM"DIOXIDE"/"TRIACETIN"/"FERRIC"OXIDE"YELLOW"/"HYPROMELLOSE"2208"(15000"CPS)
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0173-0790
+    NDC9: 001730790
+    SPLCOLOR: C48324
+    SPLIMPRINT: 80;InnoPran;XL
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "856576"
+    RXTTY: SY
+    RXSTRING: InnoPran XL 80 MG 24 HR Extended Release Capsule
+    INGREDIENTS: Propranolol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 45806bf7-893a-4dd6-b9ab-c4dc6ce53946
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: GlaxoSmithKline"LLC
+    SPL_INACTIVE_ING: ETHYLCELLULOSE"/"FERRIC"OXIDE"BLACK"/"DIETHYL"PHTHALATE"/"HYPROMELLOSE"/"POLYETHYLENE"GLYCOL"/"GELATIN"/"TITANIUM"DIOXIDE"/"POVIDONE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0555-0828
+    NDC9: 005550828
+    SPLCOLOR: C48324
+    SPLIMPRINT: barr;828;50;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "403967"
+    RXTTY: SCD
+    RXSTRING: zonisamide 50 MG Oral Capsule
+    INGREDIENTS: zonisamide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: D69A8F4F-F868-44D0-8A77-55A9BC7C6603
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: BARR"LABORATORIES,"INC.
+    SPL_INACTIVE_ING: black"iron"oxide"/"D&C"yellow"no."10"aluminum"lake"/"FD&C"blue"no."1"aluminum"lake"/"FD&C"blue"no."2"aluminum"lake"/"FD&C"red"no."40"aluminum"lake"/"gelatin"/"hydrogenated"vegetable"oil"/"propylene"glycol"/"shellac"glaze"/"silicified"microcrystalline"cellulose"/"sodium"lauryl"sulfate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 99207-489
+    NDC9: "992070489"
+    SPLCOLOR: C48324
+    SPLIMPRINT: 0489;DYNACIN;75;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "262221"
+    RXTTY: SY
+    RXSTRING: Dynacin 75 MG Oral Capsule
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 42C69D40-E716-4347-9351-F8D8E1E65085
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: MEDICIS,"The"Dermatology"Company
+    SPL_INACTIVE_ING: magnesium"stearate"/"starch"(corn)
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-695
+    NDC9: "633040695"
+    SPLCOLOR: C48324
+    SPLIMPRINT: RX695
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "314108"
+    RXTTY: SY
+    RXSTRING: minocycline (as minocycline hydrochloride) 75 MG Oral Capsule
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 61f1d07a-f5e9-45b5-8806-b31a441bc592
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: black"iron"oxide"/"corn"starch"/"gelatin"/"magnesium"stearate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0143-9992
+    NDC9: 001439992
+    SPLCOLOR: C48324
+    SPLIMPRINT: Westward;991
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "310430"
+    RXTTY: SCD
+    RXSTRING: gabapentin 100 MG Oral Capsule
+    INGREDIENTS: gabapentin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 125e4e70-b067-4daf-b017-8175def72d32
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: West-ward"Pharmaceutical"Corp
+    SPL_INACTIVE_ING: STARCH,"CORN"/"TALC"/"FERROSOFERRIC"OXIDE"/"GELATIN"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0555-1054
+    NDC9: "005551054"
+    SPLCOLOR: C48324
+    SPLIMPRINT: barr;934
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "404059"
+    RXTTY: SY
+    RXSTRING: Claravis 10 MG Oral Capsule
+    INGREDIENTS: Isotretinoin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a31fd109-d0fd-4ab9-ba98-a3d64333c18d
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Barr"Laboratories"Inc.
+    SPL_INACTIVE_ING: BUTYLATED"HYDROXYANISOLE"/"EDETATE"DISODIUM"/"GELATIN"/"COTTONSEED"OIL"/"POLYSORBATE"80"/"SOYBEAN"OIL"/"TITANIUM"DIOXIDE"/"WHITE"WAX"/"VITAMIN"E"/"FERROSOFERRIC"OXIDE"/"FD&C"YELLOW"NO."6"/"D&C"RED"NO."7"/"ETHYLENE"GLYCOL"MONOETHYL"ETHER"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0093-7509
+    NDC9: 000937509
+    SPLCOLOR: C48324
+    SPLIMPRINT: 93;7509
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "403967"
+    RXTTY: SCD
+    RXSTRING: zonisamide 50 MG Oral Capsule
+    INGREDIENTS: zonisamide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: e36503be-6a6f-4a6d-9e19-16a906d19eea
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Teva"Pharmaceuticals"USA
+    SPL_INACTIVE_ING: black"iron"oxide"/"crospovidone"/"gelatin"/"hydrogenated"vegetable"oil"/"microcrystalline"cellulose"/"povidone"/"shellac"/"sodium"lauryl"sulfate"/"titanium"dioxide"/"antifoam"DC"1510"/"propylene"glycol"/"soya"lecithin
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0173-0791
+    NDC9: 001730791
+    SPLCOLOR: C48324
+    SPLIMPRINT: 120;InnoPran;XL
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "856471"
+    RXTTY: SY
+    RXSTRING: InnoPran XL 120 MG 24 HR Extended Release Capsule
+    INGREDIENTS: Propranolol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 45806bf7-893a-4dd6-b9ab-c4dc6ce53946
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: GlaxoSmithKline"LLC
+    SPL_INACTIVE_ING: ETHYLCELLULOSE"/"FERRIC"OXIDE"BLACK"/"DIETHYL"PHTHALATE"/"HYPROMELLOSE"/"POLYETHYLENE"GLYCOL"/"GELATIN"/"TITANIUM"DIOXIDE"/"POVIDONE"/"FERRIC"OXIDE"YELLOW
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0185-0156
+    NDC9: 001850156
+    SPLCOLOR: C48324
+    SPLIMPRINT: E156
+    SPLSHAPE: C48336
+    SPLSIZE: "19.00"
+    SPLSCORE: "1"
+    RXCUI: "597852"
+    RXTTY: SY
+    RXSTRING: anagrelide 1 MG (as anagrelide hydrochloride) Oral Capsule
+    INGREDIENTS: anagrelide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 4f1e0f62-bb65-4a0c-843a-69ec48fa6c78
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sandoz"Inc
+    SPL_INACTIVE_ING: FERRIC"OXIDE"BLACK"/"CROSPOVIDONE"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."1"/"FD&C"BLUE"NO."2"/"FD&C"RED"NO."40"/"GELATIN"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"PROPYLENE"GLYCOL"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 62037-549
+    NDC9: "620370549"
+    SPLCOLOR: C48324
+    SPLIMPRINT: Andrx;549;180;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "20.00"
+    SPLSCORE: "1"
+    RXCUI: "831250"
+    RXTTY: SY
+    RXSTRING: 24 HR Diltia 180 MG Extended Release Capsule
+    INGREDIENTS: Diltiazem
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: d6a81f9f-3a51-4e86-aeb3-8352186b3528
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Watson"Pharma,"Inc.
+    SPL_INACTIVE_ING: acetyltributyl"citrate"/"lactose"(anhydrous)"/"hydroxypropyl"cellulose"/"hypromellose"2208"/"hydroxypropyl"methylcellulose"phthalate"/"magnesium"stearate"/"colloidal"silicon"dioxide"/"dibasic"sodium"phosphate"/"talc"/"gelatin"/"black"iron"oxide"/"D"&"C"Yellow"#"10"aluminum"lake"/"FD"&"C"blue"#"1"aluminum"lake"/"FD"&"C"blue"#"2"aluminum"lake"/"FD"&"C"red"#"40"aluminum"lake"/"titanium"dioxide"/"yellow"iron"oxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 62037-550
+    NDC9: "620370550"
+    SPLCOLOR: C48324
+    SPLIMPRINT: Andrx;550;240;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "23.00"
+    SPLSCORE: "1"
+    RXCUI: "831302"
+    RXTTY: SY
+    RXSTRING: 24 HR Diltia 240 MG Extended Release Capsule
+    INGREDIENTS: Diltiazem
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: d6a81f9f-3a51-4e86-aeb3-8352186b3528
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Watson"Pharma,"Inc.
+    SPL_INACTIVE_ING: acetyltributyl"citrate"/"lactose"(anhydrous)"/"hydroxypropyl"cellulose"/"hypromellose"2208"/"hydroxypropyl"methylcellulose"phthalate"/"magnesium"stearate"/"colloidal"silicon"dioxide"/"dibasic"sodium"phosphate"/"talc"/"gelatin"/"black"iron"oxide"/"D"&"C"Yellow"#"10"aluminum"lake"/"FD"&"C"blue"#"1"aluminum"lake"/"FD"&"C"blue"#"2"aluminum"lake"/"FD"&"C"red"#"40"aluminum"lake"/"titanium"dioxide"/"yellow"iron"oxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 46672-230
+    NDC9: "466720230"
+    SPLCOLOR: C48324;C48323
+    SPLIMPRINT: LPI;LPI
+    SPLSHAPE: C48336
+    SPLSIZE: "19.00"
+    SPLSCORE: "1"
+    RXCUI: "309465"
+    RXTTY: SCD
+    RXSTRING: Acetaminophen 150 MG / Aspirin 180 MG / Codeine 30 MG Oral Capsule
+    INGREDIENTS: Acetaminophen; Aspirin; Codeine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: E4D48870-CCBA-474B-AD28-2073AF5AB3A9
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: 
+    SPL_INACTIVE_ING: BLACK"IRON"DIOXIDE"/"GELATIN"/"PREGELATINIZED"STARCH"/"SILICON"DIOXIDE"/"SODIUM"LAURYL"SULFATE"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0006-0672
+    NDC9: "000060672"
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: CUPRIMINE;MSD;672
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "207368"
+    RXTTY: SY
+    RXSTRING: Cuprimine 125 MG Oral Capsule
+    INGREDIENTS: Penicillamine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: CE8A0EC5-9323-4216-B6B2-52E84177E67D
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Merck"&"Co.,"Inc.
+    SPL_INACTIVE_ING: D&C"Yellow"10"/"gelatin"/"iron"oxide"/"lactose"/"magnesium"stearate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65726-250
+    NDC9: "657260250"
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: 80;InnoPran;XL
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "856576"
+    RXTTY: SY
+    RXSTRING: InnoPran XL 80 MG 24 HR Extended Release Capsule
+    INGREDIENTS: Propranolol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a5e91827-7d55-4acf-8ba2-6c2be8e15b7e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: GlaxoSmithKline"LLC
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0093-7300
+    NDC9: 000937300
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: 93;7300
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "314108"
+    RXTTY: SY
+    RXSTRING: minocycline (as minocycline hydrochloride) 75 MG Oral Capsule
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: ab538b0c-0d25-4e01-b399-15cf221220ad
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: TEVA"Pharmaceuticals"USA"Inc
+    SPL_INACTIVE_ING: STARCH,"CORN"/"MAGNESIUM"STEARATE"/"GELATIN"/"TITANIUM"DIOXIDE"/"FERROSOFERRIC"OXIDE"/"SHELLAC"/"LECITHIN,"SOYBEAN
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 99207-488
+    NDC9: "992070488"
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: 0488;DYNACIN;100;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "207355"
+    RXTTY: SY
+    RXSTRING: Dynacin 100 MG Oral Capsule
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 42C69D40-E716-4347-9351-F8D8E1E65085
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: MEDICIS,"The"Dermatology"Company
+    SPL_INACTIVE_ING: magnesium"stearate"/"starch"(corn)
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-696
+    NDC9: "633040696"
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: RX696
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "197984"
+    RXTTY: SY
+    RXSTRING: minocycline (as minocycline hydrochloride) 100 MG Oral Capsule
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 61f1d07a-f5e9-45b5-8806-b31a441bc592
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: black"iron"oxide"/"corn"starch"/"gelatin"/"magnesium"stearate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65726-251
+    NDC9: "657260251"
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: 120;InnoPran;XL
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "856471"
+    RXTTY: SY
+    RXSTRING: InnoPran XL 120 MG 24 HR Extended Release Capsule
+    INGREDIENTS: Propranolol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a5e91827-7d55-4acf-8ba2-6c2be8e15b7e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: GlaxoSmithKline"LLC
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0187-3555
+    NDC9: 001873555
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: ANCOBON;500;ICN
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "207127"
+    RXTTY: SY
+    RXSTRING: Ancobon 500 MG Oral Capsule
+    INGREDIENTS: Flucytosine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: AEA0DF00-A88C-4A16-ABCF-750F3FF2004E
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Valeant"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: corn"starch"/"lactose"/"talc"/"butylparaben"/"methylparaben"/"propylparaben"/"sodium"propionate"/"black"iron"oxcide"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0093-7351
+    NDC9: 000937351
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: 93;7351
+    SPLSHAPE: C48336
+    SPLSIZE: "19.00"
+    SPLSCORE: "1"
+    RXCUI: "311277"
+    RXTTY: SCD
+    RXSTRING: lansoprazole 30 MG Enteric Coated Capsule
+    INGREDIENTS: lansoprazole
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 427cf924-be17-47dc-8f77-115fa2f3fe17
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: TEVA"Pharmaceuticals"USA"Inc
+    SPL_INACTIVE_ING: FERROSOFERRIC"OXIDE"/"GELATIN"/"HYPROMELLOSE"/"MAGNESIUM"CARBONATE"/"METHACRYLIC"ACID"-"ETHYL"ACRYLATE"COPOLYMER"(1:1)"TYPE"A"/"PROPYLENE"GLYCOL"/"FERRIC"OXIDE"RED"/"SHELLAC"/"SUCROSE"/"STARCH,"CORN"/"TALC"/"TITANIUM"DIOXIDE"/"TRIETHYL"CITRATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 60505-0010
+    NDC9: "605050010"
+    SPLCOLOR: C48324;C48325
+    SPLIMPRINT: APO;010
+    SPLSHAPE: C48336
+    SPLSIZE: "23.00"
+    SPLSCORE: "1"
+    RXCUI: "831337"
+    RXTTY: SY
+    RXSTRING: 24 HR Dilt 300 MG Extended Release Capsule
+    INGREDIENTS: Diltiazem
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 5E80E933-51FB-7F42-AFA6-141743FF4563
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Apotex"Corp.
+    SPL_INACTIVE_ING: dibutyl"phthalate"/"eudragit"/"methacrylic"acid"copolymer"dispersion"/"methylcellulose"/"microcrystalline"cellulose"/"polysorbate"/"talc"/"triethyl"citrate"/"gelatin"/"titanium"dioxide"/"ammonium"hydroxide"/"black"iron"oxide"/"potassium"hydroxide"/"propylene"glycol"/"shellac
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 46672-236
+    NDC9: "466720236"
+    SPLCOLOR: C48324;C48326
+    SPLIMPRINT: LPI;LPI
+    SPLSHAPE: C48336
+    SPLSIZE: "22.00"
+    SPLSCORE: "1"
+    RXCUI: "347680"
+    RXTTY: SCD
+    RXSTRING: Acetaminophen 150 MG / Aspirin 180 MG / Codeine 60 MG Oral Capsule
+    INGREDIENTS: Acetaminophen; Aspirin; Codeine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: E4D48870-CCBA-474B-AD28-2073AF5AB3A9
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: 
+    SPL_INACTIVE_ING: BLACK"IRON"DIOXIDE"/"FD&C"BLUE"#1"/"FD&C"RED"#40"/"GELATIN"/"PREGELATINIZED"STARCH"/"SILICON"DIOXIDE"/"SODIUM"LAURYL"SULFATE"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0378-2268
+    NDC9: 003782268
+    SPLCOLOR: C48324;C48327
+    SPLIMPRINT: MYLAN;2268
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "313219"
+    RXTTY: SCD
+    RXSTRING: Terazosin 5 MG Oral Capsule
+    INGREDIENTS: Terazosin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: FBFCA9D7-BD04-4148-91C7-02B37E839D28
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mylan"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: anhydrous"lactose"/"colloidal"silicon"dioxide"/"D&C"Red"No."28"/"D&C"Red"No."33"/"FD&C"Blue"No."1"/"gelatin"/"magnesium"stearate"/"microcrystalline"cellulose"/"pregelatinized"starch"/"sodium"lauryl"sulfate"/"silicon"dioxide"/"titanium"dioxide"/"black"iron"oxide"/"D&C"Yellow"No."10"Aluminum"Lake"/"FD&C"Blue"No."1"Aluminum"Lake"/"FD&C"Blue"No."2"Aluminum"Lake"/"FD&C"Red"No."40"Aluminum"Lake"/"propylene"glycol"/"shellac"glaze
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0083-4000
+    NDC9: 000834000
+    SPLCOLOR: C48324;C48328
+    SPLIMPRINT: CG;FZF
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "153079"
+    RXTTY: SY
+    RXSTRING: Diovan 80 MG Oral Capsule
+    INGREDIENTS: valsartan
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 0DD5FD1C-AB03-4860-87D6-4A95DF6E7B7A
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Novartis"Pharmaceuticals"Corporation
+    SPL_INACTIVE_ING: cellulose"compounds"/"crospovidone"/"gelatin"/"iron"oxides"/"magnesium"stearate"/"povidone"/"sodium"lauryl"sulfate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0591-5708
+    NDC9: 005915708
+    SPLCOLOR: C48324;C48328
+    SPLIMPRINT: DAN;5708
+    SPLSHAPE: C48336
+    SPLSIZE: "19.00"
+    SPLSCORE: "1"
+    RXCUI: "197518"
+    RXTTY: SY
+    RXSTRING: clindamycin (as clindamycin hydrochloride) 150 MG Oral Capsule
+    INGREDIENTS: Clindamycin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: AB7233B1-B68E-458B-9E1D-4FC3FA15E8B6
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Watson"Labs
+    SPL_INACTIVE_ING: anhydrous"lactose"/"magnesium"stearate"/"starch"(corn)"/"talc"/"D"&"C"Red"NO."28"/"FD"&"C"Blue"No."1"/"FD"&"C"Red"No."40"/"gelatin"/"silicon"dioxide"/"sodium"lauryl"sulfate"/"titanium"dioxide"/"black"iron"oxide"/"yellow"iron"oxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0083-4001
+    NDC9: 000834001
+    SPLCOLOR: C48324;C48328
+    SPLIMPRINT: CG;GOG
+    SPLSHAPE: C48336
+    SPLSIZE: "20.00"
+    SPLSCORE: "1"
+    RXCUI: "153080"
+    RXTTY: SY
+    RXSTRING: Diovan 160 MG Oral Capsule
+    INGREDIENTS: valsartan
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 0DD5FD1C-AB03-4860-87D6-4A95DF6E7B7A
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Novartis"Pharmaceuticals"Corporation
+    SPL_INACTIVE_ING: cellulose"compounds"/"crospovidone"/"gelatin"/"iron"oxides"/"magnesium"stearate"/"povidone"/"sodium"lauryl"sulfate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0187-3554
+    NDC9: 001873554
+    SPLCOLOR: C48324;C48329
+    SPLIMPRINT: ANCOBON;250;ICN
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "207125"
+    RXTTY: SY
+    RXSTRING: Ancobon 250 MG Oral Capsule
+    INGREDIENTS: Flucytosine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: AEA0DF00-A88C-4A16-ABCF-750F3FF2004E
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Valeant"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: corn"starch"/"lactose"/"talc"/"butylparaben"/"methylparaben"/"propylparaben"/"sodium"propionate"/"black"iron"oxcide"/"FD&C"Blue"No."1"/"FD&C"Yellow"No."6"/"FD&C"Yellow"No."10"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 46672-231
+    NDC9: "466720231"
+    SPLCOLOR: C48324;C48329
+    SPLIMPRINT: LPI;LPI
+    SPLSHAPE: C48336
+    SPLSIZE: "19.00"
+    SPLSCORE: "1"
+    RXCUI: "996778"
+    RXTTY: SCD
+    RXSTRING: Acetaminophen 150 MG / Aspirin 180 MG / Codeine Phosphate 15 MG Oral Capsule
+    INGREDIENTS: Acetaminophen; Aspirin; Codeine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: E4D48870-CCBA-474B-AD28-2073AF5AB3A9
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: 
+    SPL_INACTIVE_ING: BLACK"IRON"DIOXIDE"/"D&C"YELLOW#10"/"FD&C"RED"#40"/"GELATIN"/"PREGELATINIZED"STARCH"/"SILICON"DIOXIDE"/"SODIUM"LAURYL"SULFATE"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 54092-172
+    NDC9: "540920172"
+    SPLCOLOR: C48324;C48329
+    SPLIMPRINT: shire
+    SPLSHAPE: C48336
+    SPLSIZE: "20.00"
+    SPLSCORE: "1"
+    RXCUI: "308977"
+    RXTTY: SY
+    RXSTRING: 12 HR Carbatrol 200 MG Extended Release Capsule
+    INGREDIENTS: Carbamazepine
+    HAS_IMAGE: "0"
+    image_id: "000175"
+    SETID: bc03e499-5bac-4293-bff4-6864153a624d
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Shire"US"Manufacturing"Inc.
+    SPL_INACTIVE_ING: CITRIC"ACID"MONOHYDRATE"/"SILICON"DIOXIDE"/"LACTOSE"MONOHYDRATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYETHYLENE"GLYCOL"/"POVIDONE"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TRIETHYL"CITRATE"/"GELATIN"/"FD&C"RED"NO."3"/"D&C"YELLOW"NO."6"/"FERRIC"OXIDE"YELLOW"/"FD&C"BLUE"NO."2"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 52152-170
+    NDC9: "521520170"
+    SPLCOLOR: C48324;C48330
+    SPLIMPRINT: "170"
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "826131"
+    RXTTY: SY
+    RXSTRING: Phentermine Hydrochloride 18.8 MG (Phentermine 15 MG) Oral Capsule
+    INGREDIENTS: Phentermine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: A42C422E-1B6D-4072-A443-DA43BD4E8C05
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: Actavis"Totowa"LLC
+    SPL_INACTIVE_ING: D&C"Yellow"#10"/"FD&C"Blue"#1"Aluminum"Lake"/"FD&C"Red"#3"/"FD&C"REd"#40"Aluminum"Lake"/"Gelatin"/"Lactose"Monohydrate"/"Magnesium"Stearate"/"Talc"/"Titanium"Dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0591-5695
+    NDC9: 005915695
+    SPLCOLOR: C48324;C48330
+    SPLIMPRINT: MINOCYCLINE;100;DAN;5695
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "197984"
+    RXTTY: SY
+    RXSTRING: minocycline (as minocycline hydrochloride) 100 MG Oral Capsule
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: A5FC4D50-50B2-46E0-B722-4C6B2EC47D06
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Watson"Laboratories"Inc.
+    SPL_INACTIVE_ING: magnesium"stearate"/"starch"(corn)"/"D"&"C"Red"No."28"/"D"&"C"Yellow"No."10"/"gelatin"/"silicon"dioxide"/"sodium"lauryl"sulfate"/"titanium"dioxide"/"black"iron"oxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0091-2489
+    NDC9: 000912489
+    SPLCOLOR: C48324;C48330
+    SPLIMPRINT: SCHWARZ;2489;VERELAN;180;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "19.00"
+    SPLSCORE: "1"
+    RXCUI: "897620"
+    RXTTY: SY
+    RXSTRING: Verelan 180 MG 24HR Extended Release Capsule
+    INGREDIENTS: Verapamil
+    HAS_IMAGE: "0"
+    image_id: "000725"
+    SETID: e96aaa64-63ac-4016-99c1-f05b8dd3fee9
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: SCHWARZ"PHARMA,"LLC,"A"Subsidiary"of"UCB,"Inc.
+    SPL_INACTIVE_ING: fumaric"acid"/"talc"/"sucrose"/"starch,"corn"/"povidone"/"shellac"/"gelatin"/"FD&C"red"No."40"/"ferrosoferric"oxide"/"ferric"oxide"yellow"/"titanium"dioxide"/"methylparaben"/"propylparaben"/"silicon"dioxide"/"sodium"lauryl"sulfate
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0143-3189
+    NDC9: 001433189
+    SPLCOLOR: C48324;C48330
+    SPLIMPRINT: WW;3189
+    SPLSHAPE: C48336
+    SPLSIZE: "20.00"
+    SPLSCORE: "1"
+    RXCUI: "197889"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 300 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 8551dbf4-a80b-494b-824a-177a8a438b7c
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: West-ward"Pharmaceutical"Corp
+    SPL_INACTIVE_ING: TALC"/"GELATIN"/"TITANIUM"DIOXIDE"/"BUTYL"ALCOHOL"/"PROPYLENE"GLYCOL"/"FERROSOFERRIC"OXIDE"/"FD&C"GREEN"NO."3"/"FD&C"YELLOW"NO."6
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0378-6868
+    NDC9: 003786868
+    SPLCOLOR: C48324;C48331
+    SPLIMPRINT: MYLAN;6868
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "597850"
+    RXTTY: SY
+    RXSTRING: anagrelide 0.5 MG (as anagrelide hydrochloride) Oral Capsule
+    INGREDIENTS: anagrelide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 288cdfbb-c15b-4321-9ee1-9c2f2aadbb4f
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mylan"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: ANHYDROUS"LACTOSE"/"CROSPOVIDONE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POVIDONE"/"SODIUM"LAURYL"SULFATE"/"FERROSOFERRIC"OXIDE"/"GELATIN"/"TITANIUM"DIOXIDE"/"FD&C"RED"NO."40"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."1"/"FD&C"BLUE"NO."2"/"PROPYLENE"GLYCOL"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0093-3145
+    NDC9: 000933145
+    SPLCOLOR: C48324;C48331
+    SPLIMPRINT: 93;3145
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "309112"
+    RXTTY: SCD
+    RXSTRING: Cephalexin 250 MG Oral Capsule
+    INGREDIENTS: Cephalexin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 19307ff0-71de-477b-965d-ea243e5ede3a
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Teva"Pharmaceuticals"USA
+    SPL_INACTIVE_ING: magnesium"stearate"/"silicon"dioxide"/"sodium"starch"glycolate"/"black"iron"oxide"/"D&C"Yellow"#10"Aluminum"Lake"/"FD&C"Blue"#1"Aluminum"Lake"/"FD&C"Blue"#2"Aluminum"Lake"/"FD&C"Red"#40"Aluminum"Lake"/"gelatin"/"pharmaceutical"glaze"modified"in"SD-45"/"silicon"dioxide"/"carboxymethylcellulose"sodium"/"sodium"lauryl"sulfate"/"titanium"dioxide"/"propylene"glycol"/"yellow"iron"oxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0378-3422
+    NDC9: 003783422
+    SPLCOLOR: C48324;C48332
+    SPLIMPRINT: MYLAN;3422
+    SPLSHAPE: C48336
+    SPLSIZE: "18.00"
+    SPLSCORE: "1"
+    RXCUI: "311992"
+    RXTTY: SCD
+    RXSTRING: Nitrofurantoin 100 MG Oral Capsule
+    INGREDIENTS: Nitrofurantoin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 137038A6-12ED-47FD-A97C-01073C5141D1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mylan"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: alginic"acid"/"anhydrous"dibasic"calcium"phosphate"/"black"iron"oxide"/"D&C"yellow"#10"lake"/"FD&C"blue"#1"FCF"lake"/"FD&C"blue"#2"lake"/"FD&C"red"#40"AC"lake"/"FD&C"yellow"#6"lake"HT"/"gelatin"/"hypromellose"/"lactose"monohydrate"/"magnesium"stearate"/"microcrystalline"cellulose"/"nbutyl"alcohol"/"propylene"glycol"/"red"iron"oxide"/"SD-45"alcohol"/"SDA-3A"alcohol"/"shellac"glaze"/"silicon"dioxide"/"sodium"alginate"/"sodium"lauryl"sulfate"/"titanium"dioxide"/"yellow"iron"oxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0378-6869
+    NDC9: 003786869
+    SPLCOLOR: C48324;C48333
+    SPLIMPRINT: MYLAN;6869
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "597852"
+    RXTTY: SY
+    RXSTRING: anagrelide 1 MG (as anagrelide hydrochloride) Oral Capsule
+    INGREDIENTS: anagrelide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 288cdfbb-c15b-4321-9ee1-9c2f2aadbb4f
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mylan"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: ANHYDROUS"LACTOSE"/"CROSPOVIDONE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POVIDONE"/"SODIUM"LAURYL"SULFATE"/"FERROSOFERRIC"OXIDE"/"GELATIN"/"TITANIUM"DIOXIDE"/"FD&C"BLUE"NO."1"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."2"/"FD&C"RED"NO."40"/"PROPYLENE"GLYCOL"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 64455-798
+    NDC9: "644550798"
+    SPLCOLOR: C48324;C48333
+    SPLIMPRINT: cardizem;CD;300;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "23.00"
+    SPLSCORE: "1"
+    RXCUI: "830803"
+    RXTTY: SY
+    RXSTRING: 24 HR Cardizem 300 MG Extended Release Capsule
+    INGREDIENTS: Diltiazem
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 867fd84c-902e-4ddc-a3ec-2204c1de2c5e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: BTA"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: acetyltributyl"citrate"/"ferrosoferric"oxide"/"castor"oil"/"ethylcellulose"/"FD&C"Blue"no."1"/"fumaric"acid"/"gelatin"/"silicon"dioxide"/"sucrose"/"talc"/"titanium"dioxide"/"stearic"acid"/"white"wax
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-8531
+    NDC9: 000548531
+    SPLCOLOR: C48325
+    SPLIMPRINT: 54;702
+    SPLSHAPE: C48336
+    SPLSIZE: "0.00"
+    SPLSCORE: "1"
+    RXCUI: "197893"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 600 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7dc9c6d2-6d9a-49e4-a8ab-437b0ed5f84e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: FD&C"RED"NO."40"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TITANIUM"DIOXIDE"/"FERROSOFERRIC"OXIDE"/"POVIDONE"K30"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-2531
+    NDC9: "000542531"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 54;702
+    SPLSHAPE: C48336
+    SPLSIZE: "0.00"
+    SPLSCORE: "1"
+    RXCUI: "197893"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 600 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7dc9c6d2-6d9a-49e4-a8ab-437b0ed5f84e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: FD&C"RED"NO."40"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TITANIUM"DIOXIDE"/"FERROSOFERRIC"OXIDE"/"POVIDONE"K30"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-0088
+    NDC9: 000540088
+    SPLCOLOR: C48325
+    SPLIMPRINT: "54215"
+    SPLSHAPE: C48336
+    SPLSIZE: "1.00"
+    SPLSCORE: "1"
+    RXCUI: "359296"
+    RXTTY: SCD
+    RXSTRING: calcium acetate 667 MG Oral Capsule
+    INGREDIENTS: calcium acetate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: FD&C"BLUE"NO."1"/"FD&C"RED"NO."3"/"GELATIN"/"MAGNESIUM"STEARATE"/"POLYETHYLENE"GLYCOL"8000"/"TITANIUM"DIOXIDE"/"ALCOHOL"/"FD&C"BLUE"NO."2"/"FD&C"RED"NO."40"/"FD&C"YELLOW"NO."6"/"FERROSOFERRIC"OXIDE"/"PROPYLENE"GLYCOL"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-0152
+    NDC9: "000540152"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 54;636
+    SPLSHAPE: C48336
+    SPLSIZE: "1.00"
+    SPLSCORE: "2"
+    RXCUI: "311290"
+    RXTTY: SCD
+    RXSTRING: Levetiracetam 750 MG Oral Tablet
+    INGREDIENTS: Levetiracetam
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: ddfe5cde-de03-400d-8942-7a28bede6c06
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: SILICON"DIOXIDE"/"HYDROXYPROPYL"CELLULOSE"/"HYPROMELLOSE"/"FERRIC"OXIDE"YELLOW"/"FERRIC"OXIDE"RED"/"POLYETHYLENE"GLYCOL"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"CROSCARMELLOSE"SODIUM"/"POLYDEXTROSE"/"TITANIUM"DIOXIDE"/"TRIACETIN
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-0257
+    NDC9: "000540257"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 54;470
+    SPLSHAPE: C48336
+    SPLSIZE: "1.00"
+    SPLSCORE: "2"
+    RXCUI: "387003"
+    RXTTY: SCD
+    RXSTRING: Levetiracetam 1000 MG Oral Tablet
+    INGREDIENTS: Levetiracetam
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: ddfe5cde-de03-400d-8942-7a28bede6c06
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: SILICON"DIOXIDE"/"HYDROXYPROPYL"CELLULOSE"/"HYPROMELLOSE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYDEXTROSE"/"POLYETHYLENE"GLYCOL"/"TITANIUM"DIOXIDE"/"TRIACETIN
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-8527
+    NDC9: 000548527
+    SPLCOLOR: C48325
+    SPLIMPRINT: 54;463
+    SPLSHAPE: C48336
+    SPLSIZE: "2.00"
+    SPLSCORE: "1"
+    RXCUI: "197889"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 300 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7dc9c6d2-6d9a-49e4-a8ab-437b0ed5f84e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: FD&C"RED"NO."40"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TITANIUM"DIOXIDE"/"FERROSOFERRIC"OXIDE"/"POVIDONE"K30"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-2527
+    NDC9: "000542527"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 54;463
+    SPLSHAPE: C48336
+    SPLSIZE: "2.00"
+    SPLSCORE: "1"
+    RXCUI: "197889"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 300 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7dc9c6d2-6d9a-49e4-a8ab-437b0ed5f84e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: FD&C"RED"NO."40"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TITANIUM"DIOXIDE"/"FERROSOFERRIC"OXIDE"/"POVIDONE"K30"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 40032-123
+    NDC9: "400320123"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 30mg;Novel123
+    SPLSHAPE: C48336
+    SPLSIZE: "3.00"
+    SPLSCORE: "1"
+    RXCUI: "198242"
+    RXTTY: SCD
+    RXSTRING: Temazepam 30 MG Oral Capsule
+    INGREDIENTS: Temazepam
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 85327378-86a3-4448-9185-e20bb20ebf45
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: Novel"Laboratories,"Inc.
+    SPL_INACTIVE_ING: GELATIN"/"TITANIUM"DIOXIDE"/"AMMONIA"/"ETHANOL"/"SHELLAC"/"PROPYLENE"GLYCOL"/"IRON
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-8526
+    NDC9: 000548526
+    SPLCOLOR: C48325
+    SPLIMPRINT: 54;213
+    SPLSHAPE: C48336
+    SPLSIZE: "4.00"
+    SPLSCORE: "1"
+    RXCUI: "311355"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 150 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7dc9c6d2-6d9a-49e4-a8ab-437b0ed5f84e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: FD&C"RED"NO."40"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TITANIUM"DIOXIDE"/"FERROSOFERRIC"OXIDE"/"POVIDONE"K30"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-2526
+    NDC9: "000542526"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 54;213
+    SPLSHAPE: C48336
+    SPLSIZE: "4.00"
+    SPLSCORE: "1"
+    RXCUI: "311355"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 150 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7dc9c6d2-6d9a-49e4-a8ab-437b0ed5f84e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: FD&C"RED"NO."40"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TITANIUM"DIOXIDE"/"FERROSOFERRIC"OXIDE"/"POVIDONE"K30"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 24658-250
+    NDC9: "246580250"
+    SPLCOLOR: C48325
+    SPLIMPRINT: WW928
+    SPLSHAPE: C48336
+    SPLSIZE: "6.00"
+    SPLSCORE: "1"
+    RXCUI: "309309"
+    RXTTY: SCD
+    RXSTRING: Ciprofloxacin 500 MG Oral Tablet
+    INGREDIENTS: Ciprofloxacin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 9f9b2391-90eb-4773-bb6b-897c49d82ba5
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Blu"Pharmaceuticals,"LLC
+    SPL_INACTIVE_ING: STARCH,"CORN"/"CELLULOSE,"MICROCRYSTALLINE"/"COLLOIDAL"SILICON"DIOXIDE"/"SODIUM"STARCH"GLYCOLATE"TYPE"A"POTATO"/"MAGNESIUM"STEARATE"/"HYPROMELLOSE"/"TALC"/"TITANIUM"DIOXIDE"/"POLYETHYLENE"GLYCOL"/"WATER
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0143-9916
+    NDC9: 001439916
+    SPLCOLOR: C48325
+    SPLIMPRINT: H;1
+    SPLSHAPE: C48336
+    SPLSIZE: "7.00"
+    SPLSCORE: "1"
+    RXCUI: "849398"
+    RXTTY: SCD
+    RXSTRING: Naproxen sodium 275 MG Oral Tablet
+    INGREDIENTS: Naproxen
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 21f1d859-e73d-4411-b35d-53a281d09177
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: 
+    SPL_INACTIVE_ING: colloidal"silicon"dioxide"/"croscarmellose"sodium"/"hydrogenated"vegetable"oil"/"lactose"monohydrate"/"magnesium"stearate"/"microcrystalline"cellulose"/"povidone"(K-30)"/"sodium"lauryl"sulfate"/"hydroxypropyl"methylcellulose"2910"/"methacrylic"acid"/"copolymer"/"povidone"(K-30)"simethicone"emulsion"/"talc"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0143-9908
+    NDC9: 001439908
+    SPLCOLOR: C48325
+    SPLIMPRINT: H;2
+    SPLSHAPE: C48336
+    SPLSIZE: "7.00"
+    SPLSCORE: "1"
+    RXCUI: "849431"
+    RXTTY: SCD
+    RXSTRING: Naproxen sodium 550 MG Oral Tablet
+    INGREDIENTS: Naproxen
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 21f1d859-e73d-4411-b35d-53a281d09177
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: 
+    SPL_INACTIVE_ING: colloidal"silicon"dioxide"/"croscarmellose"sodium"/"hydrogenated"vegetable"oil"/"lactose"monohydrate"/"magnesium"stearate"/"microcrystalline"cellulose"/"povidone"(K-30)"/"sodium"lauryl"sulfate"/"hydroxypropyl"methylcellulose"2910"/"methacrylic"acid"/"copolymer"/"povidone"(K-30)"simethicone"emulsion"/"talc"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-361
+    NDC9: "658620361"
+    SPLCOLOR: C48325
+    SPLIMPRINT: D;98
+    SPLSHAPE: C48336
+    SPLSIZE: "7.00"
+    SPLSCORE: "1"
+    RXCUI: "311265"
+    RXTTY: SCD
+    RXSTRING: lamotrigine 5 MG Chewable Tablet
+    INGREDIENTS: lamotrigine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: e08920c2-04a3-4fb5-acc5-0af3140f82e9
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: MAGNESIUM"CARBONATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLACRILIN"POTASSIUM"/"POVIDONE"K30"/"SUCRALOSE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-001
+    NDC9: "658620001"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 11;A
+    SPLSHAPE: C48336
+    SPLSIZE: "7.00"
+    SPLSCORE: "1"
+    RXCUI: "476809"
+    RXTTY: SCD
+    RXSTRING: Mirtazapine 7.5 MG Oral Tablet
+    INGREDIENTS: Mirtazapine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a4c012f0-50b6-42fb-9f06-a14632f23f2e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: STARCH,"CORN"/"HYDROXYPROPYL"CELLULOSE,"LOW"SUBSTITUTED"/"MAGNESIUM"STEARATE"/"SILICON"DIOXIDE"/"LACTOSE"MONOHYDRATE"/"HYPROMELLOSE"2910"(6"CPS)"/"TITANIUM"DIOXIDE"/"HYDROXYPROPYL"CELLULOSE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55111-207
+    NDC9: "551110207"
+    SPLCOLOR: C48325
+    SPLIMPRINT: R;207
+    SPLSHAPE: C48336
+    SPLSIZE: "7.00"
+    SPLSCORE: "1"
+    RXCUI: "403825"
+    RXTTY: SCD
+    RXSTRING: Risperidone 0.5 MG Disintegrating Tablet
+    INGREDIENTS: Risperidone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c00809e1-e632-f246-97d9-73e1f9804587
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Dr."Reddy's"Laboratories"Limited
+    SPL_INACTIVE_ING: aspartame"/"silicon"dioxide"/"magnesium"stearate"/"mannitol"/"cellulose,"microcrystalline"/"guar"gum"/"peppermint"/"polacrilin"potassium"/"sodium"lauryl"sulfate
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 59762-2460
+    NDC9: "597622460"
+    SPLCOLOR: C48325
+    SPLIMPRINT: D;98
+    SPLSHAPE: C48336
+    SPLSIZE: "7.00"
+    SPLSCORE: "1"
+    RXCUI: "311265"
+    RXTTY: SCD
+    RXSTRING: lamotrigine 5 MG Chewable Tablet
+    INGREDIENTS: lamotrigine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a278a8ab-4c68-439a-8672-da32175dc1f5
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Greenstone"LLC
+    SPL_INACTIVE_ING: MAGNESIUM"CARBONATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLACRILIN"POTASSIUM"/"POVIDONE"K30"/"SUCRALOSE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 59762-2163
+    NDC9: "597622163"
+    SPLCOLOR: C48325
+    SPLIMPRINT: A;71
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "1"
+    RXCUI: "312830"
+    RXTTY: SCD
+    RXSTRING: Risperidone 1 MG Oral Tablet
+    INGREDIENTS: Risperidone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a75272a5-4af8-4cc8-b718-c4926262c457
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Greenstone"LLC
+    SPL_INACTIVE_ING: LACTOSE"MONOHYDRATE"/"CELLULOSE,"MICROCRYSTALLINE"/"SILICON"DIOXIDE"/"MAGNESIUM"STEARATE"/"HYPROMELLOSE"2910"(5"CPS)"/"TITANIUM"DIOXIDE"/"POLYETHYLENE"GLYCOL"400
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0085-1351
+    NDC9: 000851351
+    SPLCOLOR: C48325
+    SPLIMPRINT: REBITOL;200MG
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "1"
+    RXCUI: "352007"
+    RXTTY: SY
+    RXSTRING: Rebetol 200 MG Oral Capsule
+    INGREDIENTS: Ribavirin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 04d2b6f4-bd9b-4871-9527-92c81aa2d4d0
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Schering"Corporation
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"LACTOSE"MONOHYDRATE"/"CROSCARMELLOSE"SODIUM"/"MAGNESIUM"STEARATE"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"SILICON"DIOXIDE"/"TITANIUM"DIOXIDE"/"SHELLAC"/"ALCOHOL"/"ISOPROPYL"ALCOHOL"/"BUTYL"ALCOHOL"/"PROPYLENE"GLYCOL"/"AMMONIA"/"FD&C"BLUE"NO."2"/"ALUMINUM"OXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0085-1385
+    NDC9: 000851385
+    SPLCOLOR: C48325
+    SPLIMPRINT: REBITOL;200MG
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "1"
+    RXCUI: "352007"
+    RXTTY: SY
+    RXSTRING: Rebetol 200 MG Oral Capsule
+    INGREDIENTS: Ribavirin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 04d2b6f4-bd9b-4871-9527-92c81aa2d4d0
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Schering"Corporation
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"LACTOSE"MONOHYDRATE"/"CROSCARMELLOSE"SODIUM"/"MAGNESIUM"STEARATE"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"SILICON"DIOXIDE"/"TITANIUM"DIOXIDE"/"SHELLAC"/"ALCOHOL"/"ISOPROPYL"ALCOHOL"/"BUTYL"ALCOHOL"/"PROPYLENE"GLYCOL"/"AMMONIA"/"FD&C"BLUE"NO."2"/"ALUMINUM"OXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0085-1194
+    NDC9: 000851194
+    SPLCOLOR: C48325
+    SPLIMPRINT: REBITOL;200MG
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "1"
+    RXCUI: "352007"
+    RXTTY: SY
+    RXSTRING: Rebetol 200 MG Oral Capsule
+    INGREDIENTS: Ribavirin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 04d2b6f4-bd9b-4871-9527-92c81aa2d4d0
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Schering"Corporation
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"LACTOSE"MONOHYDRATE"/"CROSCARMELLOSE"SODIUM"/"MAGNESIUM"STEARATE"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"SILICON"DIOXIDE"/"TITANIUM"DIOXIDE"/"SHELLAC"/"ALCOHOL"/"ISOPROPYL"ALCOHOL"/"BUTYL"ALCOHOL"/"PROPYLENE"GLYCOL"/"AMMONIA"/"FD&C"BLUE"NO."2"/"ALUMINUM"OXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 68462-228
+    NDC9: "684620228"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "228"
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "2"
+    RXCUI: "311265"
+    RXTTY: SCD
+    RXSTRING: lamotrigine 5 MG Chewable Tablet
+    INGREDIENTS: lamotrigine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 50fcf452-2d21-493e-a1dd-0c6ea9ac6184
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Glenmark"Generics"Inc.,"USA
+    SPL_INACTIVE_ING: ASPARTAME"/"COLLOIDAL"SILICON"DIOXIDE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POVIDONE"K25
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-287
+    NDC9: "658620287"
+    SPLCOLOR: C48325
+    SPLIMPRINT: D;5;8
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "2"
+    RXCUI: "854988"
+    RXTTY: SCD
+    RXSTRING: Perindopril Erbumine 4 MG Oral Tablet
+    INGREDIENTS: Perindopril
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: d9033965-7cf5-41ef-9efa-d2eec745b43d
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: ANHYDROUS"LACTOSE"/"SILICON"DIOXIDE"/"CELLULOSE,"MICROCRYSTALLINE"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-287
+    NDC9: "658620287"
+    SPLCOLOR: C48325
+    SPLIMPRINT: D;5;8
+    SPLSHAPE: C48336
+    SPLSIZE: "8.00"
+    SPLSCORE: "2"
+    RXCUI: "854988"
+    RXTTY: SCD
+    RXSTRING: Perindopril Erbumine 4 MG Oral Tablet
+    INGREDIENTS: Perindopril
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 87768fbf-7c63-47da-8925-0316f343d6ef
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: ANHYDROUS"LACTOSE"/"SILICON"DIOXIDE"/"CELLULOSE,"MICROCRYSTALLINE"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0832-0400
+    NDC9: 008320400
+    SPLCOLOR: C48325
+    SPLIMPRINT: UPSHER-SMITH;0400;5;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "9.00"
+    SPLSCORE: "1"
+    RXCUI: "313762"
+    RXTTY: SCD
+    RXSTRING: zaleplon 5 MG Oral Capsule
+    INGREDIENTS: zaleplon
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 9f581c98-0631-414e-9676-0865a66dbc44
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: UPSHER-SMITH"LABORATORIES,"INC.
+    SPL_INACTIVE_ING: colloidal"silicon"dioxide"/"gelatin"/"lactose"monohydrate"/"magnesium"stearate"/"microcrystalline"cellulose"/"pregelatinized"starch"/"sodium"lauryl"sulfate"/"titanium"dioxide"/"iron"oxide"black"/"FD&C"Blue"#2"/"FD&C"Red"#40"/"FD&C"Blue"#1"/"D&C"Yellow"#10
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55111-208
+    NDC9: "551110208"
+    SPLCOLOR: C48325
+    SPLIMPRINT: R;208
+    SPLSHAPE: C48336
+    SPLSIZE: "9.00"
+    SPLSCORE: "1"
+    RXCUI: "401953"
+    RXTTY: SCD
+    RXSTRING: Risperidone 1 MG Disintegrating Tablet
+    INGREDIENTS: Risperidone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c00809e1-e632-f246-97d9-73e1f9804587
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Dr."Reddy's"Laboratories"Limited
+    SPL_INACTIVE_ING: aspartame"/"silicon"dioxide"/"magnesium"stearate"/"mannitol"/"cellulose,"microcrystalline"/"guar"gum"/"peppermint"/"polacrilin"potassium"/"sodium"lauryl"sulfate
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0904-5992
+    NDC9: 009045992
+    SPLCOLOR: C48325
+    SPLIMPRINT: W;422
+    SPLSHAPE: C48336
+    SPLSIZE: "9.00"
+    SPLSCORE: "1"
+    RXCUI: "197361"
+    RXTTY: SY
+    RXSTRING: amlodipine (as amlodipine besylate) 5 MG Oral Tablet
+    INGREDIENTS: Amlodipine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 551b2b79-492f-4d90-bc96-eceed77bf89c
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Major"Pharmaceuticals
+    SPL_INACTIVE_ING: ANHYDROUS"DIBASIC"CALCIUM"PHOSPHATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"SODIUM"STARCH"GLYCOLATE"TYPE"A"POTATO"/"MANNITOL"/"COLLOIDAL"SILICON"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 64679-422
+    NDC9: "646790422"
+    SPLCOLOR: C48325
+    SPLIMPRINT: W;422
+    SPLSHAPE: C48336
+    SPLSIZE: "9.00"
+    SPLSCORE: "1"
+    RXCUI: "197361"
+    RXTTY: SY
+    RXSTRING: amlodipine (as amlodipine besylate) 5 MG Oral Tablet
+    INGREDIENTS: Amlodipine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a3201369-1c77-4a05-bbd0-0dd333305ace
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: WOCKHARDT"USA"LLC.
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 16714-271
+    NDC9: "167140271"
+    SPLCOLOR: C48325
+    SPLIMPRINT: S;521
+    SPLSHAPE: C48336
+    SPLSIZE: "9.00"
+    SPLSCORE: "1"
+    RXCUI: "309130"
+    RXTTY: SCD
+    RXSTRING: Cetirizine 10 MG Oral Tablet
+    INGREDIENTS: Cetirizine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: d2166bf5-41a2-4592-8428-818f0dad402d
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Northstar"Rx"LLC
+    SPL_INACTIVE_ING: STARCH,"CORN"/"LACTOSE"MONOHYDRATE"/"POVIDONE"K29/32"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 62175-128
+    NDC9: "621750128"
+    SPLCOLOR: C48325
+    SPLIMPRINT: KU;128;
+    SPLSHAPE: C48336
+    SPLSIZE: "9.00"
+    SPLSCORE: "2"
+    RXCUI: "317110"
+    RXTTY: SY
+    RXSTRING: isosorbide mononitrate 30 MG 24 HR Extended Release Tablet
+    INGREDIENTS: Isosorbide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 3ae1adfa-6c55-4fd8-9d75-049509387ce0
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Kremers"Urban
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 16252-597
+    NDC9: "162520597"
+    SPLCOLOR: C48325
+    SPLIMPRINT: LI;5
+    SPLSHAPE: C48336
+    SPLSIZE: "9.00"
+    SPLSCORE: "2"
+    RXCUI: "311265"
+    RXTTY: SCD
+    RXSTRING: lamotrigine 5 MG Chewable Tablet
+    INGREDIENTS: lamotrigine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 25bbfc59-b566-1f01-8b30-b03fa3906069
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Cobalt"Laboratories
+    SPL_INACTIVE_ING: colloidal"silicon"dioxide"/"croscarmellose"sodium"/"magnesium"stearate"/"mannitol"/"cellulose,"microcrystalline"/"povidone"/"talc"/"saccharin"sodium
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 60505-0222
+    NDC9: "605050222"
+    SPLCOLOR: C48325
+    SPLIMPRINT: APO;AF;80
+    SPLSHAPE: C48336
+    SPLSIZE: "10.00"
+    SPLSCORE: "2"
+    RXCUI: "904601"
+    RXTTY: SCD
+    RXSTRING: Sotalol Hydrochloride 80 MG Oral Tablet
+    INGREDIENTS: Sotalol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 1a56c82e-7ecd-43b0-2899-f89e47adf7db
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Apotex"Corp.
+    SPL_INACTIVE_ING: magnesium"stearate"/"cellulose,"microcrystalline
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-147
+    NDC9: "658620147"
+    SPLCOLOR: C48325
+    SPLIMPRINT: C;33
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "1"
+    RXCUI: "313161"
+    RXTTY: SY
+    RXSTRING: sumatriptan 50 MG (sumatriptan succinate 70 MG) Oral Tablet
+    INGREDIENTS: Sumatriptan
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: b2503fff-c978-4efa-b1b4-d7740b6b26f2
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"POLYSORBATE"80"/"ANHYDROUS"DIBASIC"CALCIUM"PHOSPHATE"/"CELLULOSE,"MICROCRYSTALLINE"/"SODIUM"BICARBONATE"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 60505-0005
+    NDC9: "605050005"
+    SPLCOLOR: C48325
+    SPLIMPRINT: APO;005
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "1"
+    RXCUI: "308964"
+    RXTTY: SCD
+    RXSTRING: Captopril 50 MG Oral Tablet
+    INGREDIENTS: Captopril
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 2c0f1ee3-b2b7-a1bc-059a-d65bea6cd0ef
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Apotex"Corp.
+    SPL_INACTIVE_ING: SILICON"DIOXIDE"/"CROSCARMELLOSE"SODIUM"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0469-0617
+    NDC9: 004690617
+    SPLCOLOR: C48325
+    SPLIMPRINT: f;617;1;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "1"
+    RXCUI: "108513"
+    RXTTY: SY
+    RXSTRING: Prograf 1 MG Oral Capsule
+    INGREDIENTS: Tacrolimus
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7f667de1-9dfa-4bd6-8ba0-15ee2d78873b
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Astellas"Pharma"US,"Inc.
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"HYPROMELLOSE"2910"(6"CPS)"/"magnesium"stearate"/"LACTOSE"MONOHYDRATE"/"gelatin"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 59762-1851
+    NDC9: "597621851"
+    SPLCOLOR: C48325
+    SPLIMPRINT: C;33
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "1"
+    RXCUI: "313161"
+    RXTTY: SY
+    RXSTRING: sumatriptan 50 MG (sumatriptan succinate 70 MG) Oral Tablet
+    INGREDIENTS: Sumatriptan
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: e94c15f7-7115-4c9e-b5e5-6b8f275882a1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Greenstone"LLC
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"POLYSORBATE"80"/"ANHYDROUS"DIBASIC"CALCIUM"PHOSPHATE"/"CELLULOSE,"MICROCRYSTALLINE"/"SODIUM"BICARBONATE"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0078-0101
+    NDC9: 000780101
+    SPLCOLOR: C48325
+    SPLIMPRINT: HYDERGINE;LC;1;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "1"
+    RXCUI: "205959"
+    RXTTY: SY
+    RXSTRING: Hydergine LC 1 MG Oral Capsule
+    INGREDIENTS: ergoloid mesylates, USP
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 62C666BB-262F-49FE-9B31-6AFA25A33392
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Novartis"Pharmaceuticals"Corporation
+    SPL_INACTIVE_ING: ascorbic"acid"/"gelatin"/"glycerin"/"methylparaben"/"polyethylene"glycol"/"propylene"glycol"/"propylparaben"/"sorbitol"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 60505-0223
+    NDC9: "605050223"
+    SPLCOLOR: C48325
+    SPLIMPRINT: APO;AF;120
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "2"
+    RXCUI: "904567"
+    RXTTY: SCD
+    RXSTRING: Sotalol Hydrochloride 120 MG Oral Tablet
+    INGREDIENTS: Sotalol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 1a56c82e-7ecd-43b0-2899-f89e47adf7db
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Apotex"Corp.
+    SPL_INACTIVE_ING: magnesium"stearate"/"cellulose,"microcrystalline
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-164
+    NDC9: "633040164"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RE16
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "2"
+    RXCUI: "312940"
+    RXTTY: SY
+    RXSTRING: sertraline (as sertraline hydrochloride) 25 MG Oral Tablet
+    INGREDIENTS: Sertraline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c25f968b-7037-4f60-9a02-2189769b0cbf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: dibasic"calcium"phosphate"dihydrate"/"hydroxypropyl"cellulose"/"hypromellose"/"magnesium"stearate"/"microcrystalline"cellulose"/"polyethylene"glycol"/"sodium"starch"glycolate"/"talc"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-165
+    NDC9: "633040165"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RX165
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "2"
+    RXCUI: "312941"
+    RXTTY: SY
+    RXSTRING: sertraline (as sertraline hydrochloride) 50 MG Oral Tablet
+    INGREDIENTS: Sertraline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c25f968b-7037-4f60-9a02-2189769b0cbf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: dibasic"calcium"phosphate"dihydrate"/"hydroxypropyl"cellulose"/"hypromellose"/"magnesium"stearate"/"microcrystalline"cellulose"/"polyethylene"glycol"/"sodium"starch"glycolate"/"talc"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-166
+    NDC9: "633040166"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RX166
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "2"
+    RXCUI: "312938"
+    RXTTY: SY
+    RXSTRING: sertraline (as sertraline hydrochloride) 100 MG Oral Tablet
+    INGREDIENTS: Sertraline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c25f968b-7037-4f60-9a02-2189769b0cbf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: dibasic"calcium"phosphate"dihydrate"/"hydroxypropyl"cellulose"/"hypromellose"/"magnesium"stearate"/"microcrystalline"cellulose"/"polyethylene"glycol"/"sodium"starch"glycolate"/"talc"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-167
+    NDC9: "633040167"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RX168
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "2"
+    RXCUI: "794947"
+    RXTTY: SY
+    RXSTRING: sertraline (as sertraline hydrochloride) 150 MG Oral Tablet
+    INGREDIENTS: Sertraline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c25f968b-7037-4f60-9a02-2189769b0cbf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: dibasic"calcium"phosphate"dihydrate"/"hydroxypropyl"cellulose"/"hypromellose"/"magnesium"stearate"/"microcrystalline"cellulose"/"polyethylene"glycol"/"sodium"starch"glycolate"/"talc"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 57664-422
+    NDC9: "576640422"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "422"
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "2"
+    RXCUI: "314199"
+    RXTTY: SCD
+    RXSTRING: Paroxetine 20 MG Oral Tablet
+    INGREDIENTS: Paroxetine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 6c47a65b-2665-4391-ad69-25c4f5a8b010
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: CARACO"PHARMACEUTICAL"LABORATORIES,"LTD.
+    SPL_INACTIVE_ING: lactose"/"pregelatinized"starch"/"sodium"starch"glycolate"/"magnesium"Stearate"/"hypromellose"/"polysorbate"/"polyethylene"glycol"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 57664-166
+    NDC9: "576640166"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "166"
+    SPLSHAPE: C48336
+    SPLSIZE: "11.00"
+    SPLSCORE: "2"
+    RXCUI: "866514"
+    RXTTY: SCD
+    RXSTRING: Metoprolol Tartrate 50 MG Oral Tablet
+    INGREDIENTS: Metoprolol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c9a87c39-4baf-43e2-b6bc-3634f1eb77cf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Caraco"Pharmaceutical"Laboratories,"Ltd.
+    SPL_INACTIVE_ING: SILICON"DIOXIDE"/"HYPROMELLOSE"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYETHYLENE"GLYCOL"/"POLYSORBATE"20"/"POVIDONE""/"SODIUM"STARCH"GLYCOLATE"TYPE"A"POTATO"/"TALC"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-148
+    NDC9: "658620148"
+    SPLCOLOR: C48325
+    SPLIMPRINT: C;34
+    SPLSHAPE: C48336
+    SPLSIZE: "12.00"
+    SPLSCORE: "1"
+    RXCUI: "313160"
+    RXTTY: SY
+    RXSTRING: sumatriptan 100 MG (sumatriptan succinate 140 MG) Oral Tablet
+    INGREDIENTS: Sumatriptan
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: b2503fff-c978-4efa-b1b4-d7740b6b26f2
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"POLYSORBATE"80"/"ANHYDROUS"DIBASIC"CALCIUM"PHOSPHATE"/"CELLULOSE,"MICROCRYSTALLINE"/"SODIUM"BICARBONATE"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0904-5975
+    NDC9: 009045975
+    SPLCOLOR: C48325
+    SPLIMPRINT: W555
+    SPLSHAPE: C48336
+    SPLSIZE: "12.00"
+    SPLSCORE: "1"
+    RXCUI: "312830"
+    RXTTY: SCD
+    RXSTRING: Risperidone 1 MG Oral Tablet
+    INGREDIENTS: Risperidone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 1c572c5b-24f6-46c6-bdd2-6774ebefbb42
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Major"Pharmaceuticals
+    SPL_INACTIVE_ING: COLLOIDAL"SILICON"DIOXIDE"/"HYPROMELLOSE"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYETHYLENE"GLYCOL"400"/"SODIUM"STARCH"GLYCOLATE"TYPE"A"POTATO"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0378-0810
+    NDC9: 003780810
+    SPLCOLOR: C48325
+    SPLIMPRINT: MYLAN;810
+    SPLSHAPE: C48336
+    SPLSIZE: "12.00"
+    SPLSCORE: "1"
+    RXCUI: "199903"
+    RXTTY: SY
+    RXSTRING: HCTZ 12.5 MG Oral Capsule
+    INGREDIENTS: Hydrochlorothiazide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: A24C641E-85F0-4AAC-8703-2E596D673448
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mylan"Pharmaceuticals
+    SPL_INACTIVE_ING: colloidal"silicon"dioxide"/"D&C"Yellow"No."10"Aluminum"Lake"/"FD&C"Blue"No."1"Aluminum"Lake"/"FD&C"Blue"No."2"Aluminum"Lake"/"FD&C"Red"No."40"Aluminum"Lake"/"gelatin"/"magnesium"stearate"/"microcrystalline"cellulose"/"pharmaceutical"glaze"/"pregelatinized"starch"/"propylene"glycol"/"silicon"dioxide"/"sodium"lauryl"sulfate"/"synthetic"black"iron"oxide"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 59762-1852
+    NDC9: "597621852"
+    SPLCOLOR: C48325
+    SPLIMPRINT: C;34
+    SPLSHAPE: C48336
+    SPLSIZE: "12.00"
+    SPLSCORE: "1"
+    RXCUI: "313160"
+    RXTTY: SY
+    RXSTRING: sumatriptan 100 MG (sumatriptan succinate 140 MG) Oral Tablet
+    INGREDIENTS: Sumatriptan
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: e94c15f7-7115-4c9e-b5e5-6b8f275882a1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Greenstone"LLC
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"POLYSORBATE"80"/"ANHYDROUS"DIBASIC"CALCIUM"PHOSPHATE"/"CELLULOSE,"MICROCRYSTALLINE"/"SODIUM"BICARBONATE"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 49884-867
+    NDC9: "498840867"
+    SPLCOLOR: C48325
+    SPLIMPRINT: PAR;867
+    SPLSHAPE: C48336
+    SPLSIZE: "12.00"
+    SPLSCORE: "1"
+    RXCUI: "197635"
+    RXTTY: SY
+    RXSTRING: dronabinol 2.5 MG Oral Capsule
+    INGREDIENTS: Tetrahydrocannabinol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: A6269FC3-CA40-444F-8035-D6A391D037E0
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: Par"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: FD&C"Yellow"No."6"/"Gelatin"/"Glycerin"/"Water"/"Sesame"oil"/"Titanium"dioxide"/"FD&C"Blue"No."1"/"FD&C"Red"No."40
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0185-0373
+    NDC9: 001850373
+    SPLCOLOR: C48325
+    SPLIMPRINT: A;0;7
+    SPLSHAPE: C48336
+    SPLSIZE: "12.00"
+    SPLSCORE: "2"
+    RXCUI: "309314"
+    RXTTY: SY
+    RXSTRING: citalopram 40 MG (as citalopram hydrobromide 49.98 MG) Oral Tablet
+    INGREDIENTS: Citalopram
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 0979fb90-9c22-4b74-8648-1174b905654d
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sandoz"Inc.
+    SPL_INACTIVE_ING: COPOVIDONE"/"STARCH,"CORN"/"CROSCARMELLOSE"SODIUM"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"HYPROMELLOSE"2910"(6"CPS)"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYETHYLENE"GLYCOL"400"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-007
+    NDC9: "658620007"
+    SPLCOLOR: C48325
+    SPLIMPRINT: A;0;7
+    SPLSHAPE: C48336
+    SPLSIZE: "12.00"
+    SPLSCORE: "2"
+    RXCUI: "309314"
+    RXTTY: SY
+    RXSTRING: citalopram 40 MG (as citalopram hydrobromide 49.98 MG) Oral Tablet
+    INGREDIENTS: Citalopram
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 2632b547-2e13-447f-ac85-c774e437d6a8
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: COPOVIDONE"/"STARCH,"CORN"/"CROSCARMELLOSE"SODIUM"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"HYPROMELLOSE"2910"(6"CPS)"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYETHYLENE"GLYCOL"400"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55111-226
+    NDC9: "551110226"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RDY;226
+    SPLSHAPE: C48336
+    SPLSIZE: "13.00"
+    SPLSCORE: "1"
+    RXCUI: "311264"
+    RXTTY: SCD
+    RXSTRING: lamotrigine 25 MG Chewable Tablet
+    INGREDIENTS: lamotrigine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: E1A0DA17-D67C-E44F-BD42-33C4009E4CDD
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Dr."Reddy's"Laboratories"Ltd
+    SPL_INACTIVE_ING: black"currant"flavor"/"colloidal"silicon"dioxide"/"crospovidone"/"magnesium"stearate"/"mannitol"(pearlitol"SD"200)"/"microccrystalline"cellulose"(Avicel"pH"112)"/"microcrystalline"cellulose"and"guar"gum"(Avicel"CE"15)"/"preglelatinized"starch""/"sodium""saccharin"/"talc
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55111-209
+    NDC9: "551110209"
+    SPLCOLOR: C48325
+    SPLIMPRINT: R;209
+    SPLSHAPE: C48336
+    SPLSIZE: "13.00"
+    SPLSCORE: "1"
+    RXCUI: "401954"
+    RXTTY: SCD
+    RXSTRING: Risperidone 2 MG Disintegrating Tablet
+    INGREDIENTS: Risperidone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c00809e1-e632-f246-97d9-73e1f9804587
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Dr."Reddy's"Laboratories"Limited
+    SPL_INACTIVE_ING: aspartame"/"silicon"dioxide"/"magnesium"stearate"/"mannitol"/"cellulose,"microcrystalline"/"guar"gum"/"peppermint"/"polacrilin"potassium"/"sodium"lauryl"sulfate
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 60505-0224
+    NDC9: "605050224"
+    SPLCOLOR: C48325
+    SPLIMPRINT: APO;AF;160
+    SPLSHAPE: C48336
+    SPLSIZE: "13.00"
+    SPLSCORE: "2"
+    RXCUI: "904579"
+    RXTTY: SCD
+    RXSTRING: Sotalol Hydrochloride 160 MG Oral Tablet
+    INGREDIENTS: Sotalol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 1a56c82e-7ecd-43b0-2899-f89e47adf7db
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Apotex"Corp.
+    SPL_INACTIVE_ING: magnesium"stearate"/"cellulose,"microcrystalline
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0093-9477
+    NDC9: 000939477
+    SPLCOLOR: C48325
+    SPLIMPRINT: GLYBUR
+    SPLSHAPE: C48336
+    SPLSIZE: "13.00"
+    SPLSCORE: "2"
+    RXCUI: "197737"
+    RXTTY: SCD
+    RXSTRING: Glyburide 1.25 MG Oral Tablet
+    INGREDIENTS: Glyburide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 50D16F1D-C814-4411-8749-62561321ECCE
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: sanofi-aventis"U.S."LLC
+    SPL_INACTIVE_ING: dibasic"calcium"phosphate"/"magnesium"stearate"/"microcrystalline"cellulose"/"sodium"alginate"/"talc
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55111-367
+    NDC9: "551110367"
+    SPLCOLOR: C48325
+    SPLIMPRINT: IP189;375
+    SPLSHAPE: C48336
+    SPLSIZE: "13.00"
+    SPLSCORE: "2"
+    RXCUI: "198012"
+    RXTTY: SCD
+    RXSTRING: Naproxen 375 MG Oral Tablet
+    INGREDIENTS: Naproxen
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: fe7273f4-2a9a-187d-4ee0-f5f46db0bf58
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Dr."Reddy's"Laboratories"Limited
+    SPL_INACTIVE_ING: magnesium"stearate"/"croscarmellose"sodium"/"povidone
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 68462-220
+    NDC9: "684620220"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 150;G220
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "0"
+    RXCUI: "311355"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 150 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 63b3790f-a9b5-47f4-bae1-ddf8b43c13c1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Glenmark"Generics"Inc.,"USA
+    SPL_INACTIVE_ING: FD&C"BLUE"NO."1"/"FD&C"RED"NO."40"/"D&C"YELLOW"NO."10"/"SILICON"DIOXIDE"/"GELATIN"/"SODIUM"LAURYL"SULFATE"/"TALC"/"TITANIUM"DIOXIDE"/"SHELLAC"/"ISOPROPYL"ALCOHOL"/"ALCOHOL"/"BUTYL"ALCOHOL"/"PROPYLENE"GLYCOL"/"AMMONIA"/"POTASSIUM"HYDROXIDE"/"FERROSOFERRIC"OXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0071-1012
+    NDC9: "000711012"
+    SPLCOLOR: C48325
+    SPLIMPRINT: Pfizer;PGN;25
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "607026"
+    RXTTY: SY
+    RXSTRING: Lyrica 25 MG Oral Capsule
+    INGREDIENTS: pregabalin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 60185c88-ecfd-46f9-adb9-b97c6b00a553
+    DEA_SCHEDULE_CODE: C48679
+    AUTHOR: Parke-Davis"Div"of"Pfizer"Inc
+    SPL_INACTIVE_ING: LACTOSE"MONOHYDRATE"/"STARCH,"CORN"/"TALC"/"GELATIN"/"TITANIUM"DIOXIDE"/"SODIUM"LAURYL"SULFATE"/"SILICON"DIOXIDE"/"SHELLAC"/"FERROSOFERRIC"OXIDE"/"PROPYLENE"GLYCOL"/"POTASSIUM"HYDROXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 53489-284
+    NDC9: "534890284"
+    SPLCOLOR: C48325
+    SPLIMPRINT: Mutual;680
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "310430"
+    RXTTY: SCD
+    RXSTRING: gabapentin 100 MG Oral Capsule
+    INGREDIENTS: gabapentin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: A36432F9-BDDD-4B22-BE6D-ED6AC2B3846A
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: MUTUAL"PHARMACEUTICAL"COMPANY,"INC.
+    SPL_INACTIVE_ING: Corn"starch"/"talc"/"gelatin"/"titanium"dioxide"/"FD&C"Blue"#2"/"FD&C"Red"#40"/"FD&C"Blue"#1"/"D&C"Yellow"#10"Lake
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0781-2809
+    NDC9: 007812809
+    SPLCOLOR: C48325
+    SPLIMPRINT: GG;505
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "198057"
+    RXTTY: SCD
+    RXSTRING: Oxazepam 10 MG Oral Capsule
+    INGREDIENTS: Oxazepam
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 140D8F61-912B-449A-9C34-B52E08B3D819
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: Sandoz"Inc.
+    SPL_INACTIVE_ING: corn"starch"/"dimethylpolysiloxane"/"ethylene"glycol"monoethylether"/"FD&C"Red"#3"Aluminum"Lake"/"gelatin"/"hypromellose"/"lactose"(monohydrate)"/"lecithin"/"magnesium"stearate"/"propylene"glycol"/"synthetic"black"iron"oxide"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0781-2810
+    NDC9: 007812810
+    SPLCOLOR: C48325
+    SPLIMPRINT: GG;506
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "312134"
+    RXTTY: SCD
+    RXSTRING: Oxazepam 15 MG Oral Capsule
+    INGREDIENTS: Oxazepam
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 140D8F61-912B-449A-9C34-B52E08B3D819
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: Sandoz"Inc.
+    SPL_INACTIVE_ING: corn"starch"/"D&C"Red"#7"Calcium"Lake"E180"/"D&C"Yellow"#10"Aluminum"Lake"/"gelatin"/"hypromellose"/"lactose"(monohydrate)"/"magnesium"stearate"/"propylene"glycol"/"shellac"/"synthetic"black"iron"oxide"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0781-2811
+    NDC9: 007812811
+    SPLCOLOR: C48325
+    SPLIMPRINT: GG;507
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "198059"
+    RXTTY: SCD
+    RXSTRING: Oxazepam 30 MG Oral Capsule
+    INGREDIENTS: Oxazepam
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 140D8F61-912B-449A-9C34-B52E08B3D819
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: Sandoz"Inc.
+    SPL_INACTIVE_ING: corn"starch"/"D&C"Red"#7"Aluminum"Lake"/"FD&C"Blue"#2"Aluminum"Lake"#132"/"FD&C"Red"#10"Aluminum"Lake"#129"/"gelatin"/"hypromellose"/"lactose"(monohydrate)"/"magnesium"stearate"/"propylene"glycol"/"shellac"/"synthetic"black"iron"oxide"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0172-4805
+    NDC9: 001724805
+    SPLCOLOR: C48325
+    SPLIMPRINT: "4805"
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "312134"
+    RXTTY: SCD
+    RXSTRING: Oxazepam 15 MG Oral Capsule
+    INGREDIENTS: Oxazepam
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: d22859b9-d9ce-487d-8b99-addaffa1d9a0
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: Ivax"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: colloidal"silicon"dioxide"/"corn"starch"/"lactose"monohydrate"/"magnesium"stearate"/"polyoxyl"40"stearate"/"pregelatinized"starch
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0555-0827
+    NDC9: 005550827
+    SPLCOLOR: C48325
+    SPLIMPRINT: barr;827;25;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "403966"
+    RXTTY: SCD
+    RXSTRING: zonisamide 25 MG Oral Capsule
+    INGREDIENTS: zonisamide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: D69A8F4F-F868-44D0-8A77-55A9BC7C6603
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: BARR"LABORATORIES,"INC.
+    SPL_INACTIVE_ING: black"iron"oxide"/"D&C"yellow"no."10"aluminum"lake"/"FD&C"blue"no."1"aluminum"lake"/"FD&C"blue"no."2"aluminum"lake"/"FD&C"red"no."40"aluminum"lake"/"gelatin"/"hydrogenated"vegetable"oil"/"propylene"glycol"/"shellac"glaze"/"silicified"microcrystalline"cellulose"/"sodium"lauryl"sulfate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0555-0488
+    NDC9: 005550488
+    SPLCOLOR: C48325
+    SPLIMPRINT: DPI;488
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "198316"
+    RXTTY: SY
+    RXSTRING: HCTZ 25 MG / triamterene 37.5 MG Oral Capsule
+    INGREDIENTS: Hydrochlorothiazide; Triamterene
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 19c46fcc-2f0f-4522-af74-e1b0dc32c1d3
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Barr"Laboratories"Inc.
+    SPL_INACTIVE_ING: CETYLPYRIDINIUM"CHLORIDE"/"GELATIN"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYSORBATE"80"/"STARCH,"CORN"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 46672-825
+    NDC9: "466720825"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 10/400;ADG
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "670020"
+    RXTTY: SCD
+    RXSTRING: Acetaminophen 400 MG / Oxycodone 10 MG Oral Tablet
+    INGREDIENTS: Acetaminophen; Oxycodone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 4E04A691-09C8-4B20-AFB5-19CE5D5CFD7B
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: MIKART,"INC.
+    SPL_INACTIVE_ING: croscarmellose"sodium"/"crospovidone"/"microcrystalline"cellulose"/"povidone"/"pregelatinized"starch"/"silicon"dioxide"/"stearic"acid
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-694
+    NDC9: "633040694"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RX694
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "197985"
+    RXTTY: SY
+    RXSTRING: minocycline (as minocycline hydrochloride) 50 MG Oral Capsule
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 61f1d07a-f5e9-45b5-8806-b31a441bc592
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: black"iron"oxide"/"corn"starch"/"gelatin"/"magnesium"stearate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0781-2226
+    NDC9: 007812226
+    SPLCOLOR: C48325
+    SPLIMPRINT: GG589
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "313362"
+    RXTTY: SCD
+    RXSTRING: Thiothixene 1 MG Oral Capsule
+    INGREDIENTS: Thiothixene
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 24263106-80c8-47a3-b5d7-ec479ea10ea6
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sandoz"Inc
+    SPL_INACTIVE_ING: FD&C"YELLOW"NO."6"/"GELATIN"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"SODIUM"LAURYL"SULFATE"/"STARCH,"CORN"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0781-2227
+    NDC9: 007812227
+    SPLCOLOR: C48325
+    SPLIMPRINT: GG596
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "313364"
+    RXTTY: SCD
+    RXSTRING: Thiothixene 2 MG Oral Capsule
+    INGREDIENTS: Thiothixene
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 24263106-80c8-47a3-b5d7-ec479ea10ea6
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sandoz"Inc
+    SPL_INACTIVE_ING: GELATIN"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"SODIUM"LAURYL"SULFATE"/"STARCH,"CORN"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0781-2228
+    NDC9: 007812228
+    SPLCOLOR: C48325
+    SPLIMPRINT: GG597
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "313366"
+    RXTTY: SCD
+    RXSTRING: Thiothixene 5 MG Oral Capsule
+    INGREDIENTS: Thiothixene
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 24263106-80c8-47a3-b5d7-ec479ea10ea6
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sandoz"Inc
+    SPL_INACTIVE_ING: FD&C"YELLOW"NO."6"/"GELATIN"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"SODIUM"LAURYL"SULFATE"/"STARCH,"CORN"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0781-2102
+    NDC9: 007812102
+    SPLCOLOR: C48325
+    SPLIMPRINT: 643;S
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "313190"
+    RXTTY: SCD
+    RXSTRING: Tacrolimus 0.5 MG Oral Capsule
+    INGREDIENTS: Tacrolimus
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 46ac55cf-d85e-4c34-bb33-f49e078c4a03
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sandoz"Inc
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"GELATIN"/"HYPROMELLOSE"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"TITANIUM"DIOXIDE"/"FERRIC"OXIDE"YELLOW"/"AMMONIA"/"FERROSOFERRIC"OXIDE"/"BUTYL"ALCOHOL"/"POTASSIUM"HYDROXIDE"/"PROPYLENE"GLYCOL"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0406-8960
+    NDC9: 004068960
+    SPLCOLOR: C48325
+    SPLIMPRINT: M;8960;5;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "309725"
+    RXTTY: SCD
+    RXSTRING: Dextroamphetamine 5 MG Extended Release Capsule
+    INGREDIENTS: Dextroamphetamine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 69c40af8-3710-46bf-bd3d-137fe5eea23e
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: Mallinckrodt"Inc.
+    SPL_INACTIVE_ING: Sugar"Spheres"/"Titanium"Dioxide"/"Gelatin"/"Shellac"Glaze"/"SD-45"Alcohol"/"Iron"Oxide"Black"/"Propylene"Glycol"/"FD&C"Blue"#2/Indigo"Carmine"Lake"/"FD&C"Red"#40/Allura"Red"AC"Lake"/"FD&C"Blue"#1/Brilliant"Blue"FCF"Lake"/"D&C"Yellow"#10"Lake"/"SD3A"Alcohol"/"Shellac"/"Dehydrated"Alcohol"/"Isopropyl"/"Butyl"Alcohol"/"Strong"Ammonia"Solution"/"FD&C"Blue"#2"Aluminum"Lake"/"D&C"Red"#7"Calcium"Lake"/"Hydroxypropyl"Methylcellulose/Hypromellose"/"Macrogol/Polyethylene"Glycol"/"Water"/"Ethylcellulose"/"Ammonium"Hydroxide"/"Medium"Chain"Triglycerides"/"Oleic"Acid
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0406-8961
+    NDC9: 004068961
+    SPLCOLOR: C48325
+    SPLIMPRINT: M;8961;10;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "884520"
+    RXTTY: SCD
+    RXSTRING: Dextroamphetamine Sulfate 10 MG Extended Release Capsule
+    INGREDIENTS: Dextroamphetamine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 69c40af8-3710-46bf-bd3d-137fe5eea23e
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: Mallinckrodt"Inc.
+    SPL_INACTIVE_ING: Sugar"Spheres"/"Titanium"Dioxide"/"Gelatin"/"Shellac"Glaze"/"SD-45"Alcohol"/"Iron"Oxide"Black"/"Propylene"Glycol"/"FD&C"Blue"#2/Indigo"Carmine"Lake"/"FD&C"Red"#40/Allura"Red"AC"Lake"/"FD&C"Blue"#1/Brilliant"Blue"FCF"Lake"/"D&C"Yellow"#10"Lake"/"SD3A"Alcohol"/"Shellac"/"Dehydrated"Alcohol"/"Isopropyl"/"Butyl"Alcohol"/"Strong"Ammonia"Solution"/"FD&C"Blue"#2"Aluminum"Lake"/"D&C"Red"#7"Calcium"Lake"/"Hydroxypropyl"Methylcellulose/Hypromellose"/"Macrogol/Polyethylene"Glycol"/"Water"/"Ethylcellulose"/"Ammonium"Hydroxide"/"Medium"Chain"Triglycerides"/"Oleic"Acid
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0006-0570
+    NDC9: "000060570"
+    SPLCOLOR: C48325
+    SPLIMPRINT: CRIXIVAN;100;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "541058"
+    RXTTY: SY
+    RXSTRING: Crixivan 100 MG Oral Capsule
+    INGREDIENTS: Indinavir
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: e19405d9-d9a1-4072-5b9e-40cd3ae4bf1f
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Merck"Sharp"&"Dohme"Corp.
+    SPL_INACTIVE_ING: ANHYDROUS"LACTOSE"/"MAGNESIUM"STEARATE"/"GELATIN"/"TITANIUM"DIOXIDE"/"SILICON"DIOXIDE"/"SODIUM"LAURYL"SULFATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0904-5536
+    NDC9: 009045536
+    SPLCOLOR: C48325
+    SPLIMPRINT: 375;M37
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "198012"
+    RXTTY: SCD
+    RXSTRING: Naproxen 375 MG Oral Tablet
+    INGREDIENTS: Naproxen
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 907ba0f9-e4c9-49d4-9ff8-019739076324
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Major"Pharmaceuticals
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"POVIDONE"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-032
+    NDC9: "658620032"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 10;A
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "311726"
+    RXTTY: SCD
+    RXSTRING: Mirtazapine 45 MG Oral Tablet
+    INGREDIENTS: Mirtazapine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a4c012f0-50b6-42fb-9f06-a14632f23f2e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: STARCH,"CORN"/"HYDROXYPROPYL"CELLULOSE,"LOW"SUBSTITUTED"/"MAGNESIUM"STEARATE"/"SILICON"DIOXIDE"/"LACTOSE"MONOHYDRATE"/"HYPROMELLOSE"2910"(6"CPS)"/"TITANIUM"DIOXIDE"/"HYDROXYPROPYL"CELLULOSE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0245-0085
+    NDC9: 002450085
+    SPLCOLOR: C48325
+    SPLIMPRINT: Upsher;Smith;0085;80mg;;
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "856569"
+    RXTTY: SY
+    RXSTRING: propranolol hydrochloride 80 MG 24 HR Extended Release Capsule
+    INGREDIENTS: Propranolol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a5efc305-2dd1-4946-a1f8-d149b014a484
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Upsher-Smith"Laboratories,"Inc.
+    SPL_INACTIVE_ING: ethylcellulose"/"gelatin"/"hypromellose"/"cellulose,"microcrystalline"/"sodium"lauryl"sulfate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55111-157
+    NDC9: "551110157"
+    SPLCOLOR: C48325
+    SPLIMPRINT: Omeprazole;10;mg;R;157
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "199119"
+    RXTTY: SCD
+    RXSTRING: Omeprazole 10 MG Enteric Coated Capsule
+    INGREDIENTS: Omeprazole
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 72FB11B6-B08C-2F02-D82B-F60F52394903
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Dr.Reddy's"Laboratories"Inc.
+    SPL_INACTIVE_ING: crospovidone"/"hypromellose"/"magnesium"stearate"/"mannitol"/"meglumine"/"methacrylic"acid"copolymer"/"poloxamer"/"povidone"/"triethyl"citrate"/"D&C"Red"No."28"/"FD&C"Blue"No.1"/"FD&C"Red"No."40"/"FD&C"Yellow"No.6"/"yellow"iron"oxide"/"gelatin"/"silicon"dioxide"/"sodium"lauryl"sulphate"/"titanium"dioxide"/"D&C"Yellow"No."10"aluminum"lake"/"FD&C"Blue"No.1"aluminum"lake"/"FD&C"Blue"No."2"aluminum"lake"/"FD&C"Red"No."40"aluminum"lake"/"n-butyl"alcohol"/"pharmaceutical"glaze"/"propylene"glycol"/"SDA-3A"alcohol"/"synthetic"black"iron"oxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-504
+    NDC9: "633040504"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RX504
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "197311"
+    RXTTY: SCD
+    RXSTRING: Acyclovir 400 MG Oral Tablet
+    INGREDIENTS: Acyclovir
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: d13b8cdd-59fd-472b-8125-a19f42ef5402
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Laboratories"Ltd.
+    SPL_INACTIVE_ING: colloidal"silicon"dioxide"/"magnesium"stearate"/"microcrystalline"cellulose"/"pregelatinized"starch"/"sodium"starch"glycolate
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0591-0410
+    NDC9: 005910410
+    SPLCOLOR: C48325
+    SPLIMPRINT: WATSON;410;50;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "199027"
+    RXTTY: SY
+    RXSTRING: doxycycline (as doxycycline hyclate) 50 MG Oral Capsule
+    INGREDIENTS: Doxycycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a121fa30-2aaf-4dde-a08e-a67381333751
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Watson"Laboratories,"Inc.
+    SPL_INACTIVE_ING: COLLOIDAL"SILICON"DIOXIDE"/"TITANIUM"DIOXIDE"/"FERRIC"OXIDE"YELLOW"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"SODIUM"STARCH"GLYCOLATE"TYPE"A"POTATO
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 50458-387
+    NDC9: "504580387"
+    SPLCOLOR: C48325
+    SPLIMPRINT: GAL;8
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "860717"
+    RXTTY: SY
+    RXSTRING: 24 HR Razadyne ER 8 MG Extended Release Capsule
+    INGREDIENTS: Galantamine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: ec9b5a9c-8caf-4f9b-8c1b-209b2de556dc
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ortho-McNeil"Neurologics,"Division"of"Ortho-McNeil-Janssen"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: gelatin"/"diethyl"phthalate"/"ethylcellulose"/"hypromellose"/"polyethylene"glycol"/"titanium"dioxide"/"sugar"spheres"(sucrose"and"starch)
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 59572-205
+    NDC9: "595720205"
+    SPLCOLOR: C48325
+    SPLIMPRINT: Celgene;50;mg;Do;Not;Get;Pregnant;Symbol
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "213360"
+    RXTTY: SY
+    RXSTRING: Thalomid 50 MG Oral Capsule
+    INGREDIENTS: Thalidomide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 2eda833b-1357-4ed4-a093-194524fcb061
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Celgene"Corporation
+    SPL_INACTIVE_ING: STARCH,"CORN"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 53489-651
+    NDC9: "534890651"
+    SPLCOLOR: C48325
+    SPLIMPRINT: Mutual;869
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "198242"
+    RXTTY: SCD
+    RXSTRING: Temazepam 30 MG Oral Capsule
+    INGREDIENTS: Temazepam
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 3e4a35f8-77e5-4c9a-aad2-b0aeb98edd66
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: Mutual"Pharmaceutical
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 46672-823
+    NDC9: "466720823"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 5/400;ADG
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "670023"
+    RXTTY: SY
+    RXSTRING: APAP 400 MG / oxycodone 5 MG Oral Tablet
+    INGREDIENTS: Acetaminophen; Oxycodone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: CFAFD76B-F22E-4E8A-A476-26E811953183
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: MIKART,"INC.
+    SPL_INACTIVE_ING: croscarmellose"sodium"/"crospovidone"/"microcrystalline"cellulose"/"povidone"/"pregelatinized"starch"/"silicon"dioxide"/"stearic"acid
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 46672-824
+    NDC9: "466720824"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 7.5/400;ADG
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "644846"
+    RXTTY: SCD
+    RXSTRING: Acetaminophen 400 MG / Oxycodone 7.5 MG Oral Tablet
+    INGREDIENTS: Acetaminophen; Oxycodone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 3E0609C7-02C2-44FB-88BF-09D7B1425600
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: MIKART,"INC.
+    SPL_INACTIVE_ING: croscarmellose"sodium"/"crospovidone"/"microcrystalline"cellulose"/"povidone"/"pregelatinized"starch"/"silicon"dioxide"/"stearic"acid
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 54092-063
+    NDC9: "540920063"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "063"
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "597857"
+    RXTTY: SY
+    RXSTRING: Agrylin 0.5 MG Oral Capsule
+    INGREDIENTS: anagrelide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: cb960074-99c1-4a73-941f-f0644a7ec219
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Shire"US"Manufacturing"Inc.
+    SPL_INACTIVE_ING: LACTOSE,"ANHYDROUS"/"CROSPOVIDONE"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POVIDONE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 64720-322
+    NDC9: "647200322"
+    SPLCOLOR: C48325
+    SPLIMPRINT: cor;322
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "313762"
+    RXTTY: SCD
+    RXSTRING: zaleplon 5 MG Oral Capsule
+    INGREDIENTS: zaleplon
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: aae18c5d-5d4b-4fe2-930b-dbc58dc59665
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: COREPHARMA"LLC.
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"STARCH,"CORN"/"SILICON"DIOXIDE"/"SODIUM"LAURYL"SULFATE"/"MAGNESIUM"STEARATE"/"LACTOSE"/"GELATIN"/"TITANIUM"DIOXIDE"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."1"/"FD&C"GREEN"NO."3"/"FD&C"YELLOW"NO."5
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 64720-323
+    NDC9: "647200323"
+    SPLCOLOR: C48325
+    SPLIMPRINT: cor;323
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "313761"
+    RXTTY: SCD
+    RXSTRING: zaleplon 10 MG Oral Capsule
+    INGREDIENTS: zaleplon
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: aae18c5d-5d4b-4fe2-930b-dbc58dc59665
+    DEA_SCHEDULE_CODE: C48677
+    AUTHOR: COREPHARMA"LLC.
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"STARCH,"CORN"/"SILICON"DIOXIDE"/"SODIUM"LAURYL"SULFATE"/"MAGNESIUM"STEARATE"/"LACTOSE"/"GELATIN"/"TITANIUM"DIOXIDE"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."1"/"FD&C"GREEN"NO."3"/"FD&C"YELLOW"NO."5
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63717-900
+    NDC9: "637170900"
+    SPLCOLOR: C48325
+    SPLIMPRINT: IP;116
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "1"
+    RXCUI: "858772"
+    RXTTY: SY
+    RXSTRING: Reprexain 2.5/200 Oral Tablet
+    INGREDIENTS: Hydrocodone; Ibuprofen
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 8f424c9c-8d19-4619-9607-abb1eea55dcb
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: Hawthorn"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0054-0012
+    NDC9: "000540012"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "54150"
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "2"
+    RXCUI: "886671"
+    RXTTY: SCD
+    RXSTRING: Flecainide Acetate 150 MG Oral Tablet
+    INGREDIENTS: Flecainide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 4f6b78d4-8ac8-464b-bb78-ee70cbc97898
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Roxane"Laboratories,"Inc
+    SPL_INACTIVE_ING: COTTONSEED"OIL"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"CROSCARMELLOSE"SODIUM"/"STARCH,"CORN
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 57664-126
+    NDC9: "576640126"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "126"
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "2"
+    RXCUI: "857002"
+    RXTTY: SY
+    RXSTRING: APAP 325 MG / hydrocodone bitartrate 5 MG Oral Tablet
+    INGREDIENTS: Acetaminophen; Hydrocodone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 016df82c-a0a5-4f3b-bf73-f7e28f984c95
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: Caraco"Pharmaceutical"Laboratories"Ltd
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"CROSPOVIDONE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POVIDONE"/"STARCH,"CORN"/"STEARIC"ACID
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 57664-171
+    NDC9: "576640171"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "171"
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "2"
+    RXCUI: "857118"
+    RXTTY: SY
+    RXSTRING: APAP 500 MG / hydrocodone bitartrate 7.5 MG Oral Tablet
+    INGREDIENTS: Acetaminophen; Hydrocodone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 016df82c-a0a5-4f3b-bf73-f7e28f984c95
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: Caraco"Pharmaceutical"Laboratories"Ltd
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"CROSPOVIDONE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POVIDONE"/"STARCH,"CORN"/"STEARIC"ACID
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 57664-167
+    NDC9: "576640167"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "167"
+    SPLSHAPE: C48336
+    SPLSIZE: "14.00"
+    SPLSCORE: "2"
+    RXCUI: "866511"
+    RXTTY: SCD
+    RXSTRING: Metoprolol Tartrate 100 MG Oral Tablet
+    INGREDIENTS: Metoprolol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c9a87c39-4baf-43e2-b6bc-3634f1eb77cf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Caraco"Pharmaceutical"Laboratories,"Ltd.
+    SPL_INACTIVE_ING: SILICON"DIOXIDE"/"HYPROMELLOSE"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POLYETHYLENE"GLYCOL"/"POLYSORBATE"20"/"POVIDONE"/"SODIUM"STARCH"GLYCOLATE"TYPE"A"POTATO"/"TALC"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 68645-170
+    NDC9: "686450170"
+    SPLCOLOR: C48325
+    SPLIMPRINT: APO;096
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "0"
+    RXCUI: "197628"
+    RXTTY: SCD
+    RXSTRING: Doxazosin 8 MG Oral Tablet
+    INGREDIENTS: Doxazosin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: feb45c9d-b002-4306-aa8b-a1f573916286
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Legacy"Pharmaceutical"Packaging
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"CELLULOSE,"MICROCRYSTALLINE"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0143-2424
+    NDC9: "001432424"
+    SPLCOLOR: C48325
+    SPLIMPRINT: WW24
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "312084"
+    RXTTY: SY
+    RXSTRING: ondansetron (as ondansetron hydrochloride) 24 MG Oral Tablet
+    INGREDIENTS: Ondansetron
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: fc3d39e0-8bf2-4c29-b872-66a1cf8bb2fb
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: West-ward"Pharmaceutical"Corp
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 59417-102
+    NDC9: "594170102"
+    SPLCOLOR: C48325
+    SPLIMPRINT: NRP104;S489;20mg
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "854832"
+    RXTTY: SY
+    RXSTRING: Vyvanse 20 MG Oral Capsule
+    INGREDIENTS: Lisdexamfetamine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 704e4378-ca83-445c-8b45-3cfa51c1ecad
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: Shire"LLC
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"CROSCARMELLOSE"SODIUM"/"MAGNESIUM"STEARATE"/"GELATIN"/"TITANIUM"DIOXIDE"/"D&C"RED"NO."28"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."1"/"FD&C"GREEN"NO."3"/"FD&C"RED"NO."40
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 60505-0006
+    NDC9: "605050006"
+    SPLCOLOR: C48325
+    SPLIMPRINT: APO;006
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "308962"
+    RXTTY: SCD
+    RXSTRING: Captopril 100 MG Oral Tablet
+    INGREDIENTS: Captopril
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 2c0f1ee3-b2b7-a1bc-059a-d65bea6cd0ef
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Apotex"Corp.
+    SPL_INACTIVE_ING: SILICON"DIOXIDE"/"CROSCARMELLOSE"SODIUM"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0143-3188
+    NDC9: 001433188
+    SPLCOLOR: C48325
+    SPLIMPRINT: WW3188
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "311355"
+    RXTTY: SCD
+    RXSTRING: Lithium Carbonate 150 MG Oral Capsule
+    INGREDIENTS: Lithium Carbonate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 8551dbf4-a80b-494b-824a-177a8a438b7c
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: West-ward"Pharmaceutical"Corp
+    SPL_INACTIVE_ING: TALC"/"GELATIN"/"TITANIUM"DIOXIDE"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."2"/"FD&C"RED"NO."40"/"BUTYL"ALCOHOL"/"PROPYLENE"GLYCOL"/"ALCOHOL"/"FERROSOFERRIC"OXIDE"/"FD&C"BLUE"NO."1
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 68453-375
+    NDC9: "684530375"
+    SPLCOLOR: C48325
+    SPLIMPRINT: N;375
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "849475"
+    RXTTY: SY
+    RXSTRING: Naprelan 375 24 HR Extended Release Tablet
+    INGREDIENTS: Naproxen
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 09c49d97-1423-4527-aaf0-fc2eb6688487
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Victory"Pharma,"Inc."
+    SPL_INACTIVE_ING: anhydrous"citric"acid"/"crospovidone"/"magnesium"stearate"/"cellulose,"microcrystalline"/"povidone"/"talc"/"hypromellose"/"polyethylene"glycol"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55111-402
+    NDC9: "551110402"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RDY;402
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "1"
+    RXCUI: "403966"
+    RXTTY: SCD
+    RXSTRING: zonisamide 25 MG Oral Capsule
+    INGREDIENTS: zonisamide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 78ad1221-f07d-4afc-9ce7-5a0418101ff9
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Dr."Reddy's"Laboratories"Limited
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"gelatin"/"titanium"dioxide"/"FERROSOFERRIC"OXIDE"/"butyl"alcohol"/"ALCOHOL"/"isopropyl"alcohol"/"POTASSIUM"HYDROXIDE"/"propylene"glycol"/"water"/"SHELLAC"/"AMMONIA
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0037-5001
+    NDC9: "000375001"
+    SPLCOLOR: C48325
+    SPLIMPRINT: BM;105;100
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "2"
+    RXCUI: "208080"
+    RXTTY: SY
+    RXSTRING: Demadex 100 MG Oral Tablet
+    INGREDIENTS: torsemide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 01b388a0-7dfb-11de-bc4e-0002a5d5c51b
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Meda"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 57664-173
+    NDC9: "576640173"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "173"
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "2"
+    RXCUI: "857083"
+    RXTTY: SY
+    RXSTRING: APAP 650 MG / hydrocodone bitartrate 7.5 MG Oral Tablet
+    INGREDIENTS: Acetaminophen; Hydrocodone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 016df82c-a0a5-4f3b-bf73-f7e28f984c95
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: Caraco"Pharmaceutical"Laboratories"Ltd
+    SPL_INACTIVE_ING: CROSCARMELLOSE"SODIUM"/"CROSPOVIDONE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"POVIDONE"/"STARCH,"CORN"/"STEARIC"ACID
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 62175-119
+    NDC9: "621750119"
+    SPLCOLOR: C48325
+    SPLIMPRINT: KU;119;
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "2"
+    RXCUI: "353538"
+    RXTTY: SY
+    RXSTRING: isosorbide mononitrate 60 MG 24 HR Extended Release Tablet
+    INGREDIENTS: Isosorbide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 3ae1adfa-6c55-4fd8-9d75-049509387ce0
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Kremers"Urban
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0037-0731
+    NDC9: "000370731"
+    SPLCOLOR: C48325
+    SPLIMPRINT: WALLACE;731
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "2"
+    RXCUI: "93181"
+    RXTTY: SY
+    RXSTRING: Lufyllin 400 MG Oral Tablet
+    INGREDIENTS: Dyphylline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 6d7ed7c0-9646-11de-a404-0002a5d5c51b
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Meda"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 55111-368
+    NDC9: "551110368"
+    SPLCOLOR: C48325
+    SPLIMPRINT: IP190;500
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "2"
+    RXCUI: "198014"
+    RXTTY: SCD
+    RXSTRING: Naproxen 500 MG Oral Tablet
+    INGREDIENTS: Naproxen
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: fe7273f4-2a9a-187d-4ee0-f5f46db0bf58
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Dr."Reddy's"Laboratories"Limited
+    SPL_INACTIVE_ING: magnesium"stearate"/"croscarmellose"sodium"/"povidone
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0904-6061
+    NDC9: 009046061
+    SPLCOLOR: C48325
+    SPLIMPRINT: X;56;65
+    SPLSHAPE: C48336
+    SPLSIZE: "15.00"
+    SPLSCORE: "3"
+    RXCUI: "866018"
+    RXTTY: SY
+    RXSTRING: buspirone hydrochloride 15 MG (buspirone 13.7 MG) Oral Tablet
+    INGREDIENTS: Buspirone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 337ba17d-bfc5-40d8-9c57-978fe38d842f
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Major"Pharmaceuticals
+    SPL_INACTIVE_ING: COLLOIDAL"SILICON"DIOXIDE"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE"/"SODIUM"STARCH"GLYCOLATE"TYPE"A"POTATO
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0378-5710
+    NDC9: 003785710
+    SPLCOLOR: C48325
+    SPLIMPRINT: M;571
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "313222"
+    RXTTY: SCD
+    RXSTRING: terbinafine 250 MG Oral Tablet
+    INGREDIENTS: terbinafine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 8b6dab4d-5b80-4690-8d96-3438d69c7d1d
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Mylan"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: SILICON"DIOXIDE"/"CROSCARMELLOSE"SODIUM"/"HYDROXYPROPYL"CELLULOSE"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"CELLULOSE,"MICROCRYSTALLINE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 63304-627
+    NDC9: "633040627"
+    SPLCOLOR: C48325
+    SPLIMPRINT: RX627
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "310430"
+    RXTTY: SCD
+    RXSTRING: gabapentin 100 MG Oral Capsule
+    INGREDIENTS: gabapentin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 0936a88f-b569-49c4-951b-14e8f6273b53
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ranbaxy"Pharmaceuticals"Inc.
+    SPL_INACTIVE_ING: corn"starch"/"gelatin"/"magnesium"stearate"/"mannitol"/"talc"/"titanium"dioxide"/"black"edible"ink
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0093-7508
+    NDC9: 000937508
+    SPLCOLOR: C48325
+    SPLIMPRINT: 93;7508
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "403966"
+    RXTTY: SCD
+    RXSTRING: zonisamide 25 MG Oral Capsule
+    INGREDIENTS: zonisamide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: e36503be-6a6f-4a6d-9e19-16a906d19eea
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Teva"Pharmaceuticals"USA
+    SPL_INACTIVE_ING: black"iron"oxide"/"crospovidone"/"gelatin"/"hydrogenated"vegetable"oil"/"microcrystalline"cellulose"/"povidone"/"shellac"/"sodium"lauryl"sulfate"/"titanium"dioxide"/"antifoam"DC"1510"/"propylene"glycol"/"soya"lectithin
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0071-1013
+    NDC9: "000711013"
+    SPLCOLOR: C48325
+    SPLIMPRINT: Pfizer;PGN;50
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "607033"
+    RXTTY: SY
+    RXSTRING: Lyrica 50 MG Oral Capsule
+    INGREDIENTS: pregabalin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 60185c88-ecfd-46f9-adb9-b97c6b00a553
+    DEA_SCHEDULE_CODE: C48679
+    AUTHOR: Parke-Davis"Div"of"Pfizer"Inc
+    SPL_INACTIVE_ING: LACTOSE"MONOHYDRATE"/"STARCH,"CORN"/"TALC"/"GELATIN"/"TITANIUM"DIOXIDE"/"SODIUM"LAURYL"SULFATE"/"SILICON"DIOXIDE"/"SHELLAC"/"FERROSOFERRIC"OXIDE"/"PROPYLENE"GLYCOL"/"POTASSIUM"HYDROXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0015-3030
+    NDC9: "000153030"
+    SPLCOLOR: C48325
+    SPLIMPRINT: Bristol;3030;10;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "206794"
+    RXTTY: SY
+    RXSTRING: CeeNU 10 MG Oral Capsule
+    INGREDIENTS: Lomustine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 17893de9-7d54-448c-9fca-d10642046d14
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: E.R."Squibb"&"Sons,"L.L.C.
+    SPL_INACTIVE_ING: magnesium"stearate"/"mannitol
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 46672-826
+    NDC9: "466720826"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 10/500;ADG
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "644114"
+    RXTTY: SCD
+    RXSTRING: Acetaminophen 500 MG / Oxycodone 10 MG Oral Tablet
+    INGREDIENTS: Acetaminophen; Oxycodone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: D62E1C90-5780-444A-8BB3-AC9F5D11D0CB
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: MIKART,"INC.
+    SPL_INACTIVE_ING: croscarmellose"sodium"/"crospovidone"/"microcrystalline"cellulose"/"povidone"/"pregelatinized"starch"/"silicon"dioxide"/"stearic"acid
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 49884-302
+    NDC9: "498840302"
+    SPLCOLOR: C48325
+    SPLIMPRINT: K201
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "351276"
+    RXTTY: SCD
+    RXSTRING: Oxandrolone 10 MG Oral Tablet
+    INGREDIENTS: Oxandrolone
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a6f42739-5bfc-4b76-8795-e93fa58f3d29
+    DEA_SCHEDULE_CODE: C48676
+    AUTHOR: Par"Pharmaceutical"Inc.
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0006-0568
+    NDC9: 000060568
+    SPLCOLOR: C48325
+    SPLIMPRINT: 568;100;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "668606"
+    RXTTY: SY
+    RXSTRING: Zolinza 100 MG Oral Capsule
+    INGREDIENTS: Vorinostat
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: CD86EE78-2781-468B-930C-3C4677BCC092
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Merck"&"Co.,"Inc.
+    SPL_INACTIVE_ING: gelatin"/"magnesium"stearate"/"microcrystalline"cellulose"/"sodium"croscarmellose"/"sodium"lauryl"sulfate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 99207-487
+    NDC9: "992070487"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 0487;DYNACIN;50;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "207352"
+    RXTTY: SY
+    RXSTRING: Dynacin 50 MG Oral Capsule
+    INGREDIENTS: Minocycline
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 42C69D40-E716-4347-9351-F8D8E1E65085
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: MEDICIS,"The"Dermatology"Company
+    SPL_INACTIVE_ING: magnesium"stearate"/"starch"(corn)"/"gelatin"/"silicon"dioxide"/"sodium"lauryl"sulfate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0087-6671
+    NDC9: 000876671
+    SPLCOLOR: C48325
+    SPLIMPRINT: BMS;125;mg;6671
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "284498"
+    RXTTY: SY
+    RXSTRING: Videx 125 MG Enteric Coated Capsule
+    INGREDIENTS: Didanosine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 4bc249f2-7e8b-05cb-38ad-3085e947e0f1
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: E.R."Squibb"&"Sons,"L.L.C.
+    SPL_INACTIVE_ING: carboxymethylcellulose"sodium"/"diethyl"phthalate"/"methacrylic"acid"-"methyl"methacrylate"copolymer"(1:2)"/"sodium"hydroxide"/"sodium"starch"glycolate"type"a"potato"/"talc"/"gelatin"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0085-1402
+    NDC9: 000851402
+    SPLCOLOR: C48325
+    SPLIMPRINT: CG;FXF
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "284417"
+    RXTTY: SY
+    RXSTRING: Foradil 0.012 MG/ACTUAT Inhalant Powder
+    INGREDIENTS: formoterol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7b9da867-04ad-4ace-a889-9f4ff8bec47b
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Merck"&"Co.,"Inc
+    SPL_INACTIVE_ING: LACTOSE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0085-1401
+    NDC9: 000851401
+    SPLCOLOR: C48325
+    SPLIMPRINT: CG;FXF
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "284417"
+    RXTTY: SY
+    RXSTRING: Foradil 0.012 MG/ACTUAT Inhalant Powder
+    INGREDIENTS: formoterol
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7b9da867-04ad-4ace-a889-9f4ff8bec47b
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Merck"&"Co.,"Inc
+    SPL_INACTIVE_ING: LACTOSE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0172-4870
+    NDC9: 001724870
+    SPLCOLOR: C48325
+    SPLIMPRINT: 12.5;4870
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "199903"
+    RXTTY: SY
+    RXSTRING: HCTZ 12.5 MG Oral Capsule
+    INGREDIENTS: Hydrochlorothiazide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: acb11670-cc77-4a1e-9a01-38fcfbeedfb5
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Ivax"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: black"iron"oxide"/"corn"starch"/"D&C"yellow"#10"/"FD&C"blue"#1"/"FD&C"blue"#2"/"FD&C"red"#40"/"gelatin"/"hydrous"lactose"/"magnesium"stearate"/"microcrystalline"cellulose"/"propylene"glycol"/"shellac"glaze"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0002-5800
+    NDC9: 000025800
+    SPLCOLOR: C48325
+    SPLIMPRINT: LILLY;3227;10;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "895019"
+    RXTTY: SY
+    RXSTRING: Strattera 10/18/25/40 Kit
+    INGREDIENTS: atomoxetine; atomoxetine; atomoxetine; atomoxetine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 309de576-c318-404a-bc15-660c2b1876fb
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Eli"Lilly"and"Company
+    SPL_INACTIVE_ING: STARCH,"Corn"/"DIMETHICONE"/"Gelatin"/"sodium"lauryl"sulfate"/"titanium"dioxide
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0591-5630
+    NDC9: 005915630
+    SPLCOLOR: C48325
+    SPLIMPRINT: DAN;5630
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "310020"
+    RXTTY: SCD
+    RXSTRING: Doxepin 25 MG Oral Capsule
+    INGREDIENTS: Doxepin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: AA69C63C-CED6-4676-A16B-554F1AF7D210
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Watson"Laboratories,"Inc.
+    SPL_INACTIVE_ING: magnesium"stearate"/"sodium"lauryl"sulfate"/"pregelatinzed"starch"/"gelatin"/"silicon"dioxide"/"titanium"dioxide"/"D"&"C"Yellow"No."10"/"FD"&"C"Yellow"No."6
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0172-5240
+    NDC9: "001725240"
+    SPLCOLOR: C48325
+    SPLIMPRINT: 5240;1mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "597852"
+    RXTTY: SY
+    RXSTRING: anagrelide 1 MG (as anagrelide hydrochloride) Oral Capsule
+    INGREDIENTS: anagrelide
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 6727d5d4-e8ec-4a85-bc82-ec70b641eecf
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: IVAX"Pharmaceuticals,"Inc.
+    SPL_INACTIVE_ING: CELLULOSE,"MICROCRYSTALLINE"/"CROSPOVIDONE"/"D&C"YELLOW"NO."10"/"FD&C"BLUE"NO."1"/"FD&C"BLUE"NO."2"/"FD&C"RED"NO."40"/"FERROSOFERRIC"OXIDE"/"GELATIN"/"LACTOSE,"ANHYDROUS"/"LACTOSE"MONOHYDRATE"/"MAGNESIUM"STEARATE"/"POVIDONE"/"PROPYLENE"GLYCOL"/"TITANIUM"DIOXIDE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0406-8962
+    NDC9: 004068962
+    SPLCOLOR: C48325
+    SPLIMPRINT: M;8962;15;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "884532"
+    RXTTY: SCD
+    RXSTRING: Dextroamphetamine Sulfate 15 MG Extended Release Capsule
+    INGREDIENTS: Dextroamphetamine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 69c40af8-3710-46bf-bd3d-137fe5eea23e
+    DEA_SCHEDULE_CODE: C48675
+    AUTHOR: Mallinckrodt"Inc.
+    SPL_INACTIVE_ING: Sugar"Spheres"/"Titanium"Dioxide"/"Gelatin"/"Shellac"Glaze"/"SD-45"Alcohol"/"Iron"Oxide"Black"/"Propylene"Glycol"/"FD&C"Blue"#2/Indigo"Carmine"Lake"/"FD&C"Red"#40/Allura"Red"AC"Lake"/"FD&C"Blue"#1/Brilliant"Blue"FCF"Lake"/"D&C"Yellow"#10"Lake"/"SD3A"Alcohol"/"Shellac"/"Dehydrated"Alcohol"/"Isopropyl"/"Butyl"Alcohol"/"Strong"Ammonia"Solution"/"FD&C"Blue"#2"Aluminum"Lake"/"D&C"Red"#7"Calcium"Lake"/"Hydroxypropyl"Methylcellulose/Hypromellose"/"Macrogol/Polyethylene"Glycol"/"Water"/"Ethylcellulose"/"Ammonium"Hydroxide"/"Medium"Chain"Triglycerides"/"Oleic"Acid
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-310
+    NDC9: "658620310"
+    SPLCOLOR: C48325
+    SPLIMPRINT: D;70
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "284183"
+    RXTTY: SCD
+    RXSTRING: Didanosine 125 MG Enteric Coated Capsule
+    INGREDIENTS: Didanosine
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: b3ad0449-fd60-482a-9ba7-afd8f5555b83
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: SODIUM"STARCH"GLYCOLATE"TYPE"A"POTATO"/"CARBOXYMETHYLCELLULOSE"SODIUM"/"SODIUM"LAURYL"SULFATE"/"HYPROMELLOSE"2910"(3"CPS)"/"TALC"/"METHACRYLIC"ACID"-"ETHYL"ACRYLATE"COPOLYMER"(1:1)"TYPE"A"/"DIETHYL"PHTHALATE"/"SILICON"DIOXIDE"/"GELATIN"/"TITANIUM"DIOXIDE"/"FERROSOFERRIC"OXIDE"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 52544-151
+    NDC9: "525440151"
+    SPLCOLOR: C48325
+    SPLIMPRINT: WATSON;151;4;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "826614"
+    RXTTY: SY
+    RXSTRING: Rapaflo 4 MG Oral Capsule
+    INGREDIENTS: silodosin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: a21163d6-e1b9-4490-bce3-751e0823797c
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Watson"Pharma,"Inc.
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 62756-137
+    NDC9: "627560137"
+    SPLCOLOR: C48325
+    SPLIMPRINT: "137"
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "310430"
+    RXTTY: SCD
+    RXSTRING: gabapentin 100 MG Oral Capsule
+    INGREDIENTS: gabapentin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: c9a05f0c-b5f0-422c-9d67-6d0efc921a74
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Sun"Pharmaceutical"Industries"Limited
+    SPL_INACTIVE_ING: CALCIUM"CARBONATE"/"CALCIUM"SULFATE"DIHYDRATE"/"GLYCERYL"BEHENATE"/"STARCH,"CORN"/"GELATIN"/"TITANIUM"DIOXIDE"/"SODIUM"LAURYL"SULFATE
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65162-212
+    NDC9: "651620212"
+    SPLCOLOR: C48325
+    SPLIMPRINT: IP;212
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: 
+    RXTTY: 
+    RXSTRING: "Extended Phenytoin Sodium (PHENYTOIN SODIUM 100 mg) "
+    INGREDIENTS: 
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 7e467c02-49a0-4b62-b537-430fdfa4f10e
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Amneal"Pharmaceuticals,"LLC
+    SPL_INACTIVE_ING: 
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 0071-0803
+    NDC9: 000710803
+    SPLCOLOR: C48325
+    SPLIMPRINT: PD;Neurontin;100;mg
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "105028"
+    RXTTY: SY
+    RXSTRING: Neurontin 100 MG Oral Capsule
+    INGREDIENTS: gabapentin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: ee9ad9ed-6d9f-4ee1-9d7f-cfad438df388
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Parke-Davis"Div"of"Pfizer"Inc
+    SPL_INACTIVE_ING: lactose"/"starch,"corn"/"talc"/"gelatin"/"titanium"dioxide"/"FD&C"BLUE"NO."2
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 59762-5026
+    NDC9: "597625026"
+    SPLCOLOR: C48325
+    SPLIMPRINT: G;5026
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "310430"
+    RXTTY: SCD
+    RXSTRING: gabapentin 100 MG Oral Capsule
+    INGREDIENTS: gabapentin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: cff7de45-148b-4e96-88fd-6052bf75b5f7
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Greenstone"LLC
+    SPL_INACTIVE_ING: lactose"/"starch,"corn"/"talc"/"gelatin"/"titanium"dioxide"/"FD&C"BLUE"NO."2
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 65862-198
+    NDC9: "658620198"
+    SPLCOLOR: C48325
+    SPLIMPRINT: D;02
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "310430"
+    RXTTY: SCD
+    RXSTRING: gabapentin 100 MG Oral Capsule
+    INGREDIENTS: gabapentin
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 1a619a14-0b63-4cba-80e7-474c9a1c90b9
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Aurobindo"Pharma"Limited
+    SPL_INACTIVE_ING: STARCH,"CORN"/"TALC"/"GELATIN"/"TITANIUM"DIOXIDE"/"SODIUM"LAURYL"SULFATE"/"FERROSOFERRIC"OXIDE"/"SHELLAC
+  prefix_options: *id001
+- !ruby/object:PillboxResource 
+  attributes: !map:ActiveSupport::HashWithIndifferentAccess 
+    SPL_ID: "0"
+    PRODUCT_CODE: 66869-137
+    NDC9: "668690137"
+    SPLCOLOR: C48325
+    SPLIMPRINT: G;246;50
+    SPLSHAPE: C48336
+    SPLSIZE: "16.00"
+    SPLSCORE: "1"
+    RXCUI: "702169"
+    RXTTY: SY
+    RXSTRING: Lipofen 50 MG Oral Capsule
+    INGREDIENTS: Fenofibrate
+    HAS_IMAGE: "0"
+    image_id: 
+    SETID: 9a883573-aa2a-4376-bb0f-3b88246d2169
+    DEA_SCHEDULE_CODE: 
+    AUTHOR: Kowa"Pharmaceuticals"America"Inc.
+    SPL_INACTIVE_ING: POLYETHYLENE"GLYCOL"8000"/"HYDROXYPROPYL"CELLULOSE"/"GELATIN"/"TITANIUM"DIOXIDE"/"SHELLAC"/"PROPYLENE"GLYCOL"/"FERROSOFERRIC"OXIDE"/"FD&C"BLUE"NO."1"/"FD&C"BLUE"NO."2"/"FD&C"RED"NO."40"/"D&C"YELLOW"NO."10
+  prefix_options: *id001

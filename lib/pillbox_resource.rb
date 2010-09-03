@@ -27,28 +27,11 @@ NOTE: shape/color lookup doesn't always work.
 
 =end
 
-
-#require 'active_support'
-  
-begin
-  require 'active_resource'
-rescue LoadError
-  begin
-    require 'rubygems'
-    require 'active_resource'
-  rescue LoadError
-    abort <<-ERROR
-The 'activeresource' library could not be loaded. If you have RubyGems 
-installed you can install ActiveResource by doing "gem install activeresource".
-ERROR
-  end
-end
-
-
 # Version check
 module Pillbox
   ARES_VERSIONS = ['2.3.4', '2.3.5', '3.0.0']
 end
+
 require 'active_resource/version'
 unless Pillbox::ARES_VERSIONS.include?(ActiveResource::VERSION::STRING)
   abort <<-ERROR
@@ -58,28 +41,28 @@ end
 
 # Patch ActiveResource
 # handle a weird disclaimer message that is in XML
-  module ActiveResource
-    class Base           
-      	    def self.instantiate_collection(collection, prefix_options = {})
-                if collection.is_a?(Hash) && collection.size == 1
-                  value = collection.values.first
-                  if value.is_a?(Array)
-                    value.collect! { |record| instantiate_record(record, prefix_options) }
-                  else
-                    [ instantiate_record(value, prefix_options) ]
-                  end
-                else                  
-                  # strip extra layer off the front end (a disclaimer)
-                  (d,disclaimer), (p,collection) = collection.sort 
-                  
-                  # ensure type Array
-                  collection = collection.is_a?(Array) ? collection : Array[collection]
-                  
-                  collection.collect! { |record| instantiate_record(record, prefix_options) }
-                end
-             end
+module ActiveResource
+  class Base           
+     def self.instantiate_collection(collection, prefix_options = {})
+      if collection.is_a?(Hash) && collection.size == 1
+        value = collection.values.first
+        if value.is_a?(Array)
+          value.collect! { |record| instantiate_record(record, prefix_options) }
+        else
+          [ instantiate_record(value, prefix_options) ]
+        end
+      else                  
+        # strip extra layer off the front end (a disclaimer)
+        (d,disclaimer), (p,collection) = collection.sort 
+        
+        # ensure type Array
+        collection = collection.is_a?(Array) ? collection : Array[collection]
+        
+        collection.collect! { |record| instantiate_record(record, prefix_options) }
+      end
     end
   end
+end
 
 
 
@@ -126,10 +109,13 @@ class PillboxResource < ActiveResource::Base
   }
   COLOR_CODES = COLORS.invert
   def self.colors; COLORS.inject({}){|i,(k,v)| i.merge k.humanize => v } end
-  
 
   cattr_accessor :api_key
   attr_accessor :color2
+  
+  def self.test!
+    "Using testing api_key" if self.api_key = '12345'
+  end
 
   def self.find(first, options={})
     # MYTODO :| ok for now... but this only works with rails
@@ -137,6 +123,7 @@ class PillboxResource < ActiveResource::Base
     validate_pillbox_api_params(options)
     super first, self.interpret_params(options)
   end
+  
   def self.interpret_params(options = {})
     params = HashWithIndifferentAccess.new(options['params']) || {}
     params['key'] ||= self.api_key
@@ -155,20 +142,20 @@ class PillboxResource < ActiveResource::Base
     begin
       params['color'] = case params['color']
       when NilClass; 
-      when Array;                          params['color'].join(";")
-      when /^(\d|[a-f]|[A-F])+/;           params['color'] # valid hex     
-      else;                         COLORS[params['color'].upcase]
+      when Array;                 params['color'].join(";")
+      when /^(\d|[a-f]|[A-F])+/;  params['color'] # valid hex     
+      else;                       COLORS[params['color'].upcase]
       end
     rescue
       # "color not found"
     end
     
     begin
-      params['shape'] = case params['shape']
+      params['splshape'] = case params['shape']
       when NilClass; 
-      when Array;                         params['color'].join(";")  
-      when /^(\d|[a-f]|[A-F])+/;          params['shape'] # valid hex
-      else;                        SHAPES[params['shape'].upcase]
+      when Array;               params['shape'].join(";")  
+      when /^([Cc]{1}\d{5})+/;  params['shape'] # valid hex
+      else;                     SHAPES[params['shape'].upcase]
       end
     rescue # NoMethodError => e
       # raise X if e.match "shape not found"
@@ -194,8 +181,8 @@ class PillboxResource < ActiveResource::Base
     validate_presence_of_api_key(options)
     raise "try using find :all, :params => { ... }  with one of these options: #{VALID_ATTRIBUTE_NAMES.inspect}" unless options[:params].is_a?(Hash)
     raise "valid params options are:  #{VALID_ATTRIBUTE_NAMES.inspect}  ... you have invalid params option(s): #{(VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES}" unless ((VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES).empty?
-    
   end
+  
   def self.validate_presence_of_api_key(options)
     raise "must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless (self.api_key or options[:params][:key])
   end
