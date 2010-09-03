@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 =begin
 
 USAGE
@@ -176,8 +177,8 @@ class PillboxResource < ActiveResource::Base
     # todo: prodcode
     begin
       params['product_code'] = case params['product_code']
-      when NilClass;              raise NilError "Product code cannot be NULL" # Schema says PRODUCT_CODE cannot be NULL
-      when Array;                 params['product_code'].join(";")
+      when NilClass;                raise NilError "Product code cannot be nil" # Schema says PRODUCT_CODE cannot be NULL
+      when Array;                   params['product_code'].join(";")
       when /\A(\d{3,}-\d{3,4})\z/;  params['product_code']
       else;
       end
@@ -197,6 +198,10 @@ class PillboxResource < ActiveResource::Base
   end
   def self.validate_presence_of_api_key(options)
     raise "must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless (self.api_key or options[:params][:key])
+  end
+  
+  def respond_to?(meth)
+    (attributes.has_key?(meth.to_s.upcase) || attributes.has_key?(meth.to_s)) ? true : super
   end
   
   def method_missing(method, *args, &block)
