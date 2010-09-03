@@ -51,7 +51,7 @@ module ActiveResource
         else
           [ instantiate_record(value, prefix_options) ]
         end
-      else                  
+      else
         # strip extra layer off the front end (a disclaimer)
         (d,disclaimer), (p,collection) = collection.sort 
         
@@ -125,6 +125,7 @@ class PillboxResource < ActiveResource::Base
   end
   
   def self.interpret_params(options = {})
+    # puts options
     params = HashWithIndifferentAccess.new(options['params']) || {}
     params['key'] ||= self.api_key
     
@@ -151,16 +152,17 @@ class PillboxResource < ActiveResource::Base
     end
     
     begin
-      params['splshape'] = case params['shape']
+      params['shape'] = case params['shape']
       when NilClass; 
       when Array;               params['shape'].join(";")  
       when /^([Cc]{1}\d{5})+/;  params['shape'] # valid hex
-      else;                     SHAPES[params['shape'].upcase]
+      else
+        SHAPES[params['shape'].upcase]
       end
     rescue # NoMethodError => e
       # raise X if e.match "shape not found"
     end
-
+    
     # todo: prodcode
     begin
       params['product_code'] = case params['product_code']
@@ -173,7 +175,9 @@ class PillboxResource < ActiveResource::Base
     end
     
     params.delete_if {|k,v| v.nil? }
-    options.merge!(params)
+    options['params'].merge!(params)
+    return options
+    # puts options
   end
   
   VALID_ATTRIBUTE_NAMES = %w(color color2 ingredient shape imprint prodcode has_image size lower_limit product_code) 

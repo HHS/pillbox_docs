@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Pills>
+
+<disclaimer>Pillbox and the data provided by this API are currently under development and are not intended for clinical use.  This data is presented as part of a research and development effort. Images provided are not part of the FDA Structured Product Label and have not been verified by the manufacturer/labeler.</disclaimer>
+
+<pill>
+
+     <SPL_ID>1845</SPL_ID>
+
+     <PRODUCT_CODE>0089-0231</PRODUCT_CODE>
+
+     <NDC9>000890231</NDC9>
+
+     <SPLCOLOR>C48325</SPLCOLOR>
+
+     <SPLIMPRINT>NORGESIC;3M</SPLIMPRINT>
+
+     <SPLSHAPE>C48348</SPLSHAPE>
+
+     <SPLSIZE>11.00</SPLSIZE>
+
+     <SPLSCORE>1</SPLSCORE>
+
+     <RXCUI>211468</RXCUI>
+
+     <RXTTY>SBD</RXTTY>
+
+     <RXSTRING>Aspirin 385 MG / Caffeine 30 MG / Orphenadrine 25 MG Oral Tablet [Norgesic]</RXSTRING>
+
+     <INGREDIENTS>Aspirin; Caffeine; Orphenadrine</INGREDIENTS>
+
+     <HAS_IMAGE>0</HAS_IMAGE>
+
+     <image_id></image_id>
+
+     <SETID>a7fa86b5-2154-4b17-9265-8a5411c88d5d</SETID>
+
+</pill>
+
+<pill> 
+
+     <SPL_ID></SPL_ID> 
+
+     <PRODUCT_CODE>00182-0444</PRODUCT_CODE> <NDC9>001820444</NDC9>
+
+     <SPLCOLOR>C48325</SPLCOLOR>
+
+     <SPLIMPRINT>ASPIRIN44 157</SPLIMPRINT>
+
+     <SPLSHAPE>C48348</SPLSHAPE>
+
+     <SPLSIZE>11.00</SPLSIZE> 
+
+     <SPLSCORE>1</SPLSCORE>
+
+     <RXCUI>212033</RXCUI>
+
+     <RXTTY>SCD</RXTTY>
+
+     <RXSTRING>Aspirin 325 MG Oral Tablet</RXSTRING>
+
+     <INGREDIENTS>Aspirin</INGREDIENTS>
+
+     <HAS_IMAGE>1</HAS_IMAGE> 
+
+     <image_id>000098</image_id>
+
+<SETID></SETID>
+
+</pill>
+
+</Pills>
