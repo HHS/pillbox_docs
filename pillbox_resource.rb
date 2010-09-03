@@ -46,7 +46,7 @@ end
 
 # Version check
 module Pillbox
-  ARES_VERSIONS = ['2.3.4', '2.3.5']
+  ARES_VERSIONS = ['2.3.4', '2.3.5', '3.0.0']
 end
 require 'active_resource/version'
 unless Pillbox::ARES_VERSIONS.include?(ActiveResource::VERSION::STRING)
@@ -174,12 +174,21 @@ class PillboxResource < ActiveResource::Base
     end
 
     # todo: prodcode
+    begin
+      params['product_code'] = case params['product_code']
+      when NilClass;              raise NilError "Product code cannot be NULL" # Schema says PRODUCT_CODE cannot be NULL
+      when Array;                 params['product_code'].join(";")
+      when /\A(\d{3,}-\d{3,4})\z/;  params['product_code']
+      else;
+      end
+    rescue
+    end
     
     params.delete_if {|k,v| v.nil? }
     options.merge!(params)
   end
   
-  VALID_ATTRIBUTE_NAMES = %w(color color2 ingredient shape imprint prodcode has_image size lower_limit) 
+  VALID_ATTRIBUTE_NAMES = %w(color color2 ingredient shape imprint prodcode has_image size lower_limit product_code) 
   def self.validate_pillbox_api_params(options)
     validate_presence_of_api_key(options)
     raise "try using find :all, :params => { ... }  with one of these options: #{VALID_ATTRIBUTE_NAMES.inspect}" unless options[:params].is_a?(Hash)
@@ -188,6 +197,16 @@ class PillboxResource < ActiveResource::Base
   end
   def self.validate_presence_of_api_key(options)
     raise "must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless (self.api_key or options[:params][:key])
+  end
+  
+  def method_missing(method, *args, &block)
+    if attributes.has_key?(method.to_s.upcase)
+      attributes[method.to_s.upcase].nil? ? [] : attributes[method.to_s.upcase]
+    elsif attributes.has_key?(method.to_s)
+      attributes[method.to_s].nil? ? [] : attributes[method.to_s]
+    else
+      super
+    end
   end
 
   def shape # handle multi-color (OUTPUT ONLY)
@@ -201,17 +220,21 @@ class PillboxResource < ActiveResource::Base
     attributes['SPLCOLOR'].split(";").map do |color_code|
       COLOR_CODES[color_code] || color_code
     end
-  end 
+  end
 
-  def description; attributes['RXSTRING'] end
+  # def description; attributes['RXSTRING'] end
   def prodcode; attributes['PRODUCT_CODE'] end
   def api_url; "http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name="+ingredient end
-  def product_code; attributes['PRODUCT_CODE'] end
+  # def product_code; attributes['PRODUCT_CODE'] end
   def has_image?; attributes['HAS_IMAGE'] == '1' end
-  def ingredients; attributes['INGREDIENTS'].split(";") end
+  
+  # def ingredients
+    # attributes['INGREDIENTS'].nil? ? [] : attributes['INGREDIENTS'].split(";")
+  # end
+  
   def ingredient; ingredients.first end
   def size; attributes['SPLSIZE'].to_f end
-  def image_id; attributes['image_id'] end
+  # def image_id; attributes['image_id'] end
   def image_url(image_size = 'super_small')
     unless image_id 
       return nil
@@ -224,7 +247,7 @@ class PillboxResource < ActiveResource::Base
     end
   end
   def imprint; attributes['splimprint'] end
-  def trade_name; self.RXSTRING.split(" ").first.downcase end
+  def trade_name; self.rxstring.split(" ").first.downcase end
 
 end
 
