@@ -1,0 +1,31 @@
+<% for pill_resource in collection %>
+<div class="dev_application app_show" id="24003877170_info">
+ <div class="dev_application_header clearfix">
+ </div>
+ <div class="dev_application_data">
+  <div class="dev_app_insights clearfix">
+   <div class='dev_application_header clearfix'>
+     <%= image_tag(pill_resource.image_url) %>
+     <h3><%= link_to pill_resource.trade_name, pill_resource.api_url, :html=>{:popup=>true} %></h3>
+	  <p style='margin:0;padding:0;font-size:10px;color:#999;line-height:14px;'>
+	    <%= pill_resource.description %>
+	  </p>
+   </div>
+  </div>
+<% if false %>
+  <div class="dev_application_info"> <%= link_to 'more info', pill_resource.api_url %> </div>
+  <div class="dev_application_other">
+   <ul class="actionspro">
+    <li><a href="www.facebook.com/developers/dsadmin.php?app_id=24003877170">Action1</a></li>
+    <li><a href="www.facebook.com/pages/edit/?id=24003877170">Action2</a></li>
+    <li><a href="www.facebook.com/developers/editapp.php?edit&app_id=24003877170">Action3</a></li>
+   </ul>
+  </div>
+<% end %>
+ </div>
+<% debugger %>
+<% if @pill %>
+ <div class="dev_app_footer"><a href="www.facebook.com/">Action1</a> | <a href="www.facebook.com/">Action2</a></div>
+<% end %>
+</div>
+<% end %>

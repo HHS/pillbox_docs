@@ -1,0 +1,30 @@
+pill_category_5:
+  title: "Depression and Anxiety"
+  image_ref: "candy/littlewhitemonsters.jpeg"
+  subheader: "For people who worry too much."
+  description: "Or maybe they really do suck at life."
+
+pill_category_2:
+  title: "Antibiotics and H1N1"
+  image_ref: "candy/manufactured.jpeg"
+  subheader: "Treat them. Before they infect you."
+  description: "Because the next outbreak may be your last."
+
+pill_category_3:
+  title: "Sexual Health"
+  image_ref: "candy/sexual_health.jpeg"
+  subheader: "It's all fun and games until somebody loses their gonads."
+  description: "DISCLAIMER: It is illegal to sleep with your patients. (This protects consumers from being charged twice for essentially the same service.)"
+
+pill_category_4:
+  title: "Diet and Digestion"
+  image_ref: "candy/diet.jpeg"
+  subheader: "And all the other stuff that comes out either end."
+  description: "Because eating fewer doritos simply isn't an option."
+
+pill_category_1:
+  title: "Chill Pills"
+  image_ref: "candy/matrix.jpeg"
+  subheader: "It's like CANDY"
+  description: "The little blue ones taste the best."
+

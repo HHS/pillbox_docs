@@ -1,0 +1,81 @@
+practice_1:
+  name: "black"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: ""
+  level: "9"
+  id: "1"
+  minimum_hits: "40"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+
+practice_2:
+  name: "white"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: "2"
+  level: "1"
+  id: "2"
+  minimum_hits: "0"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+
+practice_3:
+  name: "green"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: ""
+  level: "4"
+  id: "3"
+  minimum_hits: "15"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+
+practice_4:
+  name: "brown"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: ""
+  level: "8"
+  id: "4"
+  minimum_hits: "35"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+
+practice_5:
+  name: "blue"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: ""
+  level: "5"
+  id: "5"
+  minimum_hits: "20"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+
+practice_6:
+  name: "red"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: ""
+  level: "7"
+  id: "6"
+  minimum_hits: "30"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+
+practice_7:
+  name: "orange"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: "4"
+  level: "3"
+  id: "7"
+  minimum_hits: "10"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+
+practice_8:
+  name: "yellow"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: "3"
+  level: "2"
+  id: "8"
+  minimum_hits: "5"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+
+practice_9:
+  name: "purple"
+  updated_at: "Fri Jan 22 17:26:22 UTC 2010"
+  next_practice_id: ""
+  level: "6"
+  id: "9"
+  minimum_hits: "25"
+  created_at: "Fri Jan 22 17:26:22 UTC 2010"
+

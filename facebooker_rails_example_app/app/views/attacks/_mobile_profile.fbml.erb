@@ -1,0 +1,16 @@
+<fb:mobile>
+<fb:fbml>
+<% for attack in battles %>
+  <div class="battle"
+    <%= link_to(
+         name(attack.attacking_user,:linked=>false),
+         battles_url(:user_id=>attack.attacking_user)) %> 
+    <%= attack_result(attack) %>
+    <%= link_to(
+         name(attack.defending_user,:linked=>false),
+         battles_url(:user_id=>attack.defending_user)) %>       
+    with a <%= attack.move.name %>
+  </div>
+<% end %>
+</fb:fbml>
+</fb:mobile>

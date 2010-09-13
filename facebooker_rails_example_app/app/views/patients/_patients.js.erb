@@ -1,0 +1,163 @@
+// Facebook prefixes: app242371403947 a242371403947
+
+// Design:
+
+// On start up, create a bunch of people (define # with a constant)
+// Start the loop
+
+// The loop:
+// On each step, move people in the direction they're going in
+// If they've been clicked on, do not move them
+// If you detect a wall hit, move them in a new direction
+// Make there be a one in x chance people decide to go in a new direction
+
+function EmergencyRoom() {
+  this.illnesses = <%= illnesses_js_array %>;
+  this.names = <%= random_names(15) %>;
+  this.name_used = 0;
+  this.sickPeople = [];
+  this.leBox = document.getElementById("patientsBox");
+  this.rightMax = this.leBox.getClientWidth() - 70;
+  this.gap = 50;
+  this.bottomMax = this.leBox.getClientHeight() - 70 - this.gap;
+  this.lastPill = null;
+  this.lastPillId = -1;
+  this.lastPatient = null;
+}
+
+EmergencyRoom.prototype.getDescription = function(sickPerson) {
+  return sickPerson.name + " is ill with " + sickPerson.illness + "!";
+}
+
+EmergencyRoom.prototype.sickPerson = function(name) {
+  l = this.illnesses.length;
+  i = Math.floor(Math.random() * l + 1) - 1;
+
+  var sp = {
+    illness: this.illnesses[i][0],
+    imageURL: this.illnesses[i][1],
+    top: Math.floor(Math.random() * this.bottomMax + 1),
+    
+    left: Math.floor(Math.random() * this.rightMax + 1),
+    id: name,
+    name: this.names[this.name_used],
+
+    ambleDirection: (Math.random() - 0.5) * 2 * Math.PI, //somewhere in a circle
+    paused: false,
+    img: document.createElement('img')
+  }
+  this.name_used += 1;
+
+  // offset for height of menu tabs within client window
+  sp.top += this.gap;
+
+  sp.img.setSrc(sp.imageURL);
+  sp.img.setStyle('width', '70px');
+  sp.img.setId(name); // todo: hack to access the parent object. can't find a better way in standard JS. need to learn.
+  sp.img.addEventListener("click", this.blurt.bind(this), false);
+
+  return sp;
+}
+
+EmergencyRoom.prototype.setupLoop = function() {
+  var peopleCount = 15;
+  
+  for (var i = 1; i <= peopleCount; i++) {
+    var sickyPants = this.sickPerson(i.toString());
+    
+    sickyPants.img.setStyle('position', 'absolute');
+    sickyPants.img.setStyle('top', sickyPants.top + 'px');
+    sickyPants.img.setStyle('left', sickyPants.left + 'px');
+
+    this.leBox.appendChild(sickyPants.img);
+  
+    this.sickPeople.push(sickyPants);
+  }
+  
+  this.loop();
+}
+
+EmergencyRoom.prototype.loop = function() {
+  for (var i = 0, il = this.sickPeople.length; i < il; i++) {
+    var sp = this.sickPeople[i];
+    if (sp.paused) continue;
+  
+    sp.top -= Math.sin(sp.ambleDirection);
+    sp.left += Math.cos(sp.ambleDirection);
+    sp.img.setStyle('left', Math.floor(sp.left) + 'px');
+    sp.img.setStyle('top', Math.floor(sp.top) + 'px');
+
+    if (Math.random() < 0.05) { // odds of changing direction
+      sp.ambleDirection = (Math.random() - 0.5) * 2 * Math.PI; //somewhere in a circle
+    }
+
+    if (sp.top < this.gap) sp.ambleDirection = Math.random() * -1 * Math.PI; //go down
+    if (sp.left < 0) sp.ambleDirection = Math.random() * -1 * (Math.PI / 2); //go right
+    if (sp.top > this.bottomMax) sp.ambleDirection = Math.random() * Math.PI / 2; //go up
+    if (sp.left > this.rightMax) sp.ambleDirection = (Math.random() > 0.5) ? 
+      Math.random() * (Math.PI / 2) + (Math.PI / 2) : -1 * (Math.random() * (Math.PI / 2) + (Math.PI / 2)); //go left		
+  }
+  
+  setTimeout( function() { this.loop() }.bind(this), 50);
+}
+
+EmergencyRoom.prototype.blurt = function(evt) {
+  for (var i = 0, il = this.sickPeople.length; i < il; i++) {
+    if (this.sickPeople[i].id == evt.target.getId()) {
+      this.sickPeople[i].paused = !this.sickPeople[i].paused; //left off: it's pausing more than one person, why
+      this.lastPatient = this.sickPeople[i];
+      this.debug( this.getDescription(this.sickPeople[i]) );
+    }
+  }
+}
+
+EmergencyRoom.prototype.pickPill = function(pill, id){
+  if(this.lastPill){
+      this.lastPill.removeClassName("selected");
+  }
+  pill.addClassName("selected");
+  this.lastPill = pill
+  this.lastPillId = id;
+
+  if(this.lastPatient != null){
+    this.prescribe();
+  }
+}
+
+EmergencyRoom.prototype.prescribe = function(){
+  msg = document.getElementById("messages");
+  msg.setTextValue("");
+  if(this.lastPill && this.lastPatient){
+    var dialog = new Dialog(Dialog.DIALOG_POP);
+    dialog.showChoice('Prescription', dialogs.prescribe, 'Yes', 'Cancel');
+    dialog.onconfirm = function() { 
+      var ajax = new Ajax();
+      ajax.responseType = Ajax.FBML
+      ajax.ondone = function(data) {
+        if(data.valid){
+          msg.setInnerFBML(messages.validPrescription);
+        } else {
+          msg.setInnerFBML(messages.invalidPrescription);
+        }
+        
+        //TODO this.rmPatient(this.lastPatient);
+        //TODO this.newPatient(data)
+
+      }.bind(this);
+      ajax.requireLogin=true;
+
+      ajax.post('http://loki.ws:4007<%= url_for :controller => 'patients', :action => 'prescribe' %>'+ this.lastPatient.id , "pi=" + this.lastPillId);
+      return true;
+    }.bind(this);
+  } else {
+    msg.setInnerFBML(messages.pleasePick);
+  }
+}
+
+EmergencyRoom.prototype.debug = function(str) {
+  document.getElementById("debugDiv").setTextValue(str);
+}
+
+emergency_room = new EmergencyRoom();
+// this wacky crap works because facebook moves all js to the end of the page (!)
+setTimeout(function() { emergency_room.setupLoop() }, 100);

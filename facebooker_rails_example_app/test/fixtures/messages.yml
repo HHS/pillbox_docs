@@ -1,0 +1,11 @@
+message_1:
+  updated_at: "Sun Jan 24 19:21:57 UTC 2010"
+  pill_id: "6"
+  crypted: ""
+  id: "1"
+  defending_user_id: "3"
+  hit: "true"
+  cleartext: ""
+  messaging_user_id: "1"
+  created_at: "Sun Jan 24 19:21:57 UTC 2010"
+

@@ -1,0 +1,13 @@
+<% if @disciples.blank? %>
+  <h2>You don't have any physician assistants
+      <%= link_to "Go Invite Some",new_invitation_path%>
+  </h2>
+<% else %>
+  <% for disciple in @disciples %>
+    <div class="disciple">
+      <%= fb_profile_pic disciple,:size=>:thumb %> 
+      <%= name(disciple) %> 
+      From: <%=disciple.hometown(@user_hash[disciple.facebook_id.to_s])%>
+    </div>
+  <% end %>
+<% end %>

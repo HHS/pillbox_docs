@@ -1,0 +1,7 @@
+%h2
+  = pill.name
+= image_tag pill.image_ref || ""
+.cost
+  Cost:
+  %span.cost
+    = money pill.cost

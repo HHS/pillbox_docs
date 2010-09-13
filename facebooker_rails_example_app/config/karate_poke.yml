@@ -1,0 +1,9 @@
+---
+cwd: "/u/apps/pharmvillerx/current"
+port: "4008"
+environment: production
+pid_file: log/mongrel.pid
+servers: 4
+user: mmangino
+group: mmangino
+num_processors: 5

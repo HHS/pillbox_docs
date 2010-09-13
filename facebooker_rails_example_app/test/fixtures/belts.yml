@@ -1,0 +1,55 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+white:
+  id: 1
+  name: white
+  level: 1
+  next_belt_id: 2
+  minimum_hits: 0
+yellow:
+  id: 2
+  name: yellow
+  level: 2
+  next_belt_id: 3
+  minimum_hits: 5
+orange:
+  id: 3
+  name: orange
+  level: 3
+  next_belt_id: 4
+  minimum_hits: 10
+green:
+  id: 4
+  name: green
+  level: 4
+  next_belt_id: 
+  minimum_hits: 15
+blue:
+  id: 5
+  name: blue
+  level: 5
+  next_belt_id: 
+  minimum_hits: 20
+purple:
+  id: 6
+  name: purple
+  level: 6
+  next_belt_id: 
+  minimum_hits: 25
+red:
+  id: 7
+  name: red
+  level: 7
+  next_belt_id: 
+  minimum_hits: 30
+brown:
+  id: 8
+  name: brown
+  level: 8
+  next_belt_id: 
+  minimum_hits: 35
+black:
+  id: 9
+  name: black
+  level: 9
+  next_belt_id: 
+  minimum_hits: 40

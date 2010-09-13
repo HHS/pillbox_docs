@@ -1,0 +1,11 @@
+.pagination {
+  float: right;
+}
+.battle {
+  padding: 3px;
+  font-size: large;
+  clear: both;
+}
+.battle img {
+  padding-right: 3px;
+}
