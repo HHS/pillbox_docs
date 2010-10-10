@@ -114,7 +114,7 @@ class PillboxResource < ActiveResource::Base
   attr_accessor :color2
   
   def self.test!
-    "Using testing api_key" if self.api_key = 'DQH65HCBY6'
+    "Using testing api_key" if self.api_key = load_test_key
   end
 
   def self.find(first, options={})
@@ -245,6 +245,12 @@ class PillboxResource < ActiveResource::Base
   end
   def imprint; attributes['splimprint'] end
   def trade_name; self.rxstring.split(" ").first.downcase end
+
+private
+  def self.load_test_key
+    test_key = YAML.load_file("#{File.expand_path(File.dirname(__FILE__) + '/../test/fixtures/test_api_key.yml')}")
+    test_key[:key]
+  end
 
 end
 
