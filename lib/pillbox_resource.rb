@@ -114,7 +114,7 @@ class PillboxResource < ActiveResource::Base
   attr_accessor :color2
   
   def self.test!
-    "Using testing api_key" if self.api_key = '12345'
+    "Using testing api_key" if self.api_key = 'DQH65HCBY6'
   end
 
   def self.find(first, options={})
@@ -210,7 +210,8 @@ class PillboxResource < ActiveResource::Base
     attributes['SPLSHAPE'].split(";").map do |shape_code|
       SHAPE_CODES[shape_code] || shape_code
     end
-  end 
+  end
+  
   def color
     return nil unless attributes['SPLCOLOR']
     attributes['SPLCOLOR'].split(";").map do |color_code|
