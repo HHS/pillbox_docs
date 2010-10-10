@@ -37,4 +37,13 @@ class PillboxResourceTest < Test::Unit::TestCase
     med = PillboxResource.find(:first, :params => {:ingredient => 'Hydromorphone'})
     assert_equal('Schedule II', med.dea)
   end
+  
+  def test_should_rescue_rexml_parser_error
+    assert_nothing_raised { med = PillboxResource.find(:all, :params => {:dea => "a"} ) }
+  end
+  
+  def test_should_allow_searching_for_multiple_active_ingredients
+    med = PillboxResource.find(:all, :params => {:ingredient => ['amlodipine', 'benazepril']})
+    assert_equal(28, med.count)
+  end
 end

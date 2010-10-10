@@ -137,7 +137,7 @@ class PillboxResource < ActiveResource::Base
       super first, self.interpret_params(options)
     rescue REXML::ParseException => e
       if e.message =~ /The document "No records found" does not have a valid root/
-        puts "No records found."
+        STDERR.puts "No records found."
       else
         raise
       end
@@ -206,6 +206,23 @@ class PillboxResource < ActiveResource::Base
       # raise "DEA schedule not found"
     end
     
+    begin
+      params['ingredient'] = case params['ingredient']
+      when NilClass;
+      when Array; params['ingredient'].sort.join("; ") # Need to sort alphabetically before send and need a space after semicolon
+      when /AND/
+        raise "not implemented"
+        # Add some parsing to concatenate terms appropriately
+      when /OR/
+        raise "not implemented"
+        # Add some parsing to create two queries, run them, and then merge the results and return it
+      else
+        # raise "Ingredients not found."
+      end
+    rescue
+      # raise "Ingredient has an invalid format."
+    end
+    
     
     params.delete_if {|k,v| v.nil? }
     options['params'].merge!(params)
@@ -213,7 +230,7 @@ class PillboxResource < ActiveResource::Base
     return options
   end
   
-  VALID_ATTRIBUTE_NAMES = %w(color color2 score ingredients inactive dea author shape imprint prodcode has_image size lower_limit product_code)
+  VALID_ATTRIBUTE_NAMES = %w(color color2 score ingredient ingredients inactive dea author shape imprint prodcode has_image size lower_limit product_code)
 
   def self.validate_pillbox_api_params(options)
     validate_presence_of_api_key(options)
