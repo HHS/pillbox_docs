@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
 =begin
 
+NOTE: This library utilizes version 2 of the Pillbox API, published 10/9/10.
+
 USAGE
 require 'pillbox_resource'
 
@@ -131,7 +133,15 @@ class PillboxResource < ActiveResource::Base
     # MYTODO :| ok for now... but this only works with rails
     options = HashWithIndifferentAccess.new(options)
     validate_pillbox_api_params(options)
-    super first, self.interpret_params(options)
+    begin
+      super first, self.interpret_params(options)
+    rescue REXML::ParseException => e
+      if e.message =~ /The document "No records found" does not have a valid root/
+        puts "No records found."
+      else
+        raise
+      end
+    end
   end
   
   def self.interpret_params(options = {})
@@ -184,13 +194,26 @@ class PillboxResource < ActiveResource::Base
     rescue
     end
     
+    begin
+      params['dea'] = case params['dea']
+      when NilClass;
+      when /^([Cc]{1}\d{5})+/;  params['dea'] # valid hex
+      when /\AI{1,3}\z|\AIV\z|\AV\z/; DEA_CODES[params['dea']]
+      else
+        raise "Invalid schedule code.  Must be one of [I, II, III, IV, V]."
+      end
+    rescue
+      # raise "DEA schedule not found"
+    end
+    
+    
     params.delete_if {|k,v| v.nil? }
     options['params'].merge!(params)
-        # puts options
+        puts options
     return options
   end
   
-  VALID_ATTRIBUTE_NAMES = %w(color color2 score ingredient inactive dea author shape imprint prodcode has_image size lower_limit product_code)
+  VALID_ATTRIBUTE_NAMES = %w(color color2 score ingredients inactive dea author shape imprint prodcode has_image size lower_limit product_code)
 
   def self.validate_pillbox_api_params(options)
     validate_presence_of_api_key(options)
