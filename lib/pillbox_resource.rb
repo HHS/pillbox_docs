@@ -180,7 +180,8 @@ class PillboxResource < ActiveResource::Base
     return options
   end
   
-  VALID_ATTRIBUTE_NAMES = %w(color color2 ingredient shape imprint prodcode has_image size lower_limit product_code) 
+  VALID_ATTRIBUTE_NAMES = %w(color color2 score ingredient inactive dea author shape imprint prodcode has_image size lower_limit product_code)
+
   def self.validate_pillbox_api_params(options)
     validate_presence_of_api_key(options)
     raise "try using find :all, :params => { ... }  with one of these options: #{VALID_ATTRIBUTE_NAMES.inspect}" unless options[:params].is_a?(Hash)
@@ -188,7 +189,7 @@ class PillboxResource < ActiveResource::Base
   end
   
   def self.validate_presence_of_api_key(options)
-    raise "must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless (self.api_key or options[:params][:key])
+    raise "You must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless (self.api_key or options[:params][:key])
   end
   
   def respond_to?(meth)
@@ -219,19 +220,11 @@ class PillboxResource < ActiveResource::Base
     end
   end
 
-  # def description; attributes['RXSTRING'] end
   def prodcode; attributes['PRODUCT_CODE'] end
   def api_url; "http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name="+ingredient end
-  # def product_code; attributes['PRODUCT_CODE'] end
   def has_image?; attributes['HAS_IMAGE'] == '1' end
-  
-  # def ingredients
-    # attributes['INGREDIENTS'].nil? ? [] : attributes['INGREDIENTS'].split(";")
-  # end
-  
   def ingredient; ingredients.first end
   def size; attributes['SPLSIZE'].to_f end
-  # def image_id; attributes['image_id'] end
   def image_url(image_size = 'super_small')
     unless image_id 
       return nil
@@ -245,13 +238,17 @@ class PillboxResource < ActiveResource::Base
   end
   def imprint; attributes['splimprint'] end
   def trade_name; self.rxstring.split(" ").first.downcase end
+  def dea; attributes['DEA_SCHEDULE_CODE'] end
+  def score; attributes['SPLSCORE'] end
+  def inactive
+    Array(attributes['SPL_INACTIVE_ING'].split("/")).map { |str| str.gsub('"', ' ').strip}
+  end
 
 private
   def self.load_test_key
     test_key = YAML.load_file("#{File.expand_path(File.dirname(__FILE__) + '/../test/fixtures/test_api_key.yml')}")
     test_key[:key]
   end
-
 end
 
 =begin
