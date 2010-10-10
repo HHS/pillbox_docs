@@ -45,5 +45,8 @@ class PillboxResourceTest < Test::Unit::TestCase
   def test_should_allow_searching_for_multiple_active_ingredients
     med = PillboxResource.find(:all, :params => {:ingredient => ['amlodipine', 'benazepril']})
     assert_equal(28, med.count)
+    med = PillboxResource.find(:all, :params => {:ingredient => ['valsartan','hydrochlorothiazide', 'amlodipine']})
+    assert_not_nil(med)
+    assert_equal(5, med.count)
   end
 end
