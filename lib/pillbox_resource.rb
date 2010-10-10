@@ -109,6 +109,16 @@ class PillboxResource < ActiveResource::Base
   }
   COLOR_CODES = COLORS.invert
   def self.colors; COLORS.inject({}){|i,(k,v)| i.merge k.humanize => v } end
+  
+  DEA_CODES = {
+      'I'   => 'C48672',
+      'II'  => 'C48675',
+      'III' => 'C48676',
+      'IV'  => 'C48677',
+      'V'   => 'C48679'
+  }
+  SCHEDULE_CODES = DEA_CODES.invert
+  def self.dea_codes; DEA_CODES.inject({}) { |i,(k,v)| i.merge k.humanize => v } end
 
   cattr_accessor :api_key
   attr_accessor :color2
@@ -223,7 +233,7 @@ class PillboxResource < ActiveResource::Base
   def prodcode; attributes['PRODUCT_CODE'] end
   def api_url; "http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name="+ingredient end
   def has_image?; attributes['HAS_IMAGE'] == '1' end
-  def ingredient; ingredients.first end
+  def ingredient; self.ingredients.first end
   def size; attributes['SPLSIZE'].to_f end
   def image_url(image_size = 'super_small')
     unless image_id 
@@ -238,7 +248,12 @@ class PillboxResource < ActiveResource::Base
   end
   def imprint; attributes['splimprint'] end
   def trade_name; self.rxstring.split(" ").first.downcase end
-  def dea; attributes['DEA_SCHEDULE_CODE'] end
+  
+  def dea
+    return nil unless attributes['DEA_SCHEDULE_CODE']
+    "Schedule #{SCHEDULE_CODES[attributes['DEA_SCHEDULE_CODE'].to_s]}" 
+  end
+  
   def score; attributes['SPLSCORE'] end
   def inactive
     Array(attributes['SPL_INACTIVE_ING'].split("/")).map { |str| str.gsub('"', ' ').strip}

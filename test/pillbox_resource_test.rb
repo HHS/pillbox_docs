@@ -32,4 +32,9 @@ class PillboxResourceTest < Test::Unit::TestCase
     end
     assert_equal("SILICON DIOXIDE", meds.first.inactive[1])
   end
+  
+  def test_should_return_appropriate_dea_schedule
+    med = PillboxResource.find(:first, :params => {:ingredient => 'Hydromorphone'})
+    assert_equal('Schedule II', med.dea)
+  end
 end
