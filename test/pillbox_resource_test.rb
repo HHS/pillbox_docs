@@ -15,12 +15,31 @@ class PillboxResourceTest < Test::Unit::TestCase
   def test_should_accept_shape_as_hex
     meds = PillboxResource.find(:all, :params=>{'shape' => 'C48336'})
     # puts PillboxResource.instance_eval { puts params }
-    assert_equal(201, meds.count)
+    assert_equal("2345", PillboxResource.record_count)
+  end
+  
+  def test_should_accept_color_as_hex
+    meds = PillboxResource.find(:all, :params => {'color' => "C48328"})
+    assert_equal("886", PillboxResource.record_count)
   end
   
   def test_should_accept_shape_as_string
     meds = PillboxResource.find(:all, :params => {'shape' => 'capsule'})
-    assert_equal(201, meds.count)
+    assert_equal("2345", PillboxResource.record_count)
+  end
+  
+  def test_should_accept_color_as_string
+    meds = PillboxResource.find(:all, :params => {'color' => 'white'})
+    assert_equal("4364", PillboxResource.record_count)
+  end
+  
+  # def test_nil_product_code_raises_error
+  #   assert_raise(StandardError::NilError) { PillboxResource.find(:all, :params => {:product_code => nil} ) }
+  # end
+  
+  def test_should_accept_array_of_product_codes
+    meds = PillboxResource.find(:all, :params  => {:product_code => ['0078-0563', '0904-5991']})
+    assert_equal("10562", PillboxResource.record_count)
   end
   
   def test_should_return_normalized_array_of_strings_for_inactive_ingredients

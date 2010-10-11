@@ -55,9 +55,11 @@ module ActiveResource
         end
       else
         # strip extra layer off the front end (a disclaimer)
-        (d,disclaimer), (p,collection) = collection.sort 
-        
-        # ensure type Array
+        (d,disclaimer), (p,collection), (r,@record_count) = collection.sort
+
+        puts "\nMatched #{@record_count} records...\n"
+
+        # ensure array
         collection = collection.is_a?(Array) ? collection : Array[collection]
         
         collection.collect! { |record| instantiate_record(record, prefix_options) }
@@ -125,6 +127,10 @@ class PillboxResource < ActiveResource::Base
   cattr_accessor :api_key
   attr_accessor :color2
   
+  def self.record_count
+    @record_count
+  end
+  
   def self.test!
     "Using testing api_key" if self.api_key = load_test_key
   end
@@ -186,7 +192,7 @@ class PillboxResource < ActiveResource::Base
     # todo: prodcode
     begin
       params['product_code'] = case params['product_code']
-      when NilClass;                raise NilError "Product code cannot be nil" # Schema says PRODUCT_CODE cannot be NULL
+      # when nil;                puts "i can see my house!  "#raise "Product code cannot be nil" # Schema says PRODUCT_CODE cannot be NULL
       when Array;                   params['product_code'].join(";")
       when /\A(\d{3,}-\d{3,4})\z/;  params['product_code']
       else;
