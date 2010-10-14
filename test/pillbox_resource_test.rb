@@ -51,6 +51,11 @@ class PillboxResourceTest < Test::Unit::TestCase
     assert_equal(69, PillboxResource.record_count)
   end
   
+  def test_size_search_should_work
+    meds = PillboxResource.find(:all, :params => {'size' => '12.00'})
+    assert_equal(3082, PillboxResource.record_count)
+  end
+  
   # def test_nil_product_code_raises_error
   #   assert_raise(StandardError::NilError) { PillboxResource.find(:all, :params => {:product_code => nil} ) }
   # end

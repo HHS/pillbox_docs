@@ -128,46 +128,13 @@ class PillboxResource < ActiveResource::Base
     begin
       super first, self.interpret_params(options)
     rescue REXML::ParseException => e
+      # Work around no XML returned when no records are found.
       if e.message =~ /The document "No records found" does not have a valid root/
         STDERR.puts "No records found."
       else
         raise
       end
     end
-  end
-  
-  def self.interpret_params(options = {})
-    # puts options
-    @params = HashWithIndifferentAccess.new(options['params']) || {}
-    @params['key'] ||= self.api_key
-    
-    # flex api is crude... this makes it compatible with rails active_resource and will_paginate
-    if @params[:start]
-       @params['lower_limit'] = (@params[:page] || "0").to_i * @params[:start].to_i
-    end
-    @params.delete(:page)
-    @params.delete(:start)
-    
-    %w(color shape prodcode dea ingredient).each do |param|
-      self.send("parse_#{param}".to_sym) if @params[param]
-    end
-
-    @params.delete_if {|k,v| v.nil? }
-    options['params'].merge!(@params)
-        puts options
-    return options
-  end
-  
-  VALID_ATTRIBUTE_NAMES = %w(color color2 score ingredient ingredients inactive dea author shape imprint prodcode has_image size lower_limit product_code)
-
-  def self.validate_pillbox_api_params(options)
-    validate_presence_of_api_key(options)
-    raise "try using find :all, :params => { ... }  with one of these options: #{VALID_ATTRIBUTE_NAMES.inspect}" unless options[:params].is_a?(Hash)
-    raise "valid params options are:  #{VALID_ATTRIBUTE_NAMES.inspect}  ... you have invalid params option(s): #{(VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES}" unless ((VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES).empty?
-  end
-  
-  def self.validate_presence_of_api_key(options)
-    raise "You must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless (self.api_key or options[:params][:key])
   end
   
   def respond_to?(meth)
@@ -203,6 +170,10 @@ class PillboxResource < ActiveResource::Base
   def has_image?; attributes['HAS_IMAGE'] == '1' end
   def ingredient; self.ingredients.first end
   def size; attributes['SPLSIZE'].to_f end
+  def score; attributes['SPLSCORE'] end
+  def imprint; attributes['splimprint'] end
+  def trade_name; self.rxstring.split(" ").first.downcase end
+
   def image_url(image_size = 'super_small')
     unless image_id 
       return nil
@@ -214,20 +185,57 @@ class PillboxResource < ActiveResource::Base
       when "large";       "http://pillbox.nlm.nih.gov/assets/large/#{image_id}lg.jpg"
     end
   end
-  def imprint; attributes['splimprint'] end
-  def trade_name; self.rxstring.split(" ").first.downcase end
   
   def dea
     return nil unless attributes['DEA_SCHEDULE_CODE']
     "Schedule #{SCHEDULE_CODES[attributes['DEA_SCHEDULE_CODE'].to_s]}" 
   end
   
-  def score; attributes['SPLSCORE'] end
   def inactive
+    # Remove double quotes from the inactive ingredients list
     Array(attributes['SPL_INACTIVE_ING'].split("/")).map { |str| str.gsub('"', ' ').strip}
+  end
+  
+  def author
+    # Remove double quotes from the author attribute
+    attributes['AUTHOR'].gsub('"', ' ').strip
   end
 
 private
+  VALID_ATTRIBUTE_NAMES = %w(color color2 score ingredient ingredients inactive dea author shape imprint prodcode has_image size lower_limit product_code)
+
+  def self.validate_pillbox_api_params(options)
+    validate_presence_of_api_key(options)
+    raise "try using find :all, :params => { ... }  with one of these options: #{VALID_ATTRIBUTE_NAMES.inspect}" unless options[:params].is_a?(Hash)
+    raise "valid params options are:  #{VALID_ATTRIBUTE_NAMES.inspect}  ... you have invalid params option(s): #{(VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES}" unless ((VALID_ATTRIBUTE_NAMES && options[:params].keys) - VALID_ATTRIBUTE_NAMES).empty?
+  end
+  
+  def self.validate_presence_of_api_key(options)
+    raise "You must define api key. PillboxResource.api_key = 'YOUR SECRET KEY'" unless (self.api_key or options[:params][:key])
+  end
+  
+  def self.interpret_params(options = {})
+    # puts options
+    @params = HashWithIndifferentAccess.new(options['params']) || {}
+    @params['key'] ||= self.api_key
+    
+    # flex api is crude... this makes it compatible with rails active_resource and will_paginate
+    if @params[:start]
+       @params['lower_limit'] = (@params[:page] || "0").to_i * @params[:start].to_i
+    end
+    @params.delete(:page)
+    @params.delete(:start)
+    
+    %w(color shape prodcode dea ingredient).each do |param|
+      self.send("parse_#{param}".to_sym) if @params[param]
+    end
+  
+    @params.delete_if {|k,v| v.nil? }
+    options['params'].merge!(@params)
+        puts options
+    return options
+  end
+  
   def self.load_test_key
     test_key = YAML.load_file("#{File.expand_path(File.dirname(__FILE__) + '/../test/fixtures/test_api_key.yml')}")
     test_key[:key]
