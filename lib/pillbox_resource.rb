@@ -128,7 +128,7 @@ class PillboxResource < ActiveResource::Base
   attr_accessor :color2
   
   def self.record_count
-    @record_count
+    @record_count.to_i
   end
   
   def self.test!
@@ -193,7 +193,7 @@ class PillboxResource < ActiveResource::Base
     begin
       params['product_code'] = case params['product_code']
       # when nil;                puts "i can see my house!  "#raise "Product code cannot be nil" # Schema says PRODUCT_CODE cannot be NULL
-      when Array;                   params['product_code'].join(";")
+      # when Array;                   params['product_code'].join(";")
       when /\A(\d{3,}-\d{3,4})\z/;  params['product_code']
       else;
       end
