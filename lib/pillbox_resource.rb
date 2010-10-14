@@ -68,8 +68,6 @@ module ActiveResource
   end
 end
 
-
-
 class PillboxResource < ActiveResource::Base
   self.site = "http://pillbox.nlm.nih.gov/PHP/pillboxAPIService.php"
 
@@ -152,86 +150,24 @@ class PillboxResource < ActiveResource::Base
   
   def self.interpret_params(options = {})
     # puts options
-    params = HashWithIndifferentAccess.new(options['params']) || {}
-    params['key'] ||= self.api_key
+    @params = HashWithIndifferentAccess.new(options['params']) || {}
+    @params['key'] ||= self.api_key
     
     # flex api is crude... this makes it compatible with rails active_resource and will_paginate
-    if params[:start]
-       params['lower_limit'] = (params[:page] || "0").to_i * params[:start].to_i
+    if @params[:start]
+       @params['lower_limit'] = (@params[:page] || "0").to_i * @params[:start].to_i
     end
-    params.delete(:page)
-    params.delete(:start)
+    @params.delete(:page)
+    @params.delete(:start)
     
-    if color2 = params.delete('color2')      
-      params['color'] = [params['color'],color2].join(";")
-    end
-    
-    begin
-      params['color'] = case params['color']
-      when NilClass; 
-      when Array;                 params['color'].join(";")
-      when /^(\d|[a-f]|[A-F])+/;  params['color'] # valid hex     
-      else;                       COLORS[params['color'].upcase]
-      end
-    rescue
-      # "color not found"
-    end
-    
-    begin
-      params['shape'] = case params['shape']
-      when NilClass; 
-      when Array;               params['shape'].join(";")  
-      when /^([Cc]{1}\d{5})+/;  params['shape'] # valid hex
-      else
-        SHAPES[params['shape'].upcase]
-      end
-    rescue # NoMethodError => e
-      # raise X if e.match "shape not found"
-    end
-    
-    # todo: prodcode
-    begin
-      params['product_code'] = case params['product_code']
-      # when nil;                puts "i can see my house!  "#raise "Product code cannot be nil" # Schema says PRODUCT_CODE cannot be NULL
-      # when Array;                   params['product_code'].join(";")
-      when /\A(\d{3,}-\d{3,4})\z/;  params['product_code']
-      else;
-      end
-    rescue
-    end
-    
-    begin
-      params['dea'] = case params['dea']
-      when NilClass;
-      when /^([Cc]{1}\d{5})+/;  params['dea'] # valid hex
-      when /\AI{1,3}\z|\AIV\z|\AV\z/; DEA_CODES[params['dea']]
-      else
-        raise "Invalid schedule code.  Must be one of [I, II, III, IV, V]."
-      end
-    rescue
-      # raise "DEA schedule not found"
-    end
-    
-    begin
-      params['ingredient'] = case params['ingredient']
-      when NilClass;
-      when Array; params['ingredient'].sort.join("; ") # Need to sort alphabetically before send and need a space after semicolon
-      when /AND/
-        raise "not implemented"
-        # Add some parsing to concatenate terms appropriately
-      when /OR/
-        raise "not implemented"
-        # Add some parsing to create two queries, run them, and then merge the results and return it
-      else
-        # raise "Ingredients not found."
-      end
-    rescue
-      # raise "Ingredient has an invalid format."
-    end
-    
-    
-    params.delete_if {|k,v| v.nil? }
-    options['params'].merge!(params)
+    parse_color if (@params['color'] || @params['color2'])
+    parse_shape if @params['shape']
+    parse_product_code if @params['prodcode']
+    parse_dea_code if @params['dea']
+    parse_ingredients if @params['ingredient']
+
+    @params.delete_if {|k,v| v.nil? }
+    options['params'].merge!(@params)
         puts options
     return options
   end
@@ -309,6 +245,83 @@ private
   def self.load_test_key
     test_key = YAML.load_file("#{File.expand_path(File.dirname(__FILE__) + '/../test/fixtures/test_api_key.yml')}")
     test_key[:key]
+  end
+  
+  def self.parse_color
+    if color2 = @params.delete('color2')      
+      @params['color'] = [@params['color'],color2].join(";")
+    end
+    
+    begin
+      @params['color'] = case @params['color']
+      when NilClass; 
+      when Array;                 @params['color'].join(";")
+      when /^(\d|[a-f]|[A-F])+/;  @params['color'] # valid hex     
+      else;                       COLORS[@params['color'].upcase]
+      end
+    rescue
+      # "color not found"
+    end
+  end
+  
+  def self.parse_shape
+    begin
+      @params['shape'] = case @params['shape']
+      when NilClass; 
+      when Array;               @params['shape'].join(";")  
+      when /^([Cc]{1}\d{5})+/;  @params['shape'] # valid hex
+      else
+        SHAPES[@params['shape'].upcase]
+      end
+    rescue # NoMethodError => e
+      # raise X if e.match "shape not found"
+    end
+  end
+  
+  def self.parse_product_code
+    # todo: prodcode
+    begin
+      @params['product_code'] = case @params['product_code']
+      # when nil;                puts "i can see my house!  "#raise "Product code cannot be nil" # Schema says PRODUCT_CODE cannot be NULL
+      # when Array;                   params['product_code'].join(";")
+      when /\A(\d{3,}-\d{3,4})\z/;  @params['product_code']
+      else;
+      end
+    rescue
+    end
+  end
+  
+  def self.parse_dea_code
+    begin
+      @params['dea'] = case @params['dea']
+      when NilClass;
+      when /^([Cc]{1}\d{5})+/;  @params['dea'] # valid hex
+      when /\AI{1,3}\z|\AIV\z|\AV\z/; DEA_CODES[@params['dea']]
+      else
+        raise "Invalid schedule code.  Must be one of [I, II, III, IV, V]."
+      end
+    rescue
+      # raise "DEA schedule not found"
+    end
+  end
+  
+  def self.parse_ingredients
+    begin
+      @params['ingredient'] = case @params['ingredient']
+      when NilClass;
+      when Array; @params['ingredient'].sort.join("; ") # Need to sort alphabetically before send and need a space after semicolon
+      when /AND/
+        raise "not implemented"
+        # Add some parsing to concatenate terms appropriately
+      when /OR/
+        raise "not implemented"
+        # Add some parsing to create two queries, run them, and then merge the results and return it
+      else
+        # raise "Ingredients not found."
+      end
+    rescue
+      # raise "Ingredient has an invalid format."
+    end
   end
 end
 

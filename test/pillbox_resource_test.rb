@@ -40,6 +40,11 @@ class PillboxResourceTest < Test::Unit::TestCase
     assert_equal(2401, PillboxResource.record_count)
   end
   
+  def test_imprint_search_should_work
+    meds = PillboxResource.find(:all, :params => {'imprint' => 'NVR'})
+    assert_equal(69, PillboxResource.record_count)
+  end
+  
   # def test_nil_product_code_raises_error
   #   assert_raise(StandardError::NilError) { PillboxResource.find(:all, :params => {:product_code => nil} ) }
   # end
