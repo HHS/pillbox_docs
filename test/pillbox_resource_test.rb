@@ -56,16 +56,6 @@ class PillboxResourceTest < Test::Unit::TestCase
     assert_equal(3082, PillboxResource.record_count)
   end
   
-  # def test_nil_product_code_raises_error
-  #   assert_raise(StandardError::NilError) { PillboxResource.find(:all, :params => {:product_code => nil} ) }
-  # end
-  
-  # def test_should_accept_array_of_product_codes
-  #     all_meds = PillboxResource.find(:all, :params  => {:product_code => ['0078-0563', '0904-5991']})
-  #     all_meds.each { |m| assert_equal(('0078-0563' || '0904-5991'), m.prodcode)}
-  #     # assert_equal(10562, PillboxResource.record_count)
-  #   end
-  
   def test_should_return_normalized_array_of_strings_for_inactive_ingredients
     meds = PillboxResource.find(:all, :params => {:has_image => true})
     assert_equal(Array, meds.first.inactive.class)
@@ -91,5 +81,10 @@ class PillboxResourceTest < Test::Unit::TestCase
     med = PillboxResource.find(:all, :params => {:ingredient => ['valsartan','hydrochlorothiazide', 'amlodipine']})
     assert_not_nil(med)
     assert_equal(5, med.count)
+  end
+  
+  def should_return_a_valid_image_url
+    meds = PillboxResource.find(:all, :params => {:has_image => 1})
+    meds.each { |m| assert_equal("http://pillbox.nlm.nih.gov/assets/super_small/#{m.image_id}ss.png", m.image_url)}
   end
 end

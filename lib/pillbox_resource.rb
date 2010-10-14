@@ -166,9 +166,9 @@ class PillboxResource < ActiveResource::Base
   end
 
   def prodcode; attributes['PRODUCT_CODE'] end
-  def api_url; "http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name="+ingredient end
+  def info_url; "http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name="+ingredient end
   def has_image?; attributes['HAS_IMAGE'] == '1' end
-  def ingredient; self.ingredients.first end
+  def ingredient; self.ingredients end
   def size; attributes['SPLSIZE'].to_f end
   def score; attributes['SPLSCORE'] end
   def imprint; attributes['splimprint'] end
@@ -181,7 +181,7 @@ class PillboxResource < ActiveResource::Base
     case image_size
       when "super_small"; "http://pillbox.nlm.nih.gov/assets/super_small/#{image_id}ss.png" 
       when "small";       "http://pillbox.nlm.nih.gov/assets/small/#{image_id}sm.jpg" 
-      when "medium";       "http://pillbox.nlm.nih.gov/assets/medium/#{image_id}md.jpg"
+      when "medium";      "http://pillbox.nlm.nih.gov/assets/medium/#{image_id}md.jpg"
       when "large";       "http://pillbox.nlm.nih.gov/assets/large/#{image_id}lg.jpg"
     end
   end
@@ -202,7 +202,12 @@ class PillboxResource < ActiveResource::Base
   end
 
 private
-  VALID_ATTRIBUTE_NAMES = %w(color color2 score ingredient ingredients inactive dea author shape imprint prodcode has_image size lower_limit product_code)
+  def self.load_test_key
+    test_key = YAML.load_file("#{File.expand_path(File.dirname(__FILE__) + '/../test/fixtures/test_api_key.yml')}")
+    test_key[:key]
+  end
+  
+  VALID_ATTRIBUTE_NAMES = %w(color score ingredient ingredients inactive dea author shape imprint prodcode has_image size lower_limit product_code)
 
   def self.validate_pillbox_api_params(options)
     validate_presence_of_api_key(options)
@@ -236,16 +241,7 @@ private
     return options
   end
   
-  def self.load_test_key
-    test_key = YAML.load_file("#{File.expand_path(File.dirname(__FILE__) + '/../test/fixtures/test_api_key.yml')}")
-    test_key[:key]
-  end
-  
   def self.parse_color
-    # if color2 = @params.delete('color2')      
-    #   @params['color'] = [@params['color'],color2].join(";")
-    # end
-    
     begin
       @params['color'] = case @params['color']
       when NilClass; 
