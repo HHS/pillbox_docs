@@ -15,18 +15,6 @@ if pills.empty?
 else
   ...
 end
-
-
-NOTE: shape/color lookup doesn't always work.
-
->> PillboxResource.find(:all, :params=>{'shape'=>'C48337'})           # GOOD!
->> PillboxResource.find(:first, :params=>{'color'=>"C48324;C48323"})  # WORKS!
-
->> PillboxResource.find(:all, :params=>{'shape'=>'capsule'})          # BROKERZED
- => NoMethodError: undefined method `name' for nil:NilClass
-
-      
-
 =end
 
 # Version check
@@ -160,11 +148,9 @@ class PillboxResource < ActiveResource::Base
     @params.delete(:page)
     @params.delete(:start)
     
-    parse_color if (@params['color'] || @params['color2'])
-    parse_shape if @params['shape']
-    parse_product_code if @params['prodcode']
-    parse_dea_code if @params['dea']
-    parse_ingredients if @params['ingredient']
+    %w(color shape prodcode dea ingredient).each do |param|
+      self.send("parse_#{param}".to_sym) if @params[param]
+    end
 
     @params.delete_if {|k,v| v.nil? }
     options['params'].merge!(@params)
@@ -248,9 +234,9 @@ private
   end
   
   def self.parse_color
-    if color2 = @params.delete('color2')      
-      @params['color'] = [@params['color'],color2].join(";")
-    end
+    # if color2 = @params.delete('color2')      
+    #   @params['color'] = [@params['color'],color2].join(";")
+    # end
     
     begin
       @params['color'] = case @params['color']
@@ -278,7 +264,7 @@ private
     end
   end
   
-  def self.parse_product_code
+  def self.parse_prodcode
     # todo: prodcode
     begin
       @params['product_code'] = case @params['product_code']
@@ -291,7 +277,7 @@ private
     end
   end
   
-  def self.parse_dea_code
+  def self.parse_dea
     begin
       @params['dea'] = case @params['dea']
       when NilClass;
@@ -305,7 +291,7 @@ private
     end
   end
   
-  def self.parse_ingredients
+  def self.parse_ingredient
     begin
       @params['ingredient'] = case @params['ingredient']
       when NilClass;

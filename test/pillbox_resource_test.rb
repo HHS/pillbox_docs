@@ -24,6 +24,12 @@ class PillboxResourceTest < Test::Unit::TestCase
     assert_equal(886, PillboxResource.record_count)
   end
   
+  def test_should_accept_multiple_colors
+    meds = PillboxResource.find(:all, :params => { 'color' => ['C48328', 'C48327']})
+    assert_equal(1, meds.count)
+    assert_equal('Selfemra 20 MG Oral Capsule', meds.first.rxstring)
+  end
+  
   def test_should_accept_shape_as_string
     meds = PillboxResource.find(:all, :params => {'shape' => 'capsule'})
     assert_equal(2345, PillboxResource.record_count)
