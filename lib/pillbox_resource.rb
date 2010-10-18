@@ -19,7 +19,7 @@ end
 
 # Version check
 module Pillbox # :nodoc:
-  ARES_VERSIONS = ['2.3.4', '2.3.5', '3.0.0']
+  ARES_VERSIONS = ['2.3.4', '2.3.5', '2.3.8', '2.3.9', '2.3.10', '3.0.0']
 end
 
 require 'active_resource/version'
@@ -62,6 +62,15 @@ end
 # methods and some parameter wrapping for querying the Pillbox API Service located at
 # http://pillbox.nlm.nih.gov/PHP/pillboxAPIService.php
 class PillboxResource < ActiveResource::Base
+  if ActiveResource::VERSION::STRING < '3.0.0'
+    def self.first(options = {})
+      find(:first, options)
+    end
+
+    def self.all(options = {})
+      find(:all, options)
+    end
+  end
   self.site = "http://pillbox.nlm.nih.gov/PHP/pillboxAPIService.php"
 
   SHAPES = {
