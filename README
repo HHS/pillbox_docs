@@ -16,8 +16,7 @@ Parameters:
 Please see files for specific usage examples in each langauge. Further API documentation available on project homepage: (http://)
 
 KNOWN BUGS
-- Please note that some XML in the Pillbox API is unescaped. 
-- Ruby wrapper limited. a few shape lookup combinations doen't seem to work. (see file examples)
+- Please note that some XML in the Pillbox API is unescaped.
 
 API provided through the generous support by the FDA in both money and resources. Work conducted by NLM at NIH.
 

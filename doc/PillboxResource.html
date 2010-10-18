@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: PillboxResource</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/pillbox_resource_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/pillbox_resource.rb">lib/pillbox_resource.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="ActiveResource/Base.html">ActiveResource::Base</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-colors">::colors</a></li>
+					
+					<li><a href="#method-c-dea_codes">::dea_codes</a></li>
+					
+					<li><a href="#method-c-find">::find</a></li>
+					
+					<li><a href="#method-c-record_count">::record_count</a></li>
+					
+					<li><a href="#method-c-shapes">::shapes</a></li>
+					
+					<li><a href="#method-c-test%21">::test!</a></li>
+					
+					<li><a href="#method-i-author">#author</a></li>
+					
+					<li><a href="#method-i-color">#color</a></li>
+					
+					<li><a href="#method-i-dea">#dea</a></li>
+					
+					<li><a href="#method-i-has_image%3F">#has_image?</a></li>
+					
+					<li><a href="#method-i-image_url">#image_url</a></li>
+					
+					<li><a href="#method-i-imprint">#imprint</a></li>
+					
+					<li><a href="#method-i-inactive">#inactive</a></li>
+					
+					<li><a href="#method-i-info_url">#info_url</a></li>
+					
+					<li><a href="#method-i-ingredient">#ingredient</a></li>
+					
+					<li><a href="#method-i-prodcode">#prodcode</a></li>
+					
+					<li><a href="#method-i-score">#score</a></li>
+					
+					<li><a href="#method-i-shape">#shape</a></li>
+					
+					<li><a href="#method-i-size">#size</a></li>
+					
+					<li><a href="#method-i-trade_name">#trade_name</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./ActiveResource.html">ActiveResource</a></li>
+				
+					<li><a href="./ActiveResource/Base.html">ActiveResource::Base</a></li>
+				
+					<li><a href="./PillboxResource.html">PillboxResource</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">PillboxResource</h1>
+
+		<div id="description">
+			<p>
+<a href="PillboxResource.html">PillboxResource</a> is a subclass of <a
+href="ActiveResource/Base.html">ActiveResource::Base</a> that provides
+additional convenience methods and some parameter wrapping for querying the
+Pillbox API Service located at <a
+href="http://pillbox.nlm.nih.gov/PHP/pillboxAPIService.php">pillbox.nlm.nih.gov/PHP/pillboxAPIService.php</a>
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="SHAPES">SHAPES</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="SHAPE_CODES">SHAPE_CODES</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="COLORS">COLORS</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="COLOR_CODES">COLOR_CODES</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="DEA_CODES">DEA_CODES</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="SCHEDULE_CODES">SCHEDULE_CODES</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="VALID_ATTRIBUTE_NAMES">VALID_ATTRIBUTE_NAMES</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="colors-method" class="method-detail ">
+				<a name="method-c-colors"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">colors</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a hash of the accepted pill colors and their related codes. {
+</p>
+<pre>
+      'BLACK'=&gt; 'C48323',
+      'BLUE'=&gt; 'C48333',
+      'BROWN'=&gt; 'C48332',
+      'GRAY'=&gt; 'C48324',
+      'GREEN'=&gt; 'C48329',
+      'ORANGE'=&gt; 'C48331',
+      'PINK'=&gt; 'C48328',
+      'PURPLE'=&gt; 'C48327',
+      'RED'=&gt; 'C48326',
+      'TURQUOISE'=&gt; 'C48334',
+      'WHITE'=&gt; 'C48325',
+      'YELLOW'=&gt; 'C48330'
+  }</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="colors-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 149</span>
+149:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">colors</span>
+150:     <span class="ruby-constant">COLORS</span>.<span class="ruby-identifier">inject</span>({}){<span class="ruby-operator">|</span><span class="ruby-identifier">i</span>,(<span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span>)<span class="ruby-operator">|</span> <span class="ruby-identifier">i</span>.<span class="ruby-identifier">merge</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">humanize</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">v</span> }
+151:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="dea-codes-method" class="method-detail ">
+				<a name="method-c-dea_codes"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">dea_codes</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a hash of the accepted DEA Schedule codes and their related API
+codes {
+</p>
+<pre>
+    'I'   =&gt; 'C48672',
+    'II'  =&gt; 'C48675',
+    'III' =&gt; 'C48676',
+    'IV'  =&gt; 'C48677',
+    'V'   =&gt; 'C48679'
+</pre>
+<p>
+}
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="dea-codes-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 171</span>
+171:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">dea_codes</span>
+172:     <span class="ruby-constant">DEA_CODES</span>.<span class="ruby-identifier">inject</span>({}) { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span>,(<span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span>)<span class="ruby-operator">|</span> <span class="ruby-identifier">i</span>.<span class="ruby-identifier">merge</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">humanize</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">v</span> }
+173:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="find-method" class="method-detail ">
+				<a name="method-c-find"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">find</span><span
+						class="method-args">(first, options={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Accepts a first argument of :first or :all to narrow search results. 
+Accepts a params  hash as the second argument consistent with
+ActiveResource.find.
+</p>
+<p>
+Accepted parameters are:
+</p>
+<pre>
+  'color'       =&gt; 'string' or Array with multiple colors (see http://pillbox.nlm.nih.gov/API-documentation.html)
+  'score'       =&gt;  integer
+  'ingredient'  =&gt; 'string' or Array with multiple ingredients (returned results include all ingredients) 
+  'inactive'    =&gt; 'string' 
+  'dea'         =&gt; 'string' or any of 'I, II, III, IV, V'
+  'author'      =&gt; 'string'
+  'shape'       =&gt; 'string' (Shape or Hex)
+  'imprint'     =&gt; 'string'
+  'prodcode'    =&gt; 'string' (Product Code: see http://pillbox.nlm.nih.gov/API-documentation.html)
+  'has_image'   =&gt; 0 or 1 for no image present or image present respectively
+  'size'        =&gt; integer for size in millimeters (currently this encompasses a range of +/- 2 mm)
+  'lower_limit' =&gt; integer for which returned record to start at (currently non-functional)</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="find-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 209</span>
+209:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">first</span>, <span class="ruby-identifier">options</span>={})
+210:     <span class="ruby-comment cmt"># MYTODO :| ok for now... but this only works with rails</span>
+211:     <span class="ruby-identifier">options</span> = <span class="ruby-constant">HashWithIndifferentAccess</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">options</span>)
+212:     <span class="ruby-identifier">validate_pillbox_api_params</span>(<span class="ruby-identifier">options</span>)
+213:     <span class="ruby-keyword kw">begin</span>
+214:       <span class="ruby-keyword kw">super</span> <span class="ruby-identifier">first</span>, <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">interpret_params</span>(<span class="ruby-identifier">options</span>)
+215:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">REXML</span><span class="ruby-operator">::</span><span class="ruby-constant">ParseException</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+216:       <span class="ruby-comment cmt"># Work around no XML returned when no records are found.</span>
+217:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/The document &quot;No records found&quot; does not have a valid root/</span>
+218:         <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;No records found.&quot;</span>
+219:       <span class="ruby-keyword kw">else</span>
+220:         <span class="ruby-identifier">raise</span>
+221:       <span class="ruby-keyword kw">end</span>
+222:     <span class="ruby-keyword kw">end</span>
+223:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="record-count-method" class="method-detail ">
+				<a name="method-c-record_count"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">record_count</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns as an integer the number of records returned from the previous API
+call.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="record-count-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 179</span>
+179:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">record_count</span>
+180:     <span class="ruby-ivar">@record_count</span>.<span class="ruby-identifier">to_i</span>
+181:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="shapes-method" class="method-detail ">
+				<a name="method-c-shapes"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">shapes</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a hash of the accepted pill shapes and their related codes. {
+</p>
+<pre>
+      'BULLET'=&gt; 'C48335',
+      'CAPSULE'=&gt; 'C48336',
+      'CLOVER'=&gt; 'C48337',
+      'DIAMOND'=&gt; 'C48338',
+      'DOUBLE_CIRCLE'=&gt; 'C48339',
+      'FREEFORM'=&gt; 'C48340',
+      'GEAR'=&gt; 'C48341',
+      'HEPTAGON'=&gt; 'C48342',
+      'HEXAGON'=&gt; 'C48343',
+      'OCTAGON'=&gt; 'C48344',
+      'OVAL'=&gt; 'C48345',
+      'PENTAGON'=&gt; 'C48346',
+      'RECTANGLE'=&gt; 'C48347',
+      'ROUND'=&gt; 'C48348',
+      'SEMI_CIRCLE'=&gt; 'C48349',
+      'SQUARE'=&gt; 'C48350',
+      'TEAR'=&gt; 'C48351',
+      'TRAPEZOID'=&gt; 'C48352',
+      'TRIANGLE'=&gt; 'C48353'
+  }</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="shapes-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 113</span>
+113:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">shapes</span>
+114:     <span class="ruby-constant">SHAPES</span>.<span class="ruby-identifier">inject</span>({}){<span class="ruby-operator">|</span><span class="ruby-identifier">i</span>,(<span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span>)<span class="ruby-operator">|</span> <span class="ruby-identifier">i</span>.<span class="ruby-identifier">merge</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">humanize</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">v</span> }
+115:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test--method" class="method-detail ">
+				<a name="method-c-test%21"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This class method sets the api_key parameter to the default key listed in
+the yaml file under fixtures/test_api_key.yml.  This is useful for putting
+a call to PillboxResource.test! in your setup method in your test suite
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 187</span>
+187:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">test!</span>
+188:     <span class="ruby-value str">&quot;Using testing api_key&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">api_key</span> = <span class="ruby-identifier">load_test_key</span>
+189:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="author-method" class="method-detail ">
+				<a name="method-i-author"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">author</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a string representing the author of the drug monograph with spaces
+and double quotes removed.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="author-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 334</span>
+334:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">author</span>
+335:     <span class="ruby-comment cmt"># Remove double quotes from the author attribute</span>
+336:     <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'AUTHOR'</span>].<span class="ruby-identifier">gsub</span>(<span class="ruby-value str">'&quot;'</span>, <span class="ruby-value str">' '</span>).<span class="ruby-identifier">strip</span>
+337:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="color-method" class="method-detail ">
+				<a name="method-i-color"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">color</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the pill color as a human readable color description or as a
+&#8216;color code&#8217;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="color-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 253</span>
+253:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">color</span>
+254:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'SPLCOLOR'</span>]
+255:     <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'SPLCOLOR'</span>].<span class="ruby-identifier">split</span>(<span class="ruby-value str">&quot;;&quot;</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">color_code</span><span class="ruby-operator">|</span>
+256:       <span class="ruby-constant">COLOR_CODES</span>[<span class="ruby-identifier">color_code</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">color_code</span>
+257:     <span class="ruby-keyword kw">end</span>
+258:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="dea-method" class="method-detail ">
+				<a name="method-i-dea"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">dea</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a string with the DEA schedule code with &#8216;Schedule&#8217;
+prepended, i.e...
+</p>
+<pre>
+  pill.dea  =&gt; 'Schedule II'</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="dea-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 319</span>
+319:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">dea</span>
+320:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'DEA_SCHEDULE_CODE'</span>]
+321:     <span class="ruby-node">&quot;Schedule #{SCHEDULE_CODES[attributes['DEA_SCHEDULE_CODE'].to_s]}&quot;</span> 
+322:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="has-image--method" class="method-detail ">
+				<a name="method-i-has_image%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">has_image?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if the pill has an associated image, false if it does not.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="has-image--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 272</span>
+272:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">has_image?</span>; <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'HAS_IMAGE'</span>] <span class="ruby-operator">==</span> <span class="ruby-value str">'1'</span> <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="image-url-method" class="method-detail ">
+				<a name="method-i-image_url"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">image_url</span><span
+						class="method-args">(image_size = 'super_small')</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Accepts image_size argument as one of super_small, small, medium, large, or
+all.  Default is super_small. Returns the url, as a string, of the
+corresponding image when all is not given as the image size argument.
+Returns an array of urls representing all sizes of the pill image when
+&#8216;all&#8217; is given as an argument
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="image-url-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 299</span>
+299:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">image_url</span>(<span class="ruby-identifier">image_size</span> = <span class="ruby-value str">'super_small'</span>)
+300:     <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">image_id</span> 
+301:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+302:     <span class="ruby-keyword kw">end</span>
+303:     <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">image_size</span>
+304:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;super_small&quot;</span>; <span class="ruby-node">&quot;http://pillbox.nlm.nih.gov/assets/super_small/#{image_id}ss.png&quot;</span> 
+305:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;small&quot;</span>;       <span class="ruby-node">&quot;http://pillbox.nlm.nih.gov/assets/small/#{image_id}sm.jpg&quot;</span> 
+306:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;medium&quot;</span>;      <span class="ruby-node">&quot;http://pillbox.nlm.nih.gov/assets/medium/#{image_id}md.jpg&quot;</span>
+307:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;large&quot;</span>;       <span class="ruby-node">&quot;http://pillbox.nlm.nih.gov/assets/large/#{image_id}lg.jpg&quot;</span>
+308:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;all&quot;</span>
+309:         [<span class="ruby-node">&quot;http://pillbox.nlm.nih.gov/assets/super_small/#{image_id}ss.png&quot;</span>,
+310:          <span class="ruby-node">&quot;http://pillbox.nlm.nih.gov/assets/small/#{image_id}sm.jpg&quot;</span>,
+311:          <span class="ruby-node">&quot;http://pillbox.nlm.nih.gov/assets/medium/#{image_id}md.jpg&quot;</span>,
+312:          <span class="ruby-node">&quot;http://pillbox.nlm.nih.gov/assets/large/#{image_id}lg.jpg&quot;</span>]
+313:     <span class="ruby-keyword kw">end</span>
+314:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="imprint-method" class="method-detail ">
+				<a name="method-i-imprint"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">imprint</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the string representation of any alphanumeric text appearing on the
+pill.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="imprint-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 288</span>
+288:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">imprint</span>; <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'splimprint'</span>] <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="inactive-method" class="method-detail ">
+				<a name="method-i-inactive"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inactive</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the inactive ingredients as an array with double quotes removed. 
+In the current API double quotes are used instead of spaces between
+ingredients.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="inactive-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 327</span>
+327:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">inactive</span>
+328:     <span class="ruby-comment cmt"># Remove double quotes from the inactive ingredients list</span>
+329:     <span class="ruby-constant">Array</span>(<span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'SPL_INACTIVE_ING'</span>].<span class="ruby-identifier">split</span>(<span class="ruby-value str">&quot;/&quot;</span>)).<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">str</span><span class="ruby-operator">|</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-value str">'&quot;'</span>, <span class="ruby-value str">' '</span>).<span class="ruby-identifier">strip</span>}
+330:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="info-url-method" class="method-detail ">
+				<a name="method-i-info_url"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">info_url</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a url as a string for looking up the drug monograph using the <a
+href="http://druginfo.nlm.nih.gov/drugportal">druginfo.nlm.nih.gov/drugportal</a>
+API
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="info-url-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 268</span>
+268:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">info_url</span>; <span class="ruby-value str">&quot;http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">ingredient</span> <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="ingredient-method" class="method-detail ">
+				<a name="method-i-ingredient"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">ingredient</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a string list of ingredients. Does not contain brand/trade names.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="ingredient-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 276</span>
+276:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ingredient</span>; <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">ingredients</span> <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="prodcode-method" class="method-detail ">
+				<a name="method-i-prodcode"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">prodcode</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the product code as a string, 9-digit FDA code listed at: <a
+href="http://www.fda.gov/Drugs/InformationOnDrugs/ucm142438.htm">www.fda.gov/Drugs/InformationOnDrugs/ucm142438.htm</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="prodcode-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 263</span>
+263:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">prodcode</span>; <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'PRODUCT_CODE'</span>] <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="score-method" class="method-detail ">
+				<a name="method-i-score"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">score</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns an integer representing the score value see <a
+href="http://goo.gl/SzCO">goo.gl/SzCO</a> for details.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="score-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 284</span>
+284:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">score</span>; <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'SPLSCORE'</span>] <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="shape-method" class="method-detail ">
+				<a name="method-i-shape"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">shape</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the pill shape as a human readable shape description or as a
+&#8216;shape code&#8217;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="shape-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 244</span>
+244:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">shape</span> <span class="ruby-comment cmt"># handle multi-color</span>
+245:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'SPLSHAPE'</span>]
+246:     <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'SPLSHAPE'</span>].<span class="ruby-identifier">split</span>(<span class="ruby-value str">&quot;;&quot;</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">shape_code</span><span class="ruby-operator">|</span>
+247:       <span class="ruby-constant">SHAPE_CODES</span>[<span class="ruby-identifier">shape_code</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">shape_code</span>
+248:     <span class="ruby-keyword kw">end</span>
+249:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="size-method" class="method-detail ">
+				<a name="method-i-size"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">size</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the size of the pill in millimeters as a float. Values contain two
+decimal places.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="size-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 280</span>
+280:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">size</span>; <span class="ruby-identifier">attributes</span>[<span class="ruby-value str">'SPLSIZE'</span>].<span class="ruby-identifier">to_f</span> <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="trade-name-method" class="method-detail ">
+				<a name="method-i-trade_name"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">trade_name</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the trade brand/trade name as a capitalized string.  This is not
+the generic name of the active ingredient. For example the trade name of
+&#8216;sildenafil&#8217; would be &#8216;Viagra&#8217;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="trade-name-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/pillbox_resource.rb, line 293</span>
+293:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">trade_name</span>; <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">rxstring</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">&quot; &quot;</span>).<span class="ruby-identifier">first</span>.<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">capitalize</span> <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
