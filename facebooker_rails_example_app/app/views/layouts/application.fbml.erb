@@ -1,0 +1,30 @@
+<fb:fbml version="1.1">
+<% if ["production"].include?(ENV["RAILS_ENV"])  %>
+  <%= stylesheet_link_tag "facebook_scaffold", :media => "screen" %>
+<%- else -%>
+  <%= content_tag :style, File.readlines("public/stylesheets/facebook_scaffold.css").join("\n"), :type=>'text/css' %>
+<%- end -%>
+<%= content_tag :style, File.readlines("public/stylesheets/application.css").join("\n") %>
+<%= content_tag :style, File.readlines("public/stylesheets/phx.css").join("\n") %>
+
+
+<%= javascript_include_tag "facebooker.js"%>
+<%= content_tag :script, File.readlines("public/javascripts/fbjs.js").join("\n") %>
+
+<%= #fb_dashboard 
+  image_tag('pharmville.png')
+%>
+<% fb_tabs do %>
+ 
+  <%= fb_tab_item "Emergency Room", patients_path, :selected=>patients_path?  %>
+  <%= fb_tab_item "Your Friends", messages_path, :selected=>(!@battles.nil? && !patients_path?) %>
+  <%= fb_tab_item "Prescribe!", new_message_path, :selected=>(@battles.nil? && !patients_path?) %>
+  <%= fb_tab_item "Help &amp; Feedback",fb_about_url,:align=>"right"%>
+  <%= fb_tab_item "Pill Reverse-Lookup",pills_path,:align=>"right"%>
+
+  
+<% end %>
+<br />
+<%= fb_add_profile_section %>
+<%= yield%>
+</fb:fbml>

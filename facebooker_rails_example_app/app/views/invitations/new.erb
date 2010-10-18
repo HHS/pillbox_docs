@@ -1,0 +1,13 @@
+<% content_for("invite_message") do %>
+  Come join my Pharmville Hospital and prescribe pills liberally.
+	<%= fb_req_choice("Viagra! Penicillin!",
+	new_message_path(:from=>current_user,:canvas=>true))%>
+<% end %>
+<% fb_request_form("Pharmville Rx","invite_message",
+  invitations_path) do %>
+  <%= fb_multi_friend_selector(
+    "Invite your friends to join your Hospital.",
+    :exclude_ids=>@not_potential_disciples.join(","))%>
+  <br />
+  <%= fb_request_form_submit %>
+<% end %>

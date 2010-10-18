@@ -1,0 +1,463 @@
+--- 
+- !ruby/object:Pill 
+  attributes: 
+    name: Pyridine
+    messages: |
+      --- 
+      - UTI's are NO FUN
+      - just in case you're peeing "shards of glass"
+      - Ever wanted to pee orange? It's like Sunny Delight!
+      - "new super power: ability to stain clothing orange with pee"
+
+    pill_category_id: "3"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Phenazopyridine
+    prodcode: 00603-5142
+    level: "1"
+    drug_class: "1"
+    reputation: "10"
+    id: "1"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000642ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Ibuprofen
+    messages: |
+      --- 
+      - take two and call me in the morning
+      - stop whining and call me in the morning
+      
+    pill_category_id: "5"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Ibuprofen
+    prodcode: ""
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "3"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000470ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Acetaminophen
+    messages: |
+      --- 
+      - hangovers are hell
+      - take two and call me in the morning
+      - take 15 and die a slow ignomious death
+
+      
+    pill_category_id: "5"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Acetaminophen
+    prodcode: ""
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "4"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000866ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Viagra
+    messages: |
+      --- 
+      - AND STAY UP
+      - have another scooby snack
+      - It's ok. Your mom told me.
+      
+      
+    pill_category_id: 
+    cost: "100"
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Sildenafil
+    prodcode: ""
+    level: "1"
+    drug_class: "1"
+    reputation: "10"
+    id: "5"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000305ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Quinine
+    messages: |
+      --- 
+      - and tonic water and gin, such colonial fortitude!
+
+      
+    pill_category_id: "5"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Quinine
+    prodcode: ""
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "6"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000814ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Imodium
+    messages: |
+      --- 
+      - hope the dripping stops!
+      - hope the dripping stops!
+
+      
+    pill_category_id: 
+    cost: "100"
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE
+    prodcode: ""
+    level: "1"
+    drug_class: "4"
+    reputation: "10"
+    id: "7"
+    image_ref: imodium.jpg
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Celebrex
+    messages: |
+      --- 
+      - It's ok. Your mom told me.
+
+      
+    pill_category_id: "5"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Celecoxib
+    prodcode: ""
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "8"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000022ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Penicillin
+    messages: |
+      --- 
+      - stay away from the clap!
+      - for your SYPHYLLIS
+      
+    pill_category_id: 
+    cost: "100"
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE
+    prodcode: ""
+    level: "1"
+    drug_class: "1"
+    reputation: "10"
+    id: "9"
+    image_ref: penicillin.jpg
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Xenical
+    description: "Taken with food, this pill inihibits absorption of fat calories.  May case oily spotting on underwear or on clothing."
+    messages: |
+      --- 
+      - 24 hour erections aren't fun
+      - greasy anal leakage is a small price to pay for great abs
+
+      
+    pill_category_id: "1"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Orlistat
+    prodcode: ""
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "10"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000003ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Placebo
+    messages: |
+      --- 
+      - Just kidding; you're perfect :)
+
+      
+    pill_category_id: 
+    cost: "100"
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE
+    prodcode: ""
+    level: "1"
+    drug_class: "2"
+    reputation: "10"
+    id: "11"
+    image_ref: placebo.jpg
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Progesterone
+    messages: |
+      --- 
+      - here have some PMS on me
+      - PLAN B
+
+      
+    pill_category_id: "3"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Progesterone
+    prodcode: ""
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "12"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000528ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Tamiflu
+    messages: |
+      --- 
+      - Stay away from the H1N1 PigDeath
+      - Stop licking bus seats!
+
+      
+    pill_category_id: 
+    cost: "100"
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE
+    prodcode: ""
+    level: "1"
+    drug_class: "3"
+    reputation: "10"
+    id: "13"
+    image_ref: tamiflu.jpg
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Norethindrone
+    messages: |
+      --- 
+      - PMS much?
+
+      
+    pill_category_id: "3"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Norethindrone
+    prodcode: ""
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "14"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000168ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Paxil
+    messages: |
+      --- 
+      - Be HAPPY damnit
+      - Dr. Happy called. He says to double your dose.
+
+      
+    pill_category_id: "1"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Paroxetine
+    prodcode: 0029-3206
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "16"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000686ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Valacyclovir
+    messages: |
+      --- 
+      - for your herpes
+      - for your "chickenpox" (I mean herpes)
+
+      
+    pill_category_id: "3"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Valacyclovir
+    prodcode: 0173-0933
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "18"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000820ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Chlorpromazine
+    messages: |
+      --- 
+      - STOP BEING PSYCHO
+      - this pill makes you look as crazy as you aren't anymore. 
+      - you're obviously tripping
+      - makes you gain weight -- but lucidly
+
+      
+    pill_category_id: "1"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Chlorpromazine
+    prodcode: 0832-0303
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "19"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000848ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Zoloft
+    messages: |
+      --- 
+      - I'm giving you a double prescription for yer DOG
+      - You also get weight gain and sexual disfunction. But you won't care!
+
+      
+    pill_category_id: "1"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Sertraline
+    prodcode: 0049-4900
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "22"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000352ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Trazodone
+    messages: |
+      ---       
+      - cures anxiety AND 24 hour erections. Miracle drug?
+      - worst case of blue balls ever
+      - CHILL THE F**K OUT
+
+      
+    pill_category_id: 
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Trazodone
+    prodcode: 0087-0796
+    level: "1"
+    drug_class: "1"
+    reputation: "10"
+    id: "23"
+    image_ref: http://pillbox.nlm.nih.gov/assets/super_small/000565ss.png
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Ex-Lax
+    messages: |
+      --- 
+      - have some anal soup
+      - 
+
+      
+    pill_category_id: "4"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Senna Extract
+    prodcode: 00603-0280
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "24"
+    image_ref: http://pillbox.nlm.nih.gov/assets/small/000429sm.jpg
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Z-Pak
+    messages: |
+      --- 
+      - Stay away from the Clap!
+      - for your "Bronchitis" Also: your many and varied STDs
+      - I don't know what you have but it must be bad
+
+      
+    pill_category_id: "2"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Azithromycin
+    prodcode: 0069-3060
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    id: "25"
+    image_ref: http://pillbox.nlm.nih.gov/assets/small/000799sm.jpg
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+

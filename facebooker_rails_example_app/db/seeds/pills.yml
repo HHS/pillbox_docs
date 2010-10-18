@@ -1,0 +1,294 @@
+--- 
+- !ruby/object:Pill 
+  attributes: 
+    name: Pyridine
+    messages: |
+      --- 
+      - UTI's are NO FUN
+      - Ever wanted to pee orange? It's like Sunny Delight!
+      - "new super power: ability to stain clothing orange with pee"
+
+    pill_category_id: "3"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Phenazopyridine
+    prodcode: 00603-5142
+    level: "1"
+    drug_class: "1"
+    reputation: "10"
+    image_id: 000642
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Ibuprofen
+    messages: |
+      --- 
+      - take two and call me in the morning
+      - stop whining and call me in the morning
+      
+    pill_category_id: "5"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Ibuprofen
+    prodcode: "53746-0137"
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    image_id: 000470
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Acetaminophen
+    messages: |
+      --- 
+      - hangovers are hell
+      - take two and call me in the morning
+      - take 15 and die a slow ignomious death
+
+      
+    pill_category_id: "5"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Acetaminophen
+    prodcode: "59630-170"
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    image_id: 000866
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Viagra
+    messages: |
+      --- 
+      - AND STAY UP
+      - have another scooby snack
+      - It's ok. Your mom told me.
+      
+      
+    pill_category_id: "3"
+    cost: "100"
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Sildenafil
+    prodcode: "0069-4220"
+    level: "1"
+    drug_class: "1"
+    reputation: "10"
+    image_id: 000305
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Quinine
+    messages: |
+      --- 
+      - and tonic water and gin, such colonial fortitude!
+
+      
+    pill_category_id: "5"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Quinine
+    prodcode: "00172-3001"
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    image_id: 000814
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Xenical
+    description: "Taken with food, this pill inihibits absorption of fat calories.  May case oily spotting on underwear or on clothing."
+    messages: |
+      --- 
+      - Diet and the runs-- Xenical is fun!
+      - Greasy anal leakage is a small price to pay for great abs.
+      - Breakfast of the Biggest Loser. Take it -- you, too can be a Big Loser.
+
+      
+    pill_category_id: "4"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Orlistat
+    prodcode: "0004-0256"
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    image_id: 000003
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Progesterone
+    messages: |
+      --- 
+      - here have some PMS on me
+      - PLAN B
+      
+    pill_category_id: "3"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Progesterone
+    prodcode: "0032-1708"
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    image_id: 000528
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Valtrex
+    description: "Used to treat the herpes viruses (oral or genital)."
+    messages: |
+      --- 
+      - for your herpes
+      - Stop licking bus seats!
+      
+    pill_category_id: "3"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Valacyclovir
+    prodcode: 0173-0933
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    image_id: 000820
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Chlorpromazine
+    messages: |
+      --- 
+      - STOP BEING PSYCHO
+      - this pill makes you look as crazy as you aren't anymore. 
+      - you're obviously tripping
+      - makes you gain weight -- but lucidly
+
+      
+    pill_category_id: "1"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Chlorpromazine
+    prodcode: 0832-0303
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    image_id: 000848
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Zoloft
+    messages: |
+      --- 
+      - I'm giving you a double prescription for yer DOG
+      - You also get weight gain and sexual disfunction. But you won't care!
+      - Be HAPPY damnit
+      - Dr. Happy called. He says to double your dose.
+      
+      
+    pill_category_id: "1"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Sertraline
+    prodcode: 0049-4900
+    level: "1"
+    drug_class: 
+    reputation: "10"
+    image_id: 000352
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+- !ruby/object:Pill 
+    attributes: 
+      name: Naproxen
+      description: An anti-inflammatory. Often used to treat PMS.
+      messages: |
+        ---       
+        - PMS much?
+
+
+      pill_category_id: "3"
+      cost: 
+      api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Naproxen
+      prodcode: 53746-0189
+      level: "1"
+      drug_class: "1"
+      reputation: "10"
+      image_id: 000290
+      accepted_names: |+
+        --- []
+        
+    attributes_cache: {}
+  
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Trazodone
+    messages: |
+      ---       
+      - CHILL THE F**K OUT
+
+      
+    pill_category_id: "1"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Trazodone
+    prodcode: 0087-0796
+    level: "1"
+    drug_class: "1"
+    reputation: "10"
+    image_id: 000565
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+
+
+- !ruby/object:Pill 
+  attributes: 
+    name: Z-Pak
+    description: "Azithromycin is used to treat many different types of infections caused by bacteria."
+    messages: |
+      --- 
+      - "Stay away from the Clap!"
+      - 'for your Bronchitis. Also, your many and varied STDs.'
+      - "I don't know what you have but it must be bad."
+      
+    pill_category_id: "2"
+    cost: 
+    api_ref: http://druginfo.nlm.nih.gov/drugportal/dpdirect.jsp?name=Azithromycin
+    prodcode: 0069-3060
+    level: "1"
+    drug_class: "1"
+    reputation: "10"
+    image_id: 000799
+    accepted_names: |+
+      --- []
+      
+  attributes_cache: {}
+

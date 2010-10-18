@@ -1,0 +1,179 @@
+body {
+  color:#333333;
+  direction:ltr;
+  font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size:11px;
+  text-align:left;
+}
+#playButton {
+	z-index:1002;
+}
+
+#mainTitle {
+  font-family:"Times New Roman", Times, serif;
+  font-size: 20px;
+}
+#mainTitle sub {
+  margin-left: -5px;
+}
+
+#topSpacer {
+  width: 100%;
+  height: 15px;
+}
+
+#patients {
+  width:237px;
+}
+
+#dashboard {
+	text-align: left;
+	padding: 5px;
+	border:0;
+}
+
+#messages {
+	margin: 0 0 15px 0;
+	width:500px;
+}
+.fbgreybox {  
+    background-color: #f7f7f7;  
+    border: 1px solid #cccccc;  
+    color: #333333;  
+    padding: 10px;  
+    font-size: 13px;  
+    font-weight: bold;  
+}
+
+#pillbox {
+	float: left;
+	width: 360px;
+}
+
+#info-windows {
+	float: right;
+	width: 235px;
+}
+
+#stats { 
+	float: left;
+}
+
+/* facebook forms and extra dialog below-the-fold */
+#footer { 
+	clear: both;
+	background: #A2A2A2;
+}
+
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table.pill td { width:100px;height:100px;padding:10px;font-size:11px; }
+ /* Facebook Box Header */
+table.pill td h2 
+ { 
+  background-color:#D8DFEA;
+  border-top:1px solid #3B5998;
+  color:#3B5998;
+  font-size:11px;
+  padding:1px 6px; 
+  margin:0;
+  font-weight:bold;
+ }
+ /* Subheader, e.g. "Displaing 10 of 100 items" */
+table.pill .subtitle {
+  background-color:#EEEEEE;
+  border-bottom:1px solid #CCCCCC;
+  color:#000000;
+  font-size:11px;
+  font-weight:normal;
+  padding:3px 5px 2px;
+ }
+
+
+ .menu {
+  background:#F7F7F7 none repeat scroll 0 0;
+  border:1px solid #BDC7D8;
+  padding:5px;
+  font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size:11px;
+  width: 330px;
+ }
+ .menu h3 {
+  margin-bottom:10px;
+  padding:5px 0 0 5px;
+  font-size:13px;
+ }
+ .menu ul {
+  color:#3B5998;
+  padding:0 10px 5px;
+ }
+ .menu li {
+  font-weight:bold;
+  list-style-image:none;
+  list-style-position:inside;
+  list-style-type:square;
+  padding:0 0 5px;
+ }
+ .menu .descrip {
+  color:#444444;
+  font-weight:normal;
+  padding:3px 0 0 15px;
+ }
+
+
+.old_pill_styling {
+/*  float:left;  ... column of two? */
+  border:1px solid #ccc;
+  overflow:auto;
+  height: 106px;
+  width: 180px;
+  margin-bottom:5px;
+  margin-right:5px;
+}
+.patient {
+  /*  float:left;  ... column of two? */
+  border:1px solid #ccc;
+  border:1px solid #ccc;
+  width: 235px;
+  height: 70px;
+  clear:left;
+  margin-bottom:10px;
+}
+.pill img, .patient img {
+  float:left;
+  margin:0px 5px 0px 0px;
+}
+
+#patients .selected, #pillbox .selected {
+  border: 1px solid red;
+  color: red;
+}
+#emergency-room {
+	width:750px;
+	position:absolute;
+	bottom: 25px;
+	background: #EEEEEE;
+}
+span.animated-patient {
+}
+
+.clear { clear: both; }
+
+.pill .name { font-weight: bold; padding-left: 5px; padding-top: 2px; border-bottom: 1px solid black; border-left: 6px solid #AAA;}
+.pill .cures { color: blue; margin-top: 4px }
+.pill ul { margin: 0px 0px 10px 0px; padding-left: 0px; height: 25px; }
+.pill ul li { list-style-type: none }
+.pill div.cost { padding: 5px 0px 5px 0px; font-weight: bold; text-align: center; background-color: #EEE; width: 100%; }
+.pill span.cost { color: red }
+
+
+
+.patient .name { font-weight: bold; padding-left: 5px; padding-top: 2px; border-bottom: 1px solid black }
+.patient .illness {color: red; margin-top: 5px;}
+.patient ul { margin: 0px 0px 5px 5px; padding-left: 75px; }
+.patient ul li { list-style-type: none }
+.patient .actions {float: left }

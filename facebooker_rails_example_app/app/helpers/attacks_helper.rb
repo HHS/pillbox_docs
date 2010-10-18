@@ -1,0 +1,2 @@
+module AttacksHelper
+end

@@ -1,0 +1,40 @@
+chop:
+  id: 1
+  cost: 100
+  reputation: 10
+  name: Penicillin
+  image_ref: penicillin.jpg
+  api_ref: "http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE"
+  drug_class: 1
+headbutt:
+  id: 2
+  cost: 100
+  reputation: 10
+  name: Viagra
+  image_ref: viagra.jpg
+  api_ref: "http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE"
+  drug_class: 1
+star:
+  id: 3
+  cost: 100
+  reputation: 10
+  name: Placebo
+  image_ref: placebo.jpg
+  api_ref: "http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE"
+  drug_class: 2
+nunchuck:
+  id: 4
+  cost: 100
+  reputation: 10
+  name: Tamiflu
+  image_ref: tamiflu.jpg
+  api_ref: "http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE"
+  drug_class: 3
+crane_kick:
+  id: 5
+  cost: 100
+  reputation: 10
+  name: Imodium
+  image_ref: imodium.jpg
+  api_ref: "http://druginfo.nlm.nih.gov/drugportal/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=drugportal&actionHandle=default&nextPage=jsp/drugportal/ResultScreen.jsp&TXTSUPERLISTID=000396010&QV1=TRIAMTERENE"
+  drug_class: 4

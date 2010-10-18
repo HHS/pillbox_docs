@@ -1,0 +1,57 @@
+<%=
+  ""
+  # if preview, render here.
+%>
+
+<script>
+
+function updatePillMessagePreview(div,val)  { 
+    var ajax = new Ajax(); 
+    ajax.responseType = Ajax.FBML; 
+    ajax.ondone = function(data) { 
+       var p = document.getElementById(div);
+       p.setInnerFBML(data); 
+    } 
+    ajax.requireLogin = true; 
+    var cbox = document.getElementsByType('check_me_now');
+    var isChecked = cbox.getChecked();
+
+	ajax.post('http://dariusroberts.com:4007/messages/secret_message_form' + isChecked); 
+} 
+
+
+</script>
+<% facebook_form_for(:message,@pill_message, :url=>messages_path, :method=>:post) do |f| %>
+  <%= f.error_messages %>
+    <%= f.hidden_field :pill_id %>
+    <tr><th>Pill:</th><td class='editor_kit'>
+         <%=select_tag :pill, grouped_options_for_select( current_user.available_pills, :selected_key=> @pill_message.pill.id) %> 
+    <br /></td></tr>
+    <tr><th><%= f.multi_friend_input :label=>"Friend(s) to treat"%></th></tr>
+
+    <tr><th><%= f.label :preset_message, "Message:" %></th></tr>
+    <tr><td> </td><td><%= "this message will be secret -- until your friend looks up this pill and decodes it." %></td></tr>
+
+    <!-- ><p>Text field: <input type="text" id="text" size="20"/></p> 
+	<p>Text area: <textarea id="textarea" rows="2" cols="20"></textarea></p> 
+    <fieldset id="radios"><legend id="foo">Radio buttons:</legend> 
+    	<label><input type="radio" name="radio" value="one"/> A</label> 
+    	<label><input type="radio" name="radio" value="two"/> B</label> 
+    	<label><input type="radio" name="radio" value="three"/> C</label></label><br/> 
+    	<span class="indent">Selected value:
+    		<input type="text" size="6" disabled="disabled"/></span></fieldset> 
+    <p>Checkbox:
+    	<label><input type="checkbox" id="checkbox" value="xyzzy"/> Checkbox value</label></p>
+    -->
+
+    <% @pill_message.pill.preset_messages.each_with_index do |preset_message, index| %>
+      <fb:js-string var='preset_message_<%=index%>'>
+            <%=preset_message%>
+      </fb:js-string>
+      <tr><td> </td><td><INPUT TYPE='RADIO' name="preset_message" onClick="var message_div = document.getElementById('message_cleartext');	
+    message_div.setInnerFBML(preset_message_<%= index %>);" > <%= preset_message %>
+	</td></tr>
+    <% end %>
+    <%= f.text_field :cleartext, :label=>"Other?",:value=>"", :size=>11 %>
+    <%= f.buttons "Preview Secret Code Message" %>
+<% end %>

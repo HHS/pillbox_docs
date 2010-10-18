@@ -1,0 +1,49 @@
+# The api key, secret key, and canvas page name are required to get started
+# Tunnel configuration is only needed if you are going to use the facebooker:tunnel Rake tasks
+# Your callback url in Facebook should be set to http://public_host:public_port
+# If you're building a Facebook connect site, 
+#    change the value of set_asset_host_to_callback_url to false
+# To develop for the new profile design, add the following key..
+# api: new
+# remove the key or set it to anything else to use the old facebook design.
+# This should only be necessary until the final version of the new profile is released.
+
+development:
+  api_key: 2cbbfc18aafcc2c0567f366fc88bbe4f
+  secret_key: cecdc64a75d3ae7dc80ba118bf958cc4
+  canvas_page_name: pharmvillerx
+  callback_url: http://pharmvillerx.heroku.com:80
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+    public_host_username: darius
+    public_host: dariusroberts.com
+    public_port: 4007
+    local_port: 3000
+    server_alive_interval: 0
+
+test:
+  api_key: 2cbbfc18aafcc2c0567f366fc88bbe4f
+  secret_key: cecdc64a75d3ae7dc80ba118bf958cc4
+  canvas_page_name: pharmvillerx
+  callback_url: http://pharmvillerx.heroku.com:80
+  set_asset_host_to_callback_url: true   
+  tunnel:
+    public_host_username: 
+    public_host: 
+    public_port: 4007
+    local_port: 3000
+    server_alive_interval: 0
+
+production:
+  api_key: 2cbbfc18aafcc2c0567f366fc88bbe4f
+  secret_key: cecdc64a75d3ae7dc80ba118bf958cc4
+  canvas_page_name: pharmvillerx
+  callback_url: http://pharmvillerx.heroku.com:80
+  set_asset_host_to_callback_url: true   
+  tunnel:
+    public_host_username: 
+    public_host: 
+    public_port: 4007
+    local_port: 3000
+    server_alive_interval: 0

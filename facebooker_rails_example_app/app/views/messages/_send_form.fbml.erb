@@ -1,0 +1,56 @@
+<%- pill = send_form -%>
+
+<div class="dev_app_insights clearfix">
+<% facebook_form_for(:message,Message.new(:pill=>pill), :url=>messages_path, :method=>:post) do |f| %>
+  <%= f.error_messages %>
+    <%= f.hidden_field :pill_id %>
+    <div class='dev_application_header clearfix'>
+      <%= image_tag(pill.image_ref) %>
+      <h3><%= link_to pill.name, pill.api_ref, :html=>{:popup=>true} %></h3>
+	  <p style='margin:0;padding:0;font-size:10px;color:#999;line-height:14px;'>
+	    <%= pill.description %>
+	  </p>
+    </div>
+
+    <%= f.text "Send a Message:" %>
+    <!-- ><p>Text field: <input type="text" id="text" size="20"/></p> 
+	<p>Text area: <textarea id="textarea" rows="2" cols="20"></textarea></p> 
+    <fieldset id="radios"><legend id="foo">Radio buttons:</legend> 
+    	<label><input type="radio" name="radio" value="one"/> A</label> 
+    	<label><input type="radio" name="radio" value="two"/> B</label> 
+    	<label><input type="radio" name="radio" value="three"/> C</label></label><br/> 
+    	<span class="indent">Selected value:
+    		<input type="text" size="6" disabled="disabled"/></span></fieldset> 
+    <p>Checkbox:
+    	<label><input type="checkbox" id="checkbox" value="xyzzy"/> Checkbox value</label></p>
+    -->
+
+    <% pill.preset_messages.each_with_index do |preset_message, index| %>
+      <tr><td> </td>
+	      <td><INPUT TYPE='RADIO' name="preset_message" onClick="
+		    var additional_options = document.getElementById('additional_options_<%= pill.id %>');
+		    var message_div = additional_options.getFirstChild();	    
+			additional_options.setStyle('display','block');				
+            message_div.setValue('<%= escape_javascript preset_message %>');" > 
+            <%= preset_message %>
+	      </td>
+	</tr>
+    <% end %>
+	  <tr>
+	  <td>.</td>
+	  <td id='additional_options_<%= pill.id %>' style='display:none;'>
+		  <%= text_area_tag('message[cleartext]', "", :size=>'30x3') %>
+		  <br />
+		  Scramble this message?
+		  Yes <%= radio_button_tag 'message[encrypt_flag]', true, true %>
+		  No <%= radio_button_tag 'message[encrypt_flag]', false, false %>
+		  <br />
+		  <small>Anyone in your network can descramble this message by looking up the pill's name.</small></td>
+	  </tr>
+
+       <tr><th><%= f.multi_friend_input :label=>"To", :width=>'100px' %></th></tr>
+    <%= f.buttons "SEND" %>
+<% end %>
+
+
+</div>

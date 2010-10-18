@@ -1,0 +1,55 @@
+  <script>
+    function load_category(category)  { 
+    var ajax = new Ajax(); 
+    ajax.responseType = Ajax.FBML; 
+    ajax.ondone = function(data) { 
+       var p = document.getElementById('dev_app_infos');
+       p.setInnerFBML(data); 
+/*
+       var current_tabs = document.getElementsByClass('flag_nav_item_selected');
+       map(current_tabs, function(current_tab) { 
+	          current_tab.removeClassName('flag_nav_item_selected'); 
+	                      }
+	         )
+*/ 
+       element.setInnerFBML(fbml_reference);
+
+       var new_current_tab = event.target;
+       new_current_tab.addClassName('flag_nav_item_selected'); 
+               
+
+    } 
+    ajax.requireLogin = true; 
+   ajax.post('http://dariusroberts.com:4007/messages/selection_window?category=' + category); 
+   } 
+  </script>
+ <div class="dashboard_header">
+  <div class="dh_titlebar clearfix"></div>
+ </div>
+ <div class="content_no_sidebar">
+  <div class="dev_applications clearfix">
+   <div class="flag_nav flag_nav_has_icon dev_app_list" id="dev_app_list">
+    <div class="flag_nav_container">
+     <!-- Start selected nav link -->
+    <% for pill_category in @pill_categories %>
+     <div class="flag_nav_item <%= (pill_category == @pill_category) ? "flag_nav_item_selected" : "" %>" id="<%= pill_category.title.underscore.gsub(" ","_") %>">
+      <% link_to new_message_path(:category=>pill_category.title), :class=>'clearfix' do %>
+    	<div class="flag_nav_li_icon" style="background-image: url(www.facebook.com/images/icons/fbfile.gif);"></div>
+        <div class="flag_nav_li_title"><%= pill_category.title %></div>
+        <div class="flag_nav_top_mask"></div>
+      <% end %> 
+      <span class="flag_nav_border_hack"> </span>
+     </div>
+    <% end %>
+     <!-- End Nav links -->
+    </div>
+   </div>
+   <div class="dev_app_infos_shadow">
+    <div class="dev_app_infos" id="dev_app_infos">
+     <%= render :partial=>'selection_window.fbml', :object=>@pill_category	%>
+
+     <!-- End Of Active Page. Other pages go here. -->
+    </div>
+   </div>
+  </div>  
+ </div>

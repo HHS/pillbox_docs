@@ -1,0 +1,2 @@
+module PillsHelper
+end

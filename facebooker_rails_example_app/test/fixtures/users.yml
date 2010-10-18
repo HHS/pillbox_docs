@@ -1,0 +1,36 @@
+user_1:
+  session_key: "2.hS4CCXjt5MBo8RrCoDXb0A__.3600.1264370400-3001191"
+  updated_at: "Sun Jan 24 20:03:55 UTC 2010"
+  practice_id: "2"
+  facebook_id: "3001191"
+  nickname: "Dr Rusyt"
+  id: "1"
+  patients_count: "10"
+  total_hits: ""
+  sensei_id: ""
+  created_at: "Fri Jan 22 17:29:32 UTC 2010"
+
+user_2:
+  session_key: "2.9_jL_zbCxkOqy_q81RzM6A__.3600.1264291200-6816611"
+  updated_at: "Sat Jan 23 22:08:22 UTC 2010"
+  practice_id: "2"
+  facebook_id: "6816611"
+  nickname: ""
+  id: "2"
+  patients_count: "10"
+  total_hits: ""
+  sensei_id: ""
+  created_at: "Sat Jan 23 22:08:22 UTC 2010"
+
+user_3:
+  session_key: ""
+  updated_at: "Sun Jan 24 19:21:57 UTC 2010"
+  practice_id: "2"
+  facebook_id: "17107323"
+  nickname: ""
+  id: "3"
+  patients_count: "10"
+  total_hits: ""
+  sensei_id: ""
+  created_at: "Sun Jan 24 19:21:57 UTC 2010"
+

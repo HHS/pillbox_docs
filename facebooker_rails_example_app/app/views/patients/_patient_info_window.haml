@@ -1,0 +1,14 @@
+- patient = patient_info_window
+.patient{:onclick => "phx.pickPatient(this, #{patient.id});", :style=>'display:none'}
+  %input{:type => "hidden", :name => "patientId#{patient.id}", :value => patient.id}
+  = image_tag patient.image_ref
+  .name
+    = patient.name
+  .illness
+    Illnesses
+  %ul
+    - patient.ailments.each do |ail|
+      %li
+        = ail.name.split(/ /).collect{|a| a.capitalize}.join(" ")
+  .actions
+    = link_to_function 'Refer', "" #"fb_connect_invite_friends({ type: 'Pharmville Rx', invitation_copy:'The patient is ____. You have a few options. You can:  Turn this patient away:#{link_to_remote("refer", :url=>referral_path}. Send this patient to a friend. FRIEND_LOOKUP_FORM', request_action_text:'Or refer this patient to a new friend. #{link_to_remote("refer", :url=>referral_path(:with_friend_ids=>"some_list"))}' })"

@@ -1,0 +1,12 @@
+<% for message in @battles %>
+  <div class="battle">
+    <%= image_tag message.pill.image_name %> 
+    <%= link_to(
+         name(message.messaging_user,:linked=>"false",:firstnameonly=>true),
+         battles_url(:user_id=>message.messaging_user)) %> 
+    <%= message_result(message) %>
+    <%= link_to(
+         name(message.defending_user,:linked=>"false",:firstnameonly=>true),
+         battles_url(:user_id=>message.defending_user)) %>       
+  </div>
+<% end %>

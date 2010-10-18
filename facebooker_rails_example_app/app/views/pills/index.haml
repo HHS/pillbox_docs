@@ -1,0 +1,37 @@
+= render(:partial=>'message', :object=>@message) if @message
+#pillbox_lookup
+  = facebook_messages
+  = flash[:errors] 
+  - facebook_form_for(:pill_properties,PillboxResource.new,:url => lookup_pills_path(:message=>@message), :method=>:get) do |f|
+    %table
+      %tr
+        = content_tag :th, f.label(:ingredients, "Ingredient(s)")
+        %td
+          = text_field_tag "pill_properties[ingredient]", ""
+          %small Active ingredients only (for now)
+      %tr
+        = content_tag :th, f.label(:imprint)
+        %td
+          = text_field_tag("pill_properties[imprint]", "", :disabled=>true)
+          %small Examples: "gB 230-5" or "Zoloft"
+      %tr
+        = content_tag :th, f.label(:size)
+        = content_tag :td, select_tag("pill_properties[size]", "<option></option>"+options_for_select((5..25).map{|n| "#{n} mm"}))
+      %tr
+        = content_tag :th, f.label(:shape)
+        = content_tag :td, select_tag('pill_properties[shape]', "<option></option>"+options_for_select(PillboxResource.shapes))
+      %tr  
+        = content_tag :th, f.label(:color, "Color(s)")
+        %td
+          = select_tag 'pill_properties[color]', "<option></option>"+options_for_select(PillboxResource.colors), :blank=>true
+          = select_tag 'pill_properties[color2]', "<option></option>"+options_for_select(PillboxResource.colors), :blank=>true
+          %small Select one, or both (if two colors)
+      %tr
+        = content_tag :th, " "
+        %td
+          = f.buttons "Lookup"
+  = "Many thanks to the NIH for letting us search their 'pillbox' database. Also: check out the NIH/NLM super snazzy #{link_to "Pillbox image search", "http://pillbox.nlm.nih.gov/"}!"
+  %br
+  %br
+  %br
+  %small The data providing this list is currently under development and are not intended for clinical use.  This data is presented as part of a research and development effort. Images provided are not part of the FDA Structured Product Label and have not been verified by the manufacturer/labeler.

@@ -1,0 +1,13 @@
+development:
+  adapter: mysql
+  database: pharmville_development
+  username: jdarius
+  password: "aid1_dashing"
+  encoding: utf8
+test:
+  adapter: mysql
+  database: pharmville_development
+  username: jdarius
+  password: "aid1_dashing"
+  encoding: utf8
+  

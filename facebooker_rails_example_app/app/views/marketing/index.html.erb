@@ -1,0 +1,30 @@
+
+<h1>Welcome to Pharmville Rx</h1>
+
+<script src="http://static.ak.facebook.com/js/api_lib/v0.3/FeatureLoader.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+  FB_RequireFeatures(["Api"], function()
+  {
+
+    // Create an ApiClient object, passing app's API key and
+    // a site relative URL to xd_receiver.htm
+    var api = new FB.ApiClient('<%=Facebooker.api_key%>', '/xd_receiver.html', null);
+          
+    // require user to login
+    api.requireLogin(function(exception) {
+    
+        // Get The name of the current user  
+        api.users_getInfo(api.get_session().uid,["first_name"],function(result, exception) {
+          Debug.dump(result,"Info on user");
+        });       
+    });
+  });
+</script>
+      <!-- // Get The name of the current user  
+      api.notifications_sendEmail(api.get_session().uid,["first_name"], function(result, exception) {
+        Debug.dump(result, 'Get first name of user ');  
+      });       
+  });
+}); -->
