@@ -22,6 +22,7 @@ module Pillbox # :nodoc:
   ARES_VERSIONS = ['2.3.4', '2.3.5', '2.3.8', '2.3.9', '2.3.10', '3.0.0']
 end
 
+require 'compatibility'
 require 'active_resource/version'
 unless Pillbox::ARES_VERSIONS.include?(ActiveResource::VERSION::STRING)
   abort <<-ERROR
@@ -63,13 +64,7 @@ end
 # http://pillbox.nlm.nih.gov/PHP/pillboxAPIService.php
 class PillboxResource < ActiveResource::Base
   if ActiveResource::VERSION::STRING < '3.0.0'
-    def self.first(options = {})
-      find(:first, options)
-    end
-
-    def self.all(options = {})
-      find(:all, options)
-    end
+    include Compatibility
   end
   self.site = "http://pillbox.nlm.nih.gov/PHP/pillboxAPIService.php"
 

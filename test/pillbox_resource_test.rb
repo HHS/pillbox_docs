@@ -70,10 +70,6 @@ class PillboxResourceTest < Test::Unit::TestCase
     assert_equal('Schedule II', med.dea)
   end
   
-  def test_should_rescue_rexml_parser_error
-    assert_nothing_raised { med = PillboxResource.all(:params => {:dea => "a"} ) }
-  end
-  
   def test_should_allow_searching_for_multiple_active_ingredients
     med = PillboxResource.all(:params => {:ingredient => ['amlodipine', 'benazepril']})
     assert_equal(28, med.count)
@@ -100,5 +96,11 @@ class PillboxResourceTest < Test::Unit::TestCase
   def test_should_return_a_valid_trade_name
     med = PillboxResource.first(:params => {:ingredient  => 'Sildenafil'})
     assert_equal('Viagra', med.trade_name)
+  end
+  
+  if RUBY_VERSION > '1.9'
+    def test_should_rescue_rexml_parser_error
+      assert_nothing_raised { med = PillboxResource.all(:params => {:dea => "a"} ) }
+    end
   end
 end
