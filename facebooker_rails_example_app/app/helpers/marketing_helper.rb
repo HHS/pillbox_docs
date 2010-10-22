@@ -1,2 +1,0 @@
-module MarketingHelper
-end
