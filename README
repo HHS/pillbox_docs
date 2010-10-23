@@ -1,5 +1,5 @@
 Several altruistic developers have created a collection of wrappers for the Pillbox API.
-   - Ruby:   http://github.com/kgautreaux/pillbox <= will be gemified and available through rubyforge: 'gem install pillboxr'
+   - Ruby:   http://github.com/kgautreaux/pillboxr <= will be gemified and available through rubyforge: 'gem install pillboxr'
    - Python: http://github.com/eyeseast/pillbox
 
 API provided through the generous support by the FDA in both money and resources. Work conducted by NLM at NIH.
