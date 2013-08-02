@@ -4,6 +4,8 @@ Several altruistic developers have created a collection of wrappers for the Pill
 
 API provided through the generous support by the FDA in both money and resources. Work conducted by NLM at NIH.
 
-Please contact david.hale at nlm.nih.gov for an api key. There is no bandwidth limit currently. (is this still true David?)
+Please contact david.hale at nlm.nih.gov for an api key. There is no bandwidth limit currently.
+
+API docs at https://github.com/lostonroute66/pillbox/wiki/Pillbox-API-documentation
 
 Data is owned by companies, mandatorily licenced for X purposes.
