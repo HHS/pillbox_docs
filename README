@@ -1,11 +1,17 @@
-Several altruistic developers have created a collection of wrappers for the Pillbox API.
+Several altruistic developers have created a collection of wrappers and other code for the Pillbox API.
    - Ruby:   http://github.com/kgautreaux/pillboxr <= will be gemified and available through rubyforge: 'gem install pillboxr'
    - Python: http://github.com/eyeseast/pillbox
+   - URL constructor and PyQyery: https://gist.github.com/adelaide01/fa7de434a04dca3d7d1f
 
-API provided through the generous support by the FDA in both money and resources. Work conducted by NLM at NIH.
+Pillbox data files are available for download (xml, tsv, sql) https://github.com/lostonroute66/pillbox/wiki/Pillbox-data-downloads
 
-Please contact david.hale at nlm.nih.gov for an api key. There is no bandwidth limit currently.
+Data docs in progress https://github.com/lostonroute66/pillbox/wiki/Pillbox-data-documentation
 
-API docs at https://github.com/lostonroute66/pillbox/wiki/Pillbox-API-documentation
+API docs https://github.com/lostonroute66/pillbox/wiki/Pillbox-API-documentation
+Please contact david.hale at nlm.nih.gov for an api key. There is no bandwidth limit.
 
-Data is owned by companies, mandatorily licenced for X purposes.
+Starting to move project docs to the wiki https://github.com/lostonroute66/pillbox/wiki/Pillbox-data-documentation
+
+Pillbox is a resource of the U.S. National Library of Medicine, part of the National Institutes of Health, U.S. Department of Health and Human Services. Pillbox is a United States government resource.
+
+This repo will be moved to an official HHS repo in August 2013.
